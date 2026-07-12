@@ -1,0 +1,586 @@
+case_submitter_id	case_id	gender	race	ethnicity	vital_status	days_to_death	age_at_index	year_of_birth	primary_diagnosis	age_at_diagnosis	ajcc_pathologic_stage	ajcc_pathologic_t	ajcc_pathologic_n	ajcc_pathologic_m	tissue_or_organ_of_origin	morphology	days_to_last_follow_up	prior_malignancy	cigarettes_per_day	pack_years_smoked	tobacco_smoking_status
+TCGA-44-2655	07b5663f-9a54-4462-b6c1-6fc8116b8714		white	not hispanic or latino	Alive		65.0		Adenocarcinoma, NOS	23854.0	Stage IA	T1	N0	M0	Upper lobe, lung	8140/3	1324.0	yes		30.0	Current Reformed Smoker for > 15 yrs
+TCGA-73-4662	294ff941-aea1-4588-9a0e-e9f5393e2bb6		white	not hispanic or latino	Alive		65.0		Infiltrating duct carcinoma, NOS		Stage I	T1c	N0	M0	Breast, NOS	8500/3				10.0	Current Reformed Smoker for > 15 yrs
+TCGA-44-7671	ebb33753-9d38-4368-9033-3e55f129d00d		black or african american	not hispanic or latino	Alive		64.0		Adenocarcinoma with mixed subtypes	23538.0	Stage IB	T2a	N0	M0	Middle lobe, lung	8255/3	889.0	yes			Current Reformed Smoker for > 15 yrs
+TCGA-78-8660	781f40c9-c099-4c96-8269-ebe2a449c93d		not reported	not reported	Dead	321.0	69.0		Adenocarcinoma, NOS	25664.0					Not Reported	8140/3				11.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-6978	5134c56f-8286-4ec8-8348-237cee7dad5e		white	not hispanic or latino	Dead	176.0	81.0		Not Reported						Not Reported	Not Reported					Lifelong Non-Smoker
+TCGA-J2-8192	369f14c4-2191-4962-a309-3e23ddc4e5fc		white	not hispanic or latino	Alive		65.0		Adenocarcinoma, NOS	23892.0	Stage IIA	T2a	N1	MX	Upper lobe, lung	8140/3	739.0	yes			Lifelong Non-Smoker
+TCGA-80-5611	e51f717f-72e8-400e-9f35-fc5dc32fdf71		not reported	not reported	Alive				Not Reported						Head, face or neck, NOS	Not Reported				60.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-93-8067	bbe88801-34f3-46d2-bbfd-b46c3901ed71		asian	not hispanic or latino	Alive		77.0		Adenocarcinoma, NOS	28453.0	Stage IB	T2a	N0	MX	Lower lobe, lung	8140/3	186.0	yes		20.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-05-4418	d2c1e896-6886-4122-bb48-5fbcd3f641f4		not reported	not reported	Dead	274.0	69.0		Not Reported						Prostate gland	Not Reported				25.0	Current Smoker
+TCGA-67-6217	108a71cf-b9db-47cd-aa74-c03ec989b41b		white	not hispanic or latino	Alive		73.0		Not Reported						Thymus	Not Reported					Current Reformed Smoker for > 15 yrs
+TCGA-49-6745	9c7875ad-ab71-4d48-b2e3-e4c7a46393e9		white	not reported	Alive		82.0		Not Reported						Prostate gland	Not Reported				20.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-8091	d12b6930-9ae4-4fe7-ad69-d183135c91ab		white	not hispanic or latino	Alive		74.0		Adenocarcinoma, NOS						Prostate gland	8140/3					Current Reformed Smoker for > 15 yrs
+TCGA-38-7271	8214a0d1-5e2d-4a7a-acb1-e5580755db83		white	not hispanic or latino	Dead	800.0	72.0		Not Reported	26744.0					Not Reported	Not Reported				25.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-7914	69dba721-a168-47a4-b7ff-80a448bad654		white	not hispanic or latino	Dead	187.0	71.0		Adenocarcinoma, NOS	26105.0	Stage IIA	T1b	N1	MX	Upper lobe, lung	8140/3	187.0	yes		5.0	Current Smoker
+TCGA-55-1595	d31aeefc-b59b-42e9-9919-750b17a70a3d		asian	not hispanic or latino	Alive		74.0		Infiltrating duct carcinoma, NOS			T1c	N0	M0	Breast, NOS	8500/3					Current Reformed Smoker for < or = 15 yrs
+TCGA-73-4658	afb91740-2668-46d7-ba01-bb26153ad1c7		white	not hispanic or latino	Dead	1600.0	80.0		Adenocarcinoma, NOS	29508.0	Stage IB	T2	N0	M0	Lower lobe, lung	8140/3	1600.0	yes		25.0	Current Reformed Smoker for > 15 yrs
+TCGA-38-4630	f1985735-a188-4567-a88a-530f9b80291b		white	not hispanic or latino	Dead	1073.0	75.0		Not Reported	28413.0					Not Reported	Not Reported					Lifelong Non-Smoker
+TCGA-55-1592	a41c46da-7ed4-4192-bd16-b3cbb94a5133		white	not hispanic or latino	Dead	701.0	65.0		Adenocarcinoma, NOS		Stage IA				Lung, NOS	8140/3					Current Reformed Smoker for < or = 15 yrs
+TCGA-55-1594	6d72de06-232a-4983-a06c-eba6d82cb3f1		white	not hispanic or latino	Alive		68.0		Adenocarcinoma, NOS	25008.0	Stage IIIA	T2	N2	M0	Lower lobe, lung	8140/3	1178.0	no			Current Smoker
+TCGA-67-3776	102fba48-b23a-46d4-8371-71c11c1a6654		white	not hispanic or latino	Alive		57.0		Adenocarcinoma, NOS	20940.0	Stage IIB	T2	N1	M0	Lower lobe, lung	8140/3	61.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-95-7043	c650b1ff-8a4c-4ee9-b7c1-268c28c83827		white	not hispanic or latino	Dead	503.0	63.0		Adenocarcinoma with mixed subtypes			T1a	NX		Lung, NOS	8255/3				40.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-86-8076	8609edfc-119d-4d63-9188-c86aabd5ca52		white	not hispanic or latino	Alive		42.0		Papillary adenocarcinoma, NOS	15605.0	Stage IA	T1	N0	M0	Upper lobe, lung	8260/3	993.0	no			Lifelong Non-Smoker
+TCGA-05-4245	03d09c05-49ab-4ba6-a8d7-e7ccf71fafd2		not reported	not reported	Alive		81.0		Not Reported			T3	N1	M0	Descending colon	Not Reported				32.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-44-2661	f3501466-cf32-4866-b5fb-e94dd32341bc		white	not hispanic or latino	Alive		69.0		Adenocarcinoma, NOS	25313.0	Stage IA	T1	N0	M0	Upper lobe, lung	8140/3	1159.0	yes			Lifelong Non-Smoker
+TCGA-55-8619	772324a5-5513-454d-ad6b-605798f69b73		white	not hispanic or latino	Alive		72.0		Mucinous adenocarcinoma	26616.0	Stage IIB	T3	N0	MX	Lower lobe, lung	8480/3	416.0	yes			Lifelong Non-Smoker
+TCGA-78-7166	b40d0849-f4ef-4a14-9732-9beb708cb46b		white	not reported	Dead	258.0	84.0		Basal cell carcinoma, NOS						External ear	8090/3				38.0	Current Reformed Smoker for > 15 yrs
+TCGA-38-4631	2483621a-4db3-41ab-aa33-b9427ea8a0af		white	not hispanic or latino	Dead	354.0	72.0		Adenocarcinoma, NOS	26538.0	Stage IB	T2	N0	M0	Upper lobe, lung	8140/3	354.0	yes		40.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-73-4670	1b354837-4925-4480-ac32-6b44d0957314		white	not hispanic or latino	Alive		69.0		Adenocarcinoma, NOS	25526.0	Stage IV	T2	N0	M1	Upper lobe, lung	8140/3	131.0	no		30.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-49-6742	21fb46f9-4bbb-441c-af19-a687e9138344		white	not hispanic or latino	Dead	488.0	70.0		Mucinous adenocarcinoma	26053.0					Not Reported	8480/3				10.0	Current Reformed Smoker for > 15 yrs
+TCGA-55-7726	923b37e4-fcf7-46a0-8cb2-9139711fec7b		white	not hispanic or latino	Alive		72.0		Adenocarcinoma, NOS	26451.0	Stage IA	T1b	N0	MX	Lower lobe, lung	8140/3	652.0	yes		30.0	Current Reformed Smoker for > 15 yrs
+TCGA-50-5932	ebcba7f2-ce13-4bae-97cd-91a6b1dcd465		white	not hispanic or latino	Dead	1235.0	75.0		Adenocarcinoma, NOS		Stage IA	T1a	N0	M0	Prostate gland	8140/3					Not Reported
+TCGA-55-1596	199386c2-bb53-4fad-a1b6-59ab216a4a50		asian	not hispanic or latino	Alive		55.0		Adenocarcinoma, NOS	20381.0	Stage IIB	T2	N1	M0	Upper lobe, lung	8140/3	2065.0	no		50.0	Current Smoker
+TCGA-44-6147	889aec8e-14ba-48d9-8fe1-f2416e82b333		white	not hispanic or latino	Alive		67.0		Adenocarcinoma, NOS	24631.0	Stage IA	T1b	NX	M0	Upper lobe, lung	8140/3	845.0	yes			Current Reformed Smoker for > 15 yrs
+TCGA-50-6597	0d66bf6c-eed0-4726-bd5b-3bf6d610b4e0		white	not hispanic or latino	Dead	1268.0	79.0		Carcinoid tumor, NOS						Lung, NOS	8240/3					Lifelong Non-Smoker
+TCGA-44-7661	cbfef004-b437-4d51-9d88-a2db50aa6481		white	not hispanic or latino	Dead	557.0	69.0		Adenocarcinoma, NOS	25818.0					Not Reported	8140/3				22.0	Current Reformed Smoker for > 15 yrs
+TCGA-05-4384	9a50e7e4-831d-489f-87d2-979e987561cc		not reported	not reported	Alive		66.0		Adenocarcinoma with mixed subtypes	24594.0					Not Reported	8255/3				20.0	Current Reformed Smoker for > 15 yrs
+TCGA-44-2659	bf15f7ad-9d92-473b-91d1-f24aa373ab97		white	not hispanic or latino	Alive		65.0		Adenocarcinoma, NOS	23808.0	Stage IIB	T1	N1	M0	Lower lobe, lung	8140/3	1367.0	no		57.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-8511	1f1df7ea-00b9-4432-86de-da773d1451e5		white	not hispanic or latino	Alive		73.0		Not Reported						Uterus, NOS	Not Reported				58.0	Current Smoker
+TCGA-44-6776	c2a1de2e-6451-4c95-8ce6-263f2b7e6eff		white	not reported	Alive		60.0		Adenocarcinoma, NOS	22150.0	Stage IA	T1	N0	MX	Upper lobe, lung	8140/3	2616.0	yes		45.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-80-5607	645903b5-ba37-48a1-985b-a019b8db3236		not reported	not reported	Alive				Adenocarcinoma, NOS		Stage IIB	T2	N1	M0	Upper lobe, lung	8140/3		yes		15.0	Current Reformed Smoker for > 15 yrs
+TCGA-50-5072	1575148b-0f63-44ee-86fd-93ae1a02be0b		white	not hispanic or latino	Dead	250.0	74.0		Adenocarcinoma, NOS	27249.0					Not Reported	8140/3				15.0	Current Reformed Smoker for > 15 yrs
+TCGA-05-4396	9f81c602-8afa-4588-b0b6-6e5a1a128d5a		not reported	not reported	Dead	303.0	76.0		Adenocarcinoma with mixed subtypes	28094.0	Stage IIIB	T4	N1	M0	Lower lobe, lung	8255/3	303.0	no		19.0	Current Reformed Smoker for > 15 yrs
+TCGA-95-7948	a52e99d6-a61a-439d-b0b1-ca7a0eabcb04		white	not hispanic or latino	Alive		42.0		Hodgkin lymphoma, NOS						Spleen	9650/3				0.15	Current Reformed Smoker for > 15 yrs
+TCGA-95-7562	193201a3-1447-47b1-bdf1-11ae0eb3b2f3		black or african american	not hispanic or latino	Dead	87.0	71.0		Adenocarcinoma, NOS	26000.0	Stage IIA	T2a	N1	M0	Lower lobe, lung	8140/3	87.0	yes		10.0	Current Reformed Smoker for > 15 yrs
+TCGA-55-8090	4d51ee44-e6f4-4bcb-be28-e9df54b39a8d		white	not hispanic or latino	Dead	598.0	80.0		Adenocarcinoma, NOS	29783.0					Not Reported	8140/3					Current Smoker
+TCGA-73-7498	ad74c0e8-8878-4efc-997d-981cd547bc5b		white	not hispanic or latino	Alive		58.0		Bronchiolo-alveolar carcinoma, non-mucinous	21527.0	Stage IA	T1b	N0	M0	Lower lobe, lung	8252/3	1189.0	no		28.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-7725	9fcdccae-676e-4071-93c3-23d2d3ab0c00		white	not hispanic or latino	Alive		68.0		Not Reported						Head, face or neck, NOS	Not Reported				16.0	Current Reformed Smoker for > 15 yrs
+TCGA-05-5420	8b119d1c-6d21-4bbd-8a00-12da7b97d6c4		not reported	not reported	Alive		67.0		Not Reported					M1	Unknown	Not Reported				40.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-38-4629	127bf818-f7e5-46b5-a9de-39f6d96b8b83		white	not hispanic or latino	Dead	864.0	68.0		Adenocarcinoma, NOS	25104.0	Stage IIB	T3	N0	M0	Upper lobe, lung	8140/3	864.0	yes		100.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-67-3770	eeab558b-8d1e-4843-861d-dbfb06061758		white	not hispanic or latino	Alive		70.0		Adenocarcinoma, NOS	25658.0	Stage IA	T1	N0	M0	Upper lobe, lung	8140/3	610.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-73-4676	195a5afb-b79f-44d2-9d12-884487630c2b		white	not hispanic or latino	Dead	281.0	45.0		Adenocarcinoma, NOS	16746.0	Stage IIA	T2a	N1	M0	Upper lobe, lung	8140/3	281.0	no		48.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-95-7947	e0acafdd-06d0-48a6-bd68-577ef666a419		white	not hispanic or latino	Alive		67.0		Adenocarcinoma with mixed subtypes	24752.0	Stage IA	T1a	N0	M0	Upper lobe, lung	8255/3	477.0	yes		100.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-97-8172	cbf1f718-6bb7-4daf-b9d6-fb294281decb		white	not hispanic or latino	Alive		75.0		Acinar cell carcinoma	27416.0	Stage IB	T2a	N0	M0	Upper lobe, lung	8550/3	545.0	yes		20.0	Current Reformed Smoker for > 15 yrs
+TCGA-44-6146	0c0b610e-fe4c-406d-a5ed-5cc3b11dabf5		white	not hispanic or latino	Alive		64.0		Mucinous adenocarcinoma	24009.0					Not Reported	8480/3				15.0	Current Reformed Smoker for > 15 yrs
+TCGA-05-4410	d28e465c-e553-4c53-8bb7-3d8199b9a8a5		not reported	not reported	Alive		62.0		Adenocarcinoma with mixed subtypes	22888.0	Stage IB	T2	N0	M0	Upper lobe, lung	8255/3	0.0	yes		98.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-91-6836	0b31dbdf-0623-48e4-a0ec-017650dceda7		white	not hispanic or latino	Alive		52.0		Papillary adenocarcinoma, NOS	19202.0					Thyroid gland	8260/3				50.0	Current Smoker
+TCGA-55-7724	294cb595-0907-44c7-bbef-985a27c1e6e2		white	not hispanic or latino	Alive		76.0		Adenocarcinoma, NOS	27891.0	Stage IB	T2a	N0	MX	Upper lobe, lung	8140/3	705.0	yes		50.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-6979	5af499be-d2b9-4eaf-9a9f-435dccb51917		white	not reported	Dead	237.0	59.0		Adenocarcinoma, NOS	21975.0					Not Reported	8140/3					Current Reformed Smoker for > 15 yrs
+TCGA-05-4382	3434b91a-c05f-460f-a078-7b1bb6e7085d		not reported	not reported	Alive		68.0		Carcinoma in situ, NOS						Penis, NOS	8010/2				62.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-50-5939	12b79b4f-c28c-418e-a1e7-e622f33fdcc2		white	not hispanic or latino	Dead	460.0	85.0		Adenocarcinoma with mixed subtypes	31236.0	Stage IB	T2	N0	M0	Upper lobe, lung	8255/3	460.0	yes		15.0	Current Reformed Smoker for > 15 yrs
+TCGA-78-7633	44218b35-219c-4ad9-a01e-fde14067c4c0		white	not reported	Dead	1528.0	67.0		Adenocarcinoma with mixed subtypes	24713.0	Stage IB	T2	N0	M0	Upper lobe, lung	8255/3	1528.0	no		94.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-7573	8e41153b-9faf-45c3-8397-8a428ef5c0d5		white	not hispanic or latino	Alive		72.0		Adenocarcinoma, NOS	26302.0	Stage IA	T1b	N0	MX	Upper lobe, lung	8140/3	487.0	yes			Current Reformed Smoker for > 15 yrs
+TCGA-05-4405	f587c9ab-2949-4410-80d6-a050865d48aa		not reported	not reported	Alive		74.0		Not Reported						Uterus, NOS	Not Reported				65.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-91-7771	c0fdb152-25d2-404b-bec7-a43ece381f5b		white	not hispanic or latino	Alive		62.0		Adenocarcinoma, NOS	22926.0	Stage IIB	T3	N0	MX	Upper lobe, lung	8140/3	492.0	no		75.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-64-1677	8a16ddb3-4861-4128-bed9-0b1f94fe8cf7		white	not hispanic or latino	Dead	628.0	77.0		Not Reported	28842.0					Not Reported	Not Reported				50.0	Current Smoker
+TCGA-38-6178	edf80622-aea2-4b50-bb69-691d6708aa83		white	not hispanic or latino	Alive		70.0		Granulosa cell tumor, malignant						Ovary	8620/3					Lifelong Non-Smoker
+TCGA-05-4434	d94fe32f-bedd-4f4c-9feb-fcb60d40f4bb		not reported	not reported	Dead	457.0	67.0		Not Reported						Breast, NOS	Not Reported				15.0	Current Smoker
+TCGA-44-2664	93b62fc5-a0d3-4d32-bf27-cd7c9d43cd5f		black or african american	not hispanic or latino	Alive		66.0		Adenocarcinoma, NOS	25281.0					Not Reported	8140/3				23.0	Current Smoker
+TCGA-44-7670	9b38eded-3f46-4aaa-9991-68008d97bdbe		white	hispanic or latino	Alive		47.0		Not Reported						Vulva, NOS	Not Reported				30.0	Current Smoker
+TCGA-49-4501	0780eb43-d5b5-4c3d-9825-beacba5cc723		white	not hispanic or latino	Dead	1421.0	67.0		Not Reported	25362.0					Not Reported	Not Reported					Lifelong Non-Smoker
+TCGA-MP-A4T9	70081320-540f-41d2-8687-ee6d011f8eb0		white	not hispanic or latino	Dead	1265.0	54.0		Adenocarcinoma, NOS	20185.0					Not Reported	8140/3				24.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-44-8119	230dc42d-681c-4e31-9d2e-c724e61829fb		white	not hispanic or latino	Alive		73.0		Adenocarcinoma, NOS	27003.0	Stage IIB	T3	N0	M0	Upper lobe, lung	8140/3	285.0	yes		50.0	Current Smoker
+TCGA-50-5935	100430c8-1446-45c8-af36-b6dbb3ddd0c1		white	not hispanic or latino	Dead	653.0	86.0		Not Reported						Cervix uteri	Not Reported					Not Reported
+TCGA-62-8394	742e0e32-25b5-4d41-8bf5-364b571cfd93		white	not hispanic or latino	Dead	139.0	65.0		Adenocarcinoma with mixed subtypes	23758.0	Stage IIIB	T4	N2	M0	Lower lobe, lung	8255/3	139.0	no			Lifelong Non-Smoker
+TCGA-05-4402	722d6818-f1cb-49f4-b68a-fd0a31304681		not reported	not reported	Dead	244.0	56.0		Adenocarcinoma with mixed subtypes	20819.0	Stage IV	T2	NX	M1	Lower lobe, lung	8255/3	244.0	yes			Lifelong Non-Smoker
+TCGA-MN-A4N1	75a0bb0b-6528-4fb8-a9e6-254905d21df4		black or african american	not hispanic or latino	Alive		60.0		Squamous cell carcinoma, NOS	19175.0	Stage II	T2	N0	MX	Mouth, NOS	8070/3					Current Smoker
+TCGA-44-3917	7099597a-b208-45b5-b9e0-11ab40d5e497		white	not hispanic or latino	Alive		33.0		Adenocarcinoma, NOS	12179.0	Stage IB	T2	N0	M0	Upper lobe, lung	8140/3	1183.0	no		16.0	Current Smoker
+TCGA-64-5775	c8544fb3-b26e-4672-bb81-a271db724b04		white	not hispanic or latino	Dead	62.0	71.0		Adenocarcinoma, NOS	26058.0	Stage IIIA	T4	N0	M0	Upper lobe, lung	8140/3	62.0	no		110.0	Current Smoker
+TCGA-55-8203	9a9bd705-1ef1-4a6c-bb1e-bdd346dc01c0		white	not hispanic or latino	Alive		69.0		Adenocarcinoma, NOS	25477.0	Stage IA	T1b	N0	M0	Lower lobe, lung	8140/3	547.0	yes		50.0	Current Smoker
+TCGA-55-8621	8d535aa6-6d59-4965-b5ed-17217d8f5930		white	not hispanic or latino	Alive		75.0		Clear cell carcinoma	26993.0					Kidney, NOS	8310/3				30.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-17-Z003	c390b6ad-14c8-49ea-9b38-798c9fad5b62																				
+TCGA-69-7761	77828a90-8e2a-4664-b674-d837e6e34fe4		white	not hispanic or latino	Alive		84.0		Acinar cell carcinoma	31041.0	Stage IB	T2a	N0	MX	Lower lobe, lung	8550/3	186.0	no		20.0	Current Reformed Smoker for > 15 yrs
+TCGA-62-A471	0075437e-ba1a-46be-86d6-9773209a2b5e		white	not hispanic or latino	Alive		64.0		Adenocarcinoma, NOS	23689.0	Stage IIB	T2b	N1	M0	Upper lobe, lung	8140/3	1246.0	no		30.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-17-Z059	77bb204d-4e68-4c93-905f-9ef4c53b1ce2																				
+TCGA-55-7903	77c4dbb2-eceb-4e0d-bcde-63dc817d5f35		white	not hispanic or latino	Alive		64.0		Adenocarcinoma, NOS	23509.0	Stage IA	T1b	N0	MX	Lower lobe, lung	8140/3	567.0	no		40.0	Current Smoker
+TCGA-91-6848	0232d299-4cdf-4fd7-9a5e-8d13c208b40c		white	not hispanic or latino	Alive		59.0		Adenocarcinoma, NOS	21829.0	Stage IIIA	T2	N2	MX	Upper lobe, lung	8140/3	224.0	no			Current Reformed Smoker for < or = 15 yrs
+TCGA-55-8208	77f8c850-b4e6-46a1-ab12-a50e0044a0c8		white	not hispanic or latino	Alive		73.0		Adenocarcinoma, NOS	26716.0	Stage IA	T1b	N0	M0	Upper lobe, lung	8140/3	674.0	no		50.0	Current Smoker
+TCGA-86-6851	035c0b2b-c722-443b-8962-db4ee92c7532		white	not hispanic or latino	Alive		73.0		Adenocarcinoma with mixed subtypes	26808.0	Stage IIA	T1b	N1	M0	Upper lobe, lung	8255/3	179.0	no		52.0	Current Smoker
+TCGA-62-A46U	793649e5-f479-4d64-8723-2ef488fe0fd9		white	not hispanic or latino	Alive		71.0		Adenocarcinoma with mixed subtypes	25998.0	Stage IIB	T2	N1	M0	Lower lobe, lung	8255/3	2067.0	no			Lifelong Non-Smoker
+TCGA-78-7540	05534064-8b43-4c82-95da-70fd83bd6560		white	not reported	Dead	1197.0	66.0		Bronchio-alveolar carcinoma, mucinous	24440.0	Stage IB	T2	N0	M0	Lower lobe, lung	8253/3	1197.0	no			Lifelong Non-Smoker
+TCGA-50-5933	7a0ea814-f0de-4bc4-a81a-daa000559369		white	not hispanic or latino	Dead	2393.0	72.0		Adenocarcinoma, NOS	26377.0	Stage IIIB	T4	N2	M0	Lower lobe, lung	8140/3	2393.0	no			Not Reported
+TCGA-55-8615	06fe7f3e-4edd-4150-981c-93787ea19b39		white	not hispanic or latino	Alive		67.0		Adenocarcinoma, NOS	25010.0					Not Reported	8140/3				67.0	Current Smoker
+TCGA-17-Z055	07119baf-64a7-454c-b1b0-c769b506a63d																				
+TCGA-86-7954	079ae0b3-b64b-4b8e-ab7d-225b8046568c		white	not hispanic or latino	Alive		68.0		Bronchiolo-alveolar adenocarcinoma, NOS	25062.0	Stage IB	T2	N0	M0	Lower lobe, lung	8250/3	605.0	no		8.0	Current Reformed Smoker for > 15 yrs
+TCGA-49-4505	088edf89-d2b5-40c7-b066-df3bd383f7ea		white	not hispanic or latino	Dead	428.0	61.0		Adenocarcinoma, NOS	22628.0	Stage IIB	T2	N1	M0	Lower lobe, lung	8140/3	428.0	no		74.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-J2-A4AD	096bd95f-9900-4db2-b1c4-103902c3b31f		white	not hispanic or latino	Dead	550.0	61.0		Adenocarcinoma, NOS	22938.0					Not Reported	8140/3				120.0	Current Smoker
+TCGA-50-6592	09918b81-4696-4cba-a45a-5fe7407c2337		white	not hispanic or latino	Dead	777.0	71.0		Adenocarcinoma, NOS	26191.0	Stage IB	T2	N0	M0	Lower lobe, lung	8140/3	777.0	no			Current Reformed Smoker for < or = 15 yrs
+TCGA-86-8674	0a1eea76-e19a-4547-9b24-abf7051cc4db		white	not hispanic or latino	Alive		50.0		Papillary adenocarcinoma, NOS	18479.0	Stage IIA	T2a	N1	M0	Middle lobe, lung	8260/3	806.0	no		37.5	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-6981	0a45f302-5748-48f3-9dc9-66c01843a68e		white	not hispanic or latino	Dead	1379.0	53.0		Adenocarcinoma, NOS	19497.0	Stage IIIA	T1	N2	M0	Upper lobe, lung	8140/3	1379.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-55-7284	0b15fcb8-1fb7-497e-80b9-d3db66a3c0a2		white	not hispanic or latino	Dead	243.0	74.0		Bronchiolo-alveolar carcinoma, non-mucinous	27087.0	Stage IIB	T3	N0	MX	Overlapping lesion of lung	8252/3	243.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-62-A46P	0c59ff96-5e4a-4664-a0b1-d057b4725483		white	not hispanic or latino	Dead	594.0	65.0		Adenocarcinoma with mixed subtypes	24260.0					Not Reported	8255/3				40.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-99-8032	7e83f9dd-b038-497b-a113-a55605398b7b		white	not hispanic or latino	Alive		61.0		Adenocarcinoma, NOS	22635.0	Stage IA	T1a	N0	M0	Upper lobe, lung	8140/3	44.0	no		90.0	Current Smoker
+TCGA-91-A4BD	0d980584-4484-4063-8243-c3cd67f6f588		white	not hispanic or latino	Alive		78.0		Adenocarcinoma, NOS	28544.0	Stage IIA	T1b	N1	MX	Lower lobe, lung	8140/3	603.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-44-7667	7f6455e8-fa3d-4452-acb2-8c9995073072		white	not hispanic or latino	Alive		49.0		Adenocarcinoma, NOS	18062.0	Stage IIB	T3	N0	MX	Lower lobe, lung	8140/3	1097.0	no		50.0	Current Smoker
+TCGA-38-4625	0ea4920f-f4c8-4590-84b3-eb419824e144		white	not hispanic or latino	Alive		66.0		Adenocarcinoma, NOS	24241.0	Stage IB	T2a	N0	M0	Upper lobe, lung	8140/3	2973.0	no		50.0	Current Smoker
+TCGA-55-8302	807cc7d2-6e3b-4f2d-9531-0da994eeeada		white	not reported	Alive		54.0		Adenocarcinoma, NOS	20011.0	Stage IB	T2	N0	MX	Lower lobe, lung	8140/3	478.0	no		59.0	Current Smoker
+TCGA-50-6590	114a34c0-983b-4d90-9181-1823c9637a63		white	not hispanic or latino	Dead	1288.0	72.0		Adenocarcinoma, NOS	26444.0	Stage IB	T2	N0	M0	Upper lobe, lung	8140/3	1288.0	no		50.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-17-Z017	81b71cff-da58-47cf-ad00-0a42489a7a0b																				
+TCGA-97-8179	11c2e619-8aeb-4f86-b03b-78f9a8099263		white	not hispanic or latino	Alive		72.0		Acinar cell carcinoma	26305.0	Stage IA	T1a	N0	M0	Upper lobe, lung	8550/3	435.0	no		60.0	Current Reformed Smoker for > 15 yrs
+TCGA-55-6968	83a6ed20-b3cf-48b9-8ed3-a080cd4951fa		white	not hispanic or latino	Dead	1293.0	61.0		Adenocarcinoma, NOS	22344.0	Stage IV	T1	N0	M1	Lower lobe, lung	8140/3	1293.0	no			Current Smoker
+TCGA-97-8176	12c27db5-db2f-48dc-a2ca-9557b951f43e		white	not hispanic or latino	Dead	468.0	63.0		Acinar cell carcinoma	23170.0	Stage IIIA	T3	N1	M0	Lower lobe, lung	8550/3	468.0	no		40.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-99-8025	84c3ba70-afa7-4b69-be69-7ec8d6022c56		black or african american	not hispanic or latino	Alive		72.0		Adenocarcinoma, NOS	26634.0	Stage IIIA	T3	N2	M0	Upper lobe, lung	8140/3	1060.0	no		20.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-50-6594	8504fd86-a70a-4cba-9ec8-25c9e60ca549		black or african american	not hispanic or latino	Dead	370.0	79.0		Adenocarcinoma, NOS	29209.0					Not Reported	8140/3					Current Reformed Smoker for < or = 15 yrs
+TCGA-49-6744	15340dd3-84ae-49fb-989a-eb212f3e73da		white	not reported	Alive		64.0		Adenocarcinoma with mixed subtypes	23484.0	Stage IIA	T2a	N1	MX	Upper lobe, lung	8255/3	1683.0	no		20.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-MP-A4TF	86dac334-f30e-438e-810a-8e45f69dbb7e		white	not hispanic or latino	Dead	336.0	58.0		Adenocarcinoma, NOS	21387.0	Stage IIA	T2b	N0	M0	Upper lobe, lung	8140/3	336.0	no		40.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-78-7162	16cd58db-d52c-403e-9e9c-6da2e99f6bad		white	not reported	Dead	3169.0	75.0		Not Reported	29811.0					Not Reported	Not Reported				12.0	Current Smoker
+TCGA-38-4632	875333ab-9048-462d-aaa2-693ad127e3cc		black or african american	not hispanic or latino	Dead	1357.0	42.0		Not Reported	16098.0					Not Reported	Not Reported				10.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-17-Z028	87eeaf49-3c02-402f-9ae4-3627391e7749																				
+TCGA-MN-A4N5	17e09b0d-eab2-40ec-ae3c-be9ab63fcef0		white	not hispanic or latino	Alive		63.0		Adenocarcinoma, NOS	23257.0	Stage IA	T1a	N0	M0	Upper lobe, lung	8140/3	84.0	no			Current Reformed Smoker for < or = 15 yrs
+TCGA-78-8640	18478121-f1d1-4bdd-9511-8ab22f4a0660		not reported	not reported	Alive		59.0		Adenocarcinoma, NOS	21832.0	Stage IIA	T1	N1	M0	Upper lobe, lung	8140/3	7062.0	no		45.0	Current Smoker
+TCGA-17-Z050	19ca36e6-2154-4224-89b1-117a4a4407f6																				
+TCGA-44-6148	8994c8c4-9ea0-46cb-b4a5-0055d7da5bfa		white	not hispanic or latino	Alive		60.0		Mucinous adenocarcinoma	22138.0	Stage IA	T1b	N0	M0	Lower lobe, lung	8480/3	704.0	no		60.0	Current Reformed Smoker for > 15 yrs
+TCGA-NJ-A55O	8ab8c4ba-311e-41d0-85ea-a0245aca1bdd		white	not hispanic or latino	Alive		56.0		Mucinous adenocarcinoma	20628.0	Stage IIA	T1b	N1	M0	Upper lobe, lung	8480/3	13.0	no		30.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-17-Z026	8b3a111a-aa46-41b9-bbec-28f4290da939																				
+TCGA-69-7763	1b31cdb3-1837-49d6-a857-1830f8800299		white	not hispanic or latino	Alive		69.0		Acinar cell carcinoma	25316.0	Stage IA	T1b	N0	M0	Middle lobe, lung	8550/3	690.0	no		7.5	Current Reformed Smoker for < or = 15 yrs
+TCGA-MP-A4SY	8cc6bcec-65df-46a9-a88c-09762a132857		white	not hispanic or latino	Dead	1501.0	61.0		Adenocarcinoma, NOS	22937.0					Not Reported	8140/3				40.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-64-5779	1c58d9b8-17a2-4fc6-9898-fe6f47bd2c2a		white	not hispanic or latino	Alive		61.0		Acinar cell carcinoma	22305.0	Stage IIIA	T2	N2	M0	Lower lobe, lung	8550/3	864.0	no		40.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-86-A456	8e2aca86-7cba-4631-9f25-4d14219dbc6d		asian	not hispanic or latino	Alive		78.0		Papillary adenocarcinoma, NOS	28533.0	Stage IA	T1a	N0	M0	Upper lobe, lung	8260/3	896.0	no			Current Reformed Smoker for < or = 15 yrs
+TCGA-97-7546	1d90c9f3-5025-4867-a2f0-e455b6a254fa		white	not hispanic or latino	Alive		76.0		Acinar cell carcinoma	27913.0	Stage IA	T1	N0	MX	Upper lobe, lung	8550/3	1285.0	no		25.0	Current Reformed Smoker for > 15 yrs
+TCGA-MP-A4TJ	8f52cccd-5709-4753-9670-31a573ee27ab		Unknown	Unknown	Dead	339.0	62.0		Signet ring cell carcinoma	22875.0	Stage IA	T1	N0	M0	Upper lobe, lung	8490/3	339.0	no			Current Smoker
+TCGA-44-5644	1fc81cd4-fa89-4135-8c3c-027ffae82b05		white	not hispanic or latino	Alive		51.0		Adenocarcinoma, NOS	18644.0	Stage IB	T2a	N0		Lower lobe, lung	8140/3	863.0	no		17.5	Current Smoker
+TCGA-55-8512	202e5df9-69f2-432c-a59d-cc5aa176e973		white	not hispanic or latino	Dead	607.0	41.0		Bronchiolo-alveolar carcinoma, non-mucinous	15266.0	Stage IV	T1a	N1	M1b	Lower lobe, lung	8252/3	607.0	no		19.0	Current Smoker
+TCGA-L9-A8F4	927fc5e0-2c14-4c20-a49b-f10d8a1175c3		black or african american	not hispanic or latino	Alive		64.0		Adenocarcinoma, NOS	23617.0	Stage IB	T2a	N0	MX	Upper lobe, lung	8140/3	476.0	no		14.0	Current Smoker
+TCGA-38-4626	2079155a-d91d-4246-a038-01934a580f32		white	not hispanic or latino	Alive		57.0		Not Reported	23421.0					Not Reported	Not Reported				40.0	Current Smoker
+TCGA-91-6828	9536e32d-2707-48d2-a36d-08c521665bb9		white	not hispanic or latino	Alive		70.0		Adenocarcinoma, NOS	25870.0	Stage IA	T1a	N0	M0	Lower lobe, lung	8140/3	323.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-75-6212	23069f19-eba5-4ea5-ae7d-1ee4399ce7c1		not reported	not reported	Dead	1516.0			Not Reported						Not Reported	Not Reported					Lifelong Non-Smoker
+TCGA-99-8033	9582b436-145b-4f84-8f7f-8b39b8254cc1		white	not hispanic or latino	Dead	656.0	74.0		Adenocarcinoma, NOS	27342.0	Stage IV	TX	NX	M1	Upper lobe, lung	8140/3	656.0	no			Lifelong Non-Smoker
+TCGA-17-Z060	257c9416-e86a-4c71-9dee-7212c2e56351																				
+TCGA-55-8510	962fd4e7-9199-43d9-abce-e3dfa46da62c		white	not hispanic or latino	Alive		55.0		Adenocarcinoma, NOS	20410.0	Stage IB	T2a	N0	MX	Lower lobe, lung	8140/3	539.0	no			Current Smoker
+TCGA-83-5908	25d4ea9e-f773-4f11-bac9-64efdad73211		white	not hispanic or latino	Alive		59.0		Adenocarcinoma, NOS	21760.0	Stage IA	T1	N0	M0	Upper lobe, lung	8140/3	824.0	no		69.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-99-7458	96d93e23-bb0d-46a8-9685-5ed0d6b83059		white	not hispanic or latino	Alive		74.0		Bronchiolo-alveolar carcinoma, non-mucinous	27359.0	Stage IIIA	T4	N0	M0	Lower lobe, lung	8252/3	747.0	no		52.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-99-8028	9759bf3a-74ff-433f-99bb-f9406f222ed2		black or african american	not hispanic or latino	Alive		50.0		Adenocarcinoma, NOS	18542.0	Stage IA	T1a	N0	M0	Upper lobe, lung	8140/3	1118.0	no		30.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-86-8279	2923e404-38f2-437a-b57e-23401fbe0273		white	not hispanic or latino	Alive		46.0		Adenocarcinoma, NOS	17032.0	Stage IIA	T2a	N1	M0	Upper lobe, lung	8140/3	949.0	no			Lifelong Non-Smoker
+TCGA-MP-A4TA	98ee294a-46ed-4572-bdd4-a932c3498a25		white	not hispanic or latino	Dead	950.0	75.0		Papillary transitional cell carcinoma	26570.0					Bladder, NOS	8130/3				55.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-L9-A5IP	2a43e61e-2151-4c5a-b062-74ce9dfd8d4a		black or african american	not hispanic or latino	Dead	58.0	40.0		Adenocarcinoma, NOS	14681.0	Stage IV	T3	N2	M1b	Upper lobe, lung	8140/3	58.0	no			Current Reformed Smoker for < or = 15 yrs
+TCGA-50-5049	9944f46f-9fa8-4e2c-a806-776bec7f8803		white	not hispanic or latino	Alive		70.0		Adenocarcinoma, NOS	28121.0					Not Reported	8140/3					Not Reported
+TCGA-75-6211	2db08267-d346-4d42-aac0-b76831903253		not reported	not reported	Dead				Adenocarcinoma, NOS		Stage IB	T2	N0	M0	Lung, NOS	8140/3		no		34.0	Current Smoker
+TCGA-MP-A4TC	99c35245-e1c8-4805-b7a5-f703bb506030		white	not hispanic or latino	Dead	74.0	77.0		Squamous cell carcinoma, NOS	25720.0					Skin of other and unspecified parts of face	8070/3				125.0	Current Reformed Smoker for > 15 yrs
+TCGA-78-7149	2de1ba51-eae1-4a54-b7cd-d6d739fdc39d		white	not reported	Alive		71.0		Adenocarcinoma with mixed subtypes	26285.0	Stage IIIB	T4	N0	M0	Lower lobe, lung	8255/3	3940.0	no		115.0	Current Smoker
+TCGA-75-6205	9a63f744-4ed4-4b4d-aac6-f9bda66aa563		not reported	not reported	Dead				Not Reported						Not Reported	Not Reported					Lifelong Non-Smoker
+TCGA-55-6980	2f0710f4-827b-45b2-9b7e-c27385b481a7		white	not reported	Alive		56.0		Bronchiolo-alveolar carcinoma, non-mucinous		Stage IA	T1	N0	M0	Lower lobe, lung	8252/3	2109.0	no			Lifelong Non-Smoker
+TCGA-05-5425	9b4eeecb-6aff-435b-a244-ec362af92b7f		not reported	not reported	Alive		68.0		Not Reported	25506.0					Not Reported	Not Reported				40.0	Current Reformed Smoker for > 15 yrs
+TCGA-49-AARR	9b93a7c5-f9b4-4461-8078-0201a725c9cf		black or african american	not hispanic or latino	Alive		68.0		Adenocarcinoma, NOS	24942.0	Stage IA	T1	N0	MX	Upper lobe, lung	8140/3	4992.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-62-8398	2fabeb98-05e3-4f55-97f5-fbc675e25a3d		white	not hispanic or latino	Dead	444.0	55.0		Adenocarcinoma with mixed subtypes	20197.0	Stage IIIA	T2	N2	M0	Lower lobe, lung	8255/3	444.0	no		20.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-97-8552	9ca1a26c-82e0-48b3-b3bb-2ed57086eeb1		white	not hispanic or latino	Alive		55.0		Bronchiolo-alveolar carcinoma, non-mucinous	20331.0	Stage I	T1a	N0	MX	Lower lobe, lung	8252/3	626.0	no			Lifelong Non-Smoker
+TCGA-50-8459	9cfc1519-33e7-4145-a4ad-78b5c449853a		white	not hispanic or latino	Alive		68.0		Mucinous adenocarcinoma	24859.0	Stage IIB	T3	N0	M0	Lower lobe, lung	8480/3	1119.0	no		10.0	Current Smoker
+TCGA-17-Z009	3136b041-24b9-42c5-b4a8-70f04c63a177																				
+TCGA-95-A4VP	9e22a3af-7f28-4757-8684-ed64a2a27ad1		white	not reported	Alive		66.0		Acinar cell carcinoma	24346.0					Not Reported	8550/3				20.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-50-5066	3199cfe5-3be3-43cd-a36b-5cf2c7a9929f		black or african american	not hispanic or latino	Alive		72.0		Adenocarcinoma with mixed subtypes	26862.0					Not Reported	8255/3					Lifelong Non-Smoker
+TCGA-50-5045	9ee20c0d-a1c3-47f3-abda-131b3f190f52		black or african american	not hispanic or latino	Dead	2174.0	57.0		Adenocarcinoma, NOS	20961.0		T2	N1	M0	Lower lobe, lung	8140/3	2174.0	no			Not Reported
+TCGA-05-4398	31c96e35-5e2f-429c-b12a-7bc5a497a300		not reported	not reported	Alive		47.0		Adenocarcinoma with mixed subtypes	17471.0	Stage IIIB	T4	N3	M0	Upper lobe, lung	8255/3	1431.0	no		72.0	Current Smoker
+TCGA-55-6975	a046888c-f153-4f35-a1b6-23dd1691a91a		white	not hispanic or latino	Dead	118.0	61.0		Adenocarcinoma with mixed subtypes		Stage IIB	T2	N1	M0	Lower lobe, lung	8255/3	118.0	no			Current Reformed Smoker for < or = 15 yrs
+TCGA-75-6214	32592562-11fa-435a-b40b-2b242bae53aa		not reported	not reported	Dead	1115.0			Adenocarcinoma, NOS						Not Reported	8140/3				40.0	Current Smoker
+TCGA-49-4512	a1e65587-24c1-4b41-92a7-4e1f15fffd78		white	not hispanic or latino	Dead	905.0	69.0		Adenocarcinoma, NOS	25502.0	Stage IIIA	T2	N2	MX	Middle lobe, lung	8140/3	905.0	no			Lifelong Non-Smoker
+TCGA-55-A48X	32d9935a-f5cd-43b3-88bd-09e6e2b9090d		white	not hispanic or latino	Alive		63.0		Not Reported	23956.0					Not Reported	Not Reported				36.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-05-4417	a244a99a-d7cc-4fb1-bc76-b66886481621		not reported	not reported	Alive		51.0		Adenocarcinoma with mixed subtypes	18780.0	Stage IB	T2	N0	M0	Upper lobe, lung	8255/3	455.0	no		56.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-05-5423	33e3f736-7990-4f7a-ac35-863247566541		not reported	not reported	Alive		65.0		Adenocarcinoma with mixed subtypes	23863.0	Stage IIB	T2	N1	M0	Lung, NOS	8255/3	151.0	no		72.0	Current Reformed Smoker for > 15 yrs
+TCGA-05-4244	34040b83-7e8a-4264-a551-b16621843e28		not reported	not reported	Alive		70.0		Adenocarcinoma, NOS	25752.0	Stage IV	T2	N2	M1	Lower lobe, lung	8140/3	0.0	no		38.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-97-A4M2	345aef28-d49b-491b-a337-b1ac55c37d35		white	not hispanic or latino	Alive		66.0		Not Reported						Prostate gland	Not Reported				100.0	Current Smoker
+TCGA-86-7701	a3f6bc1c-19ab-4eeb-a9ac-3d2fac850bde		white	not hispanic or latino	Alive		66.0		Adenocarcinoma, NOS	24209.0	Stage IV	T2	N0	M1	Upper lobe, lung	8140/3	947.0	no			Lifelong Non-Smoker
+TCGA-86-8055	34d8e84e-c3e1-417d-8b9b-8563d9fa0f8e		white	not hispanic or latino	Dead	124.0	79.0		Adenocarcinoma, NOS	29124.0	Stage IIA	T2a	N1	M0	Upper lobe, lung	8140/3	124.0	no		60.0	Current Smoker
+TCGA-44-7660	a534b96b-1665-444a-9308-e610f2f0e510		white	not hispanic or latino	Alive		72.0		Adenocarcinoma, NOS	26594.0	Stage IB	T2	N0	MX	Upper lobe, lung	8140/3	592.0	no		124.0	Current Smoker
+TCGA-17-Z021	a56d2b48-375d-4193-91a9-f589c39523fb																				
+TCGA-55-8096	36470b30-a3b3-4d28-851b-918a7ff88011		white	not hispanic or latino	Dead	719.0	67.0		Adenocarcinoma, NOS	24684.0	Stage IB	T2a	N0	MX	Upper lobe, lung	8140/3	719.0	no		104.0	Current Smoker
+TCGA-L9-A743	a5f2576a-d628-47de-a5df-76a4f3105dcc		black or african american	not hispanic or latino	Alive		56.0		Adenocarcinoma, NOS	20711.0	Stage IIA	T1c	NX	MX	Prostate gland	8140/3				40.5	Current Smoker
+TCGA-50-5930	368e23f0-e573-4547-bf5a-14080baf737b		white	not hispanic or latino	Dead	282.0	47.0		Adenocarcinoma with mixed subtypes	17238.0	Stage IIIA	T2	N2	M0	Lower lobe, lung	8255/3	282.0	no			Not Reported
+TCGA-55-7574	a7911bdc-13f1-434a-bfa3-f8ba55d15846		white	not hispanic or latino	Dead	995.0	64.0		Adenocarcinoma, NOS	23703.0	Stage IB	T2a	N0	M0	Upper lobe, lung	8140/3	995.0	no		2.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-L9-A50W	a815619f-dbba-469f-a1f7-dfbd51cd86c5		black or african american	not hispanic or latino	Dead	442.0	75.0		Adenocarcinoma with mixed subtypes	27414.0	Stage IIA	T1b	N1	MX	Lower lobe, lung	8255/3	442.0	no		19.0	Current Reformed Smoker for > 15 yrs
+TCGA-71-8520	37884d39-64e8-4242-b6bd-4c0a1daa21cd		asian	not hispanic or latino	Dead	210.0	60.0		Adenocarcinoma, NOS	21921.0	Stage IB	T2	N0	M0	Upper lobe, lung	8140/3	210.0	no			Lifelong Non-Smoker
+TCGA-75-6203	a8d6694c-a213-4544-ac0b-63bce16d8f4e		not reported	not reported	Alive				Adenocarcinoma, NOS		Stage IIIA	T2	N2	M0	Lower lobe, lung	8140/3		no			Lifelong Non-Smoker
+TCGA-MP-A4TD	383d1253-349f-43b3-bebd-9f1d1cf14b3d		white	Unknown	Dead	307.0	71.0		Adenocarcinoma, NOS	26209.0					Not Reported	8140/3				20.0	Current Reformed Smoker for > 15 yrs
+TCGA-17-Z051	a8f3da11-890c-4fff-bfc5-d99357dc4e46																				
+TCGA-78-8655	a905d275-9283-4fa6-bbbf-46019bd1bcb7		not reported	not reported	Alive		77.0		Adenocarcinoma with mixed subtypes	28379.0	Stage IA	T1	N0	M0	Lower lobe, lung	8255/3	2360.0	no		10.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-97-8171	397d3f69-1453-4057-b177-8723eec923d1		asian	not hispanic or latino	Alive		81.0		Papillary adenocarcinoma, NOS	29627.0	Stage IV	T2a	N2	M1a	Overlapping lesion of lung	8260/3	568.0	no		65.0	Current Smoker
+TCGA-55-A492	39ab7174-5707-498d-9959-523680e04198		white	not hispanic or latino	Alive		70.0		Medullary carcinoma, NOS	25080.0	Stage IIA	T3	N0	M0	Colon, NOS	8510/3				35.0	Current Reformed Smoker for > 15 yrs
+TCGA-50-6673	ab8d7f84-dd71-42c7-9471-4db967a9c89c		white	not reported	Dead	22.0	84.0		Adenocarcinoma, NOS	30689.0	Stage I	T1	N0	M0	Upper lobe, lung	8140/3	22.0	no			Lifelong Non-Smoker
+TCGA-44-7662	ab9e6815-4d13-44db-93e5-553eb4f5bc95		white	not hispanic or latino	Alive		61.0		Adenocarcinoma, NOS	22543.0	Stage IB	T2a	N0	MX	Upper lobe, lung	8140/3	218.0	no		50.0	Current Smoker
+TCGA-L9-A443	3b89ac82-63f6-41b9-a03d-34b9ffc1550d		white	not hispanic or latino	Dead	193.0	63.0		Not Reported						Cervix uteri	Not Reported				90.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-7995	abd6647b-d2eb-404d-8283-443e92addf55		white	not hispanic or latino	Alive		73.0		Adenocarcinoma, NOS	27305.0					Not Reported	8140/3				60.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-17-Z047	abf6eb5f-fa06-4032-8cff-c8522b0a3c9a																				
+TCGA-97-8547	ac0d7a82-82cb-4aec-b859-e37375f3de8b		not reported	not reported	Alive		78.0		Acinar cell carcinoma	28801.0	Stage IIIA	T2a	N2	MX	Lower lobe, lung	8550/3	657.0	no			Lifelong Non-Smoker
+TCGA-55-A494	adbaba9c-5efc-4130-82f6-8055eab13795		white	not hispanic or latino	Alive		61.0		Adenocarcinoma, NOS	22540.0	Stage IB	T2a	N0	MX	Lower lobe, lung	8140/3	481.0	no		7.0	Current Reformed Smoker for > 15 yrs
+TCGA-73-4675	ae39e358-08d7-4367-ae68-82b469e791e4		white	not hispanic or latino	Dead	922.0	59.0		Adenocarcinoma, NOS	21614.0	Stage IIIA	T3	N1	M0	Lower lobe, lung	8140/3	922.0	no		41.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-95-7039	ae702159-5b6a-41dd-868c-7540f9e1131c		white	not hispanic or latino	Alive		54.0		Adenocarcinoma, NOS	21239.0					Not Reported	8140/3				34.0	Current Smoker
+TCGA-17-Z001	aebd0313-23be-46a8-abc6-b16c531c3a8e																				
+TCGA-69-7980	aee86a89-0377-4080-b16c-408bfbe78687		white	not hispanic or latino	Alive		70.0		Acinar cell carcinoma	25583.0	Stage I	T1b	N0	M0	Upper lobe, lung	8550/3	411.0	no		80.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-93-A4JO	3daebe75-c6df-478e-8a4c-11186fd5ead9		white	not hispanic or latino	Dead	33.0	70.0		Adenocarcinoma with mixed subtypes	25898.0	Stage IA	T1a	N0	MX	Lower lobe, lung	8255/3	33.0	no		50.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-73-4668	b2285924-9813-4f46-bb8f-91a0efd8a9b6		american indian or alaska native	not hispanic or latino	Alive		66.0		Invasive micropapillary carcinoma	24255.0	Stage IIB	T2	N1	M0	Upper lobe, lung	8507/3	467.0	no		55.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-67-4679	3e635902-5310-4406-8b4d-a238ce382639		white	not hispanic or latino	Alive		68.0		Adenocarcinoma, NOS	25202.0		T3	N0	M0	Lower lobe, lung	8140/3	448.0	no			Current Reformed Smoker for < or = 15 yrs
+TCGA-55-7910	b2bc53d6-ef78-4ae9-a6b5-1c7cad9a43eb		black or african american	not hispanic or latino	Alive		50.0		Adenocarcinoma, NOS	18289.0	Stage IIA	T2b	N0	M0	Lower lobe, lung	8140/3	1040.0	no		15.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-17-Z002	b2c6939b-d8ec-4a07-8ea6-06c4553ee446																				
+TCGA-05-5428	3fe8f8e4-5396-4362-82f5-366e2fb69db2		not reported	not reported	Alive		57.0		Adenocarcinoma with mixed subtypes	21061.0	Stage IIA	T1b	N1	M0	Lung, NOS	8255/3	670.0	no		30.0	Current Reformed Smoker for > 15 yrs
+TCGA-44-7672	4036c6fc-c82e-47bb-a384-6f299dc30b52		white	not hispanic or latino	Alive		52.0		Adenocarcinoma, NOS	19200.0	Stage IA	T1b	N0	M0	Upper lobe, lung	8140/3	719.0	no		20.0	Current Smoker
+TCGA-78-7152	b56dad1e-2fd5-47d8-9cc7-a54be9a1bae2		white	not reported	Dead	1215.0	65.0		Adenocarcinoma with mixed subtypes	24984.0					Not Reported	8255/3				40.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-17-Z018	b5cdf68a-9903-4f82-9017-ab88d2b73d4f																				
+TCGA-NJ-A4YP	42259aa6-c9f5-4309-a956-dbf930312f44		white	not hispanic or latino	Alive		52.0		Adenocarcinoma with mixed subtypes	19106.0	Stage IB	T2a	N0	M0	Lower lobe, lung	8255/3	50.0	no		60.0	Current Reformed Smoker, Duration Not Specified
+TCGA-O1-A52J	42432463-8e92-4f25-b72a-f03953527aa5		white	not hispanic or latino	Dead	1798.0	74.0		Adenocarcinoma, NOS	28121.0					Not Reported	8140/3				45.0	Current Reformed Smoker for > 15 yrs
+TCGA-05-4390	b8475929-2d9d-4909-bd62-59684a140bd7		not reported	not reported	Alive		58.0		Adenocarcinoma with mixed subtypes	21430.0	Stage IB	T2	N0	M0	Upper lobe, lung	8255/3	1126.0	no		15.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-44-7659	b86b1616-20a2-4300-8daa-03dcc9938215		white	not hispanic or latino	Alive		70.0		Adenocarcinoma, NOS	25730.0	Stage IA	T1b	N0	MX	Upper lobe, lung	8140/3	691.0	no		40.0	Current Smoker
+TCGA-44-2656	42ca54fc-c1ae-41cd-bca1-7fe9810db460		white	not hispanic or latino	Alive		59.0		Not Reported	22334.0					Not Reported	Not Reported				23.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-7727	ba49117e-dab6-4e7d-bc44-f11dcafa1318		white	not hispanic or latino	Alive		70.0		Adenocarcinoma, NOS	25929.0	Stage IIIA	T1a	N2	MX	Upper lobe, lung	8140/3	119.0	no			Current Smoker
+TCGA-55-8508	bab335f9-b241-41a7-b107-79b9676b37b8		black or african american	not hispanic or latino	Alive		60.0		Mucinous adenocarcinoma	22159.0	Stage IIA	T2a	N1	MX	Upper lobe, lung	8480/3	617.0	no			Current Smoker
+TCGA-44-2668	bab43415-d413-40be-a4c0-2c40a52afe6a		white	not hispanic or latino	Dead	761.0	51.0		Adenocarcinoma, NOS	18856.0	Stage IB	T2	N0	M0	Upper lobe, lung	8140/3	761.0	no		60.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-05-4422	44dec838-b653-42a7-a58b-a1fd232cd68c		not reported	not reported	Alive		68.0		Adenocarcinoma with mixed subtypes	24837.0	Stage IB	T2	N0	M0	Lower lobe, lung	8255/3	365.0	no		147.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-78-7535	46592b7b-6968-42a6-83af-0917c9f4a9a5		white	not reported	Dead	949.0	45.0		Not Reported	17380.0					Not Reported	Not Reported				35.0	Current Smoker
+TCGA-17-Z046	bd693ad9-6ce9-469a-a3f9-c2779c32d6bc																				
+TCGA-86-8358	467d96d7-4a42-4116-8c32-0e4b34f96d8a		white	not hispanic or latino	Alive		44.0		Adenocarcinoma, NOS	16409.0	Stage IB	T2a	N0	M0	Upper lobe, lung	8140/3	653.0	no		20.0	Current Smoker
+TCGA-44-A4SU	bf34664d-423d-4257-99d4-797f7d366455		white	not hispanic or latino	Dead	409.0	67.0		Adenocarcinoma, NOS	24820.0	Stage IA	T1a	N0	MX	Lower lobe, lung	8140/3	409.0	no		50.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-86-8056	472337c2-a2fc-403a-8c17-69511193128b		white	not hispanic or latino	Alive		63.0		Adenocarcinoma with mixed subtypes	23369.0	Stage IIIA	T4	N0	M0	Upper lobe, lung	8255/3	139.0	no		36.0	Current Reformed Smoker for > 15 yrs
+TCGA-17-Z014	c05b1a5c-2f6d-448a-94c8-58cce3d34b37																				
+TCGA-55-6642	474b86d9-d897-467d-85d4-51dfa26ea107		white	not reported	Alive		63.0		Adenocarcinoma, NOS	23107.0	Stage IB	T2	N0	MX	Lower lobe, lung	8140/3	2449.0	no			Current Smoker
+TCGA-86-8672	c0e263eb-1a83-4dc8-8abe-3dd2a59bae1b		white	not hispanic or latino	Dead	19.0	59.0		Adenocarcinoma, NOS	21682.0	Stage IIB	T3	N0	M0	Upper lobe, lung	8140/3	19.0	no			Lifelong Non-Smoker
+TCGA-78-7160	c1a01e8c-1f7e-4e24-bfad-90b73f88e992		white	not reported	Dead	697.0	61.0		Adenocarcinoma with mixed subtypes	22385.0	Stage IV	T4	N2	M1	Lower lobe, lung	8255/3	697.0	no		43.8	Current Reformed Smoker for < or = 15 yrs
+TCGA-78-7153	c353f949-5f66-4a2c-b8f0-17be8bf19e0a		white	not reported	Alive		65.0		Adenocarcinoma with mixed subtypes	23922.0	Stage IB	T2	N0	M0	Overlapping lesion of lung	8255/3	3635.0	no		20.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-17-Z031	c43c8eea-7014-4abe-b805-397a9062d3e0																				
+TCGA-62-A46R	c497f8c7-2fb5-44d9-bc7c-69cfd0b51b54		white	not hispanic or latino	Dead	1725.0	54.0		Adenocarcinoma with mixed subtypes	20063.0	Stage IB	T2	N0	M0	Lower lobe, lung	8255/3	1725.0	no		25.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-L9-A444	4a1d30e8-e93a-41ed-8e54-08eaff6556a7		white	not hispanic or latino	Alive		60.0		Endometrioid adenocarcinoma, NOS	20597.0	Stage IB	T1b	NX	MX	Endometrium	8380/3				10.0	Current Smoker
+TCGA-86-8671	c4cfa3cc-e305-42dd-be57-97efbb891659		white	not hispanic or latino	Alive		72.0		Papillary adenocarcinoma, NOS	26448.0	Stage IIB	T2b	N1	M0	Upper lobe, lung	8260/3	839.0	no			Lifelong Non-Smoker
+TCGA-55-6972	c4d1e105-28b7-48df-abef-fbe09782fdb2		white	not hispanic or latino	Dead	1632.0	72.0		Papillary adenocarcinoma, NOS	26625.0	Stage IB	T2	N0	M0	Upper lobe, lung	8260/3	1632.0	no			Current Smoker
+TCGA-64-1681	c583fdd1-8cd2-4c15-a23e-0644261f65da		white	not hispanic or latino	Dead	1167.0	61.0		Adenocarcinoma, NOS	22525.0	Stage IA	T1	N0	M0	Lung, NOS	8140/3	1167.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-44-7669	4b22ad71-c585-4077-ad3c-c6e026d0c7fa		black or african american	not hispanic or latino	Dead	574.0	59.0		Not Reported	22418.0					Not Reported	Not Reported				20.0	Current Smoker
+TCGA-17-Z005	4b5ff30e-65fc-4434-b174-9d699594c658																				
+TCGA-49-4494	c6d78e27-e510-4f57-abae-19efa6105a8d		white	not hispanic or latino	Dead	1081.0	77.0		Adenocarcinoma, NOS	28387.0	Stage IIIA	T3	N2	M0	Upper lobe, lung	8140/3	1081.0	no		50.0	Current Reformed Smoker for > 15 yrs
+TCGA-50-5946	c95957a7-1a1a-4c8d-bb61-7c99b500f224		white	not reported	Alive		62.0		Adenocarcinoma with mixed subtypes	23073.0					Not Reported	8255/3					Current Reformed Smoker for < or = 15 yrs
+TCGA-73-4666	4c31127e-d095-4978-9dac-35153c27f6ed		white	not hispanic or latino	Alive		52.0		Adenocarcinoma, NOS	19074.0	Stage IV	T1	N0	M1	Upper lobe, lung	8140/3	800.0	no		10.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-44-6779	cbbea9f1-396a-4bf3-b67c-2cac3394dceb		white	not reported	Dead	500.0	50.0		Not Reported	18701.0					Not Reported	Not Reported				15.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-78-7159	4d153600-81f9-44fb-b485-6355ec306d6a		white	not reported	Alive		60.0		Adenocarcinoma with mixed subtypes	22261.0	Stage IA	T1	NX	M0	Upper lobe, lung	8255/3	1974.0	no		21.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-38-4628	cc4bd56a-25c5-4c48-b583-ac3aeb778ca6		white	not hispanic or latino	Dead	1492.0	65.0		Not Reported	25140.0					Not Reported	Not Reported					Lifelong Non-Smoker
+TCGA-78-7145	4ef872e1-82c9-4939-9248-41ed9d3085b2		white	not reported	Dead	826.0	52.0		Adenocarcinoma, NOS	19080.0	Stage IV	T4	N1	M1	Middle lobe, lung	8140/3	826.0	no		25.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-49-4507	50b2c647-aecd-4c81-af22-0d8116593552		white	not hispanic or latino	Dead	268.0	73.0		Adenocarcinoma, NOS	26851.0	Stage IIIA	T3	N1	M0	Main bronchus	8140/3	268.0	no		78.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-67-6216	ccecce70-dd54-4c5b-bf9f-ca87d290cb00		white	not hispanic or latino	Alive		57.0		Adenocarcinoma, NOS	20967.0	Stage IA	T1a	N0	M0	Middle lobe, lung	8140/3	141.0	no			Lifelong Non-Smoker
+TCGA-86-A4D0	528a0fce-0719-4b19-a69d-3f18681696c5		white	not hispanic or latino	Dead	116.0	48.0		Adenocarcinoma, NOS	17607.0	Stage IIA	T2b	N0	M0	Upper lobe, lung	8140/3	116.0	no			Current Smoker
+TCGA-NJ-A4YQ	52df074f-a402-4b78-9472-f8eb268efded		white	not hispanic or latino	Alive		69.0		Adenocarcinoma with mixed subtypes	25427.0	Stage IA	T1b	N0	M0	Upper lobe, lung	8255/3	1432.0	no		40.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-86-8073	cd902d08-215e-4bd0-88e4-4fd01ab43cbf		white	not hispanic or latino	Alive		58.0		Bronchiolo-alveolar adenocarcinoma, NOS	21214.0	Stage IB	T2a	N0	M0	Upper lobe, lung	8250/3	740.0	no		40.0	Current Smoker
+TCGA-78-7143	54254f5a-50e8-4150-a9b7-56a0470d2a56		white	not reported	Dead	4961.0	62.0		Bronchiolo-alveolar carcinoma, non-mucinous	22673.0	Stage IB	T2	N0	M0	Upper lobe, lung	8252/3	4961.0	no			Lifelong Non-Smoker
+TCGA-05-4403	ce15f31f-2bad-4485-96fa-495bfa262e66		not reported	not reported	Alive		76.0		Adenocarcinoma with mixed subtypes	27881.0	Stage IB	T2	N0	M0	Upper lobe, lung	8255/3	578.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-55-7816	548b0b68-ff45-4d45-adbe-984259e4a68b		white	not hispanic or latino	Dead	468.0	49.0		Adenocarcinoma, NOS	18170.0	Stage IV	TX	NX	MX	Upper lobe, lung	8140/3	468.0	no			Lifelong Non-Smoker
+TCGA-55-6983	54a0e4d7-c274-4569-9c25-45bbe26d7f21		white	not hispanic or latino	Alive		81.0		Mucinous adenocarcinoma		Stage IIB	T2	N1	M0	Lower lobe, lung	8480/3	2823.0	no		60.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-53-7624	54a9cc9e-3eee-4caa-9f33-4ea64a2999ba		white	hispanic or latino	Dead	1043.0	40.0		Adenocarcinoma, NOS	15194.0					Not Reported	8140/3				50.0	Current Smoker
+TCGA-L9-A7SV	54e90433-5218-4d83-848f-f995ecba2a63		black or african american	not hispanic or latino	Alive		69.0		Adenocarcinoma, NOS	25298.0	Stage IIA	T2a	N1	M0	Lower lobe, lung	8140/3	565.0	no		93.0	Current Reformed Smoker for > 15 yrs
+TCGA-55-8620	5510ad32-62fd-4adc-964a-ae4e997c2f4b		white	not hispanic or latino	Dead	375.0	60.0		Adenocarcinoma, NOS	22091.0	Stage IV	T1a	N1	M1b	Upper lobe, lung	8140/3	375.0	no		154.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-99-AA5R	d3e23815-7f9d-48aa-9aef-3a1dd9d464d7		black or african american	not hispanic or latino	Alive		70.0		Adenocarcinoma, NOS	25778.0	Stage IA	T1a	N0	M0	Lower lobe, lung	8140/3	658.0	no		46.0	Current Smoker
+TCGA-17-Z042	56027785-fb10-492c-b021-ea9e3a1979db																				
+TCGA-17-Z020	5730b09c-a69f-425a-8af9-61172f9dfe56																				
+TCGA-91-6840	d5326429-9805-47f9-97b0-fbda658e3f01		white	not hispanic or latino	Alive		59.0		Adenocarcinoma, NOS	21854.0	Stage IA	T1b	N0	M0	Upper lobe, lung	8140/3	372.0	no		50.0	Current Reformed Smoker for > 15 yrs
+TCGA-49-AAR3	5813997a-d7dc-4f7c-8d4b-e979832168a9		black or african american	not hispanic or latino	Alive		69.0		Adenocarcinoma, NOS	27362.0					Not Reported	8140/3					Unknown
+TCGA-75-6207	58babefe-7e81-4594-ba29-50d1de92a5ab		not reported	not reported	Dead				Adenocarcinoma, NOS		Stage IIIA	T2	N2	M0	Lung, NOS	8140/3		no		10.0	Current Reformed Smoker for > 15 yrs
+TCGA-50-5068	591c068f-bbb1-4df2-9abb-d1a2e4a58372		white	not hispanic or latino	Dead	1499.0	59.0		Adenocarcinoma, NOS	21728.0	Stage IIB	T2	N1	MX	Lower lobe, lung	8140/3	1499.0	no			Not Reported
+TCGA-NJ-A4YF	595fc3ad-f603-421b-b130-52f1f617050b		black or african american	not hispanic or latino	Alive		50.0		Adenocarcinoma with mixed subtypes	18584.0	Stage IA	T1	N0	M0	Upper lobe, lung	8255/3	2161.0	no		30.0	Current Reformed Smoker for > 15 yrs
+TCGA-38-4627	d717fa33-3c91-4ced-89c6-79ff5542f04c		white	not hispanic or latino	Dead	1147.0	64.0		Adenocarcinoma, NOS	23510.0	Stage IIA	T1b	N1	M0	Upper lobe, lung	8140/3	1147.0	no			Current Reformed Smoker for < or = 15 yrs
+TCGA-78-8648	5ace9608-d38a-42f2-a877-ec7c9d211808		not reported	not reported	Dead	1209.0	58.0		Adenocarcinoma, NOS	21443.0	Stage IIB	T3	N0	M0	Upper lobe, lung	8140/3	1209.0	no		45.0	Current Smoker
+TCGA-62-A46O	d7ae8efb-aa4d-4807-9772-55b0a28ccd5c		white	not hispanic or latino	Dead	1454.0	65.0		Adenocarcinoma, NOS	24993.0					Not Reported	8140/3				48.0	Current Smoker
+TCGA-86-8280	d8faa3a7-6b3f-4e69-8c88-184e41055bd7		white	not hispanic or latino	Alive		54.0		Bronchiolo-alveolar carcinoma, non-mucinous	19977.0	Stage IIA	T2b	N0	M0	Lower lobe, lung	8252/3	701.0	no			Lifelong Non-Smoker
+TCGA-35-5375	5d2a9a4f-678d-4089-a8c5-81a5cb696629		white	not hispanic or latino	Alive		61.0		Adenocarcinoma, NOS	22628.0	Stage IIIA	T2	N2	M0	Upper lobe, lung	8140/3	264.0	no		35.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-78-7536	daf0e08e-1738-43f8-874a-b37d79cbe3a7		white	not reported	Dead	244.0	69.0		Not Reported	25789.0					Not Reported	Not Reported				44.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-91-6831	db0b9e63-4272-4f29-bf0e-1ec0fe79a9d7		white	not hispanic or latino	Alive		66.0		Adenocarcinoma, NOS	24436.0	Stage IB	T2	N0	MX	Middle lobe, lung	8140/3	310.0	no			Current Smoker
+TCGA-55-7728	db769d5c-a794-448d-9130-38a82d051c95		white	not hispanic or latino	Alive		64.0		Mucinous adenocarcinoma	23505.0	Stage IB	T2a	N0	MX	Upper lobe, lung	8480/3	704.0	no		30.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-8085	5fd0f07b-8bb9-4378-bd26-28a26057e8fe		white	not hispanic or latino	Alive		64.0		Papillary adenocarcinoma, NOS	23596.0	Stage IA	T1b	N0	M0	Lower lobe, lung	8260/3	904.0	no			Current Smoker
+TCGA-97-A4M5	5fe77d4a-a8a5-4c90-8ff2-9c3bbbb309ef		white	not hispanic or latino	Alive		83.0		Adenocarcinoma with mixed subtypes	30665.0	Stage IA	T1b	N0	M0	Upper lobe, lung	8255/3	634.0	no		6.0	Current Reformed Smoker for > 15 yrs
+TCGA-97-7547	6092bd5c-e97c-4a77-a4ad-c87623b17507		white	not hispanic or latino	Alive		67.0		Papillary adenocarcinoma, NOS	24737.0	Stage IB	T2	N0	MX	Upper lobe, lung	8260/3	1965.0	no		30.0	Current Reformed Smoker for > 15 yrs
+TCGA-J2-8194	2b68b51f-bd4c-4bbb-b4e6-2eead53da2a4		white	not hispanic or latino	Alive		69.0		Adenocarcinoma with mixed subtypes	25911.0					Not Reported	8255/3				20.0	Current Reformed Smoker for > 15 yrs
+TCGA-MP-A4SV	706420c4-8820-4b41-80d9-f3efd1d2a4f0		Unknown	Unknown	Dead	2620.0	67.0		Adenocarcinoma, NOS	24516.0	Stage IB	T2	N0	M0	Lower lobe, lung	8140/3	2620.0	no		110.0	Current Smoker
+TCGA-93-A4JQ	7093024b-cf56-4783-b973-b72573ed7f2b		white	not hispanic or latino	Alive		49.0		Acinar cell carcinoma	17951.0	Stage IA	T1b	N0	MX	Upper lobe, lung	8550/3	526.0	yes			Current Reformed Smoker for > 15 yrs
+TCGA-17-Z034	733087d2-98ed-4ac7-8b48-98f0fe1c4c0f																				
+TCGA-55-8207	b256e065-c681-4f82-8b68-a8ef7c413791		white	not hispanic or latino	Alive		73.0		Adenocarcinoma, NOS						Colon, NOS	8140/3					Current Reformed Smoker for > 15 yrs
+TCGA-55-8204	75589307-f141-4d0d-b35d-adbbc77b3dec		white	not hispanic or latino	Alive		87.0		Adenocarcinoma, NOS	31818.0	Stage IB	T2a	N0	MX	Upper lobe, lung	8140/3	515.0	yes			Current Reformed Smoker for > 15 yrs
+TCGA-05-4427	78a24c56-576c-4245-bb42-6603b3d19897		not reported	not reported	Alive		65.0		Adenocarcinoma with mixed subtypes	23893.0	Stage IIB	T2	N1	M0	Upper lobe, lung	8255/3	791.0	yes		8.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-50-5942	75dd635e-8e0c-4c0b-b21c-20f77770218d		white	not hispanic or latino	Alive		67.0		Adenocarcinoma, NOS	26159.0					Not Reported	8140/3				30.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-05-4395	762dea8a-5b41-4058-979a-b7876ed13d7e		not reported	not reported	Dead	0.0	76.0		Adenocarcinoma with mixed subtypes	27971.0	Stage IIIB	T4	N2	M0	Upper lobe, lung	8255/3	0.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-49-AAR4	765ad5a5-134b-4680-a6d4-1dd113dc47cc		black or african american	not hispanic or latino	Dead	879.0	51.0		Adenocarcinoma, NOS	18939.0	Stage IIIA	T2	N2	MX	Upper lobe, lung	8140/3	879.0	no		35.0	Current Smoker
+TCGA-50-5051	e1c55bac-bb41-4964-add5-ecd6ba04b58d		white	not hispanic or latino	Dead	478.0	42.0		Adenocarcinoma, NOS	15585.0	Stage IIIA	T2	N2	M0	Upper lobe, lung	8140/3	478.0	no		30.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-73-7499	7782ceaa-da49-4232-8b3f-534971adaad8		white	not hispanic or latino	Dead	1531.0	81.0		Adenocarcinoma with mixed subtypes	29683.0	Stage IB	T2a	N0	M0	Upper lobe, lung	8255/3	1531.0	no			Lifelong Non-Smoker
+TCGA-67-3773	009be09b-f9f6-43b7-8f45-4a648f8123ce		white	not hispanic or latino	Alive		84.0		Adenocarcinoma, NOS	30706.0	Stage IB	T2	N0	M0	Lower lobe, lung	8140/3	427.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-17-Z038	0147edcf-0ca5-4136-bd01-43d05e2843f4																				
+TCGA-NJ-A7XG	01e9888d-b5b9-48f1-8ba6-8a89af108a04		black or african american	not hispanic or latino	Alive		49.0		Adenocarcinoma, NOS	18127.0	Stage IIIA	T4	N1	M0	Upper lobe, lung	8140/3	617.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-55-6986	028e99e9-5b9a-4954-bb6e-6d4709a3cea8		white	not reported	Alive		74.0		Bronchiolo-alveolar carcinoma, non-mucinous		Stage IB	T2	N0	M0	Lower lobe, lung	8252/3	3261.0	no			Lifelong Non-Smoker
+TCGA-75-5122	78ae716b-0ca5-4c01-a053-d41288385fcd		not reported	not reported	Dead				Adenocarcinoma, NOS		Stage IB	T2	N0	M0	Upper lobe, lung	8140/3		no		20.0	Current Reformed Smoker for > 15 yrs
+TCGA-73-4677	03c3409a-9d16-41d0-9e26-f9fc2547a4c8		white	not hispanic or latino	Dead	38.0	74.0		Adenocarcinoma, NOS	27381.0		T2a	N0	M0	Upper lobe, lung	8140/3	38.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-17-Z057	79684460-f74c-4954-80fa-b418827bf2ef																				
+TCGA-55-7576	055e9a43-3c00-4110-a303-e4407676bec0		black or african american	not hispanic or latino	Alive		54.0		Adenocarcinoma, NOS	19917.0	Stage IB	T2a	N0	M0	Upper lobe, lung	8140/3	670.0	no			Current Smoker
+TCGA-MP-A4TH	7a111b4f-46e9-4e34-8024-0b9fdc5cbcd8		white	not hispanic or latino	Alive		70.0		Adenocarcinoma, NOS	25759.0	Stage IA	T1a	N0	M0	Lower lobe, lung	8140/3	741.0	no		20.0	Current Reformed Smoker for > 15 yrs
+TCGA-78-7156	7b0622ab-63ea-483f-ae40-d3ea587bdbba		white	not reported	Dead	976.0	62.0		Adenocarcinoma with mixed subtypes	22720.0	Stage IV	T4	N1	M1	Lung, NOS	8255/3	976.0	no		84.0	Current Reformed Smoker for > 15 yrs
+TCGA-86-8669	7b89166e-c5b8-481b-aa70-495141499b91		white	not hispanic or latino	Alive		64.0		Adenocarcinoma, NOS	23443.0	Stage IA	T1b	N0	M0	Upper lobe, lung	8140/3	938.0	no		47.0	Current Smoker
+TCGA-44-A47A	7b9479ff-23d6-4689-91f0-02efc94300f9		white	not hispanic or latino	Alive		78.0		Adenocarcinoma, NOS	28782.0	Stage IB	T2a	N0	MX	Upper lobe, lung	8140/3	466.0	no		80.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-97-8177	09078761-1c14-4d01-8e15-535c19a9b0f9		white	not hispanic or latino	Alive		59.0		Adenocarcinoma with mixed subtypes	21648.0	Stage IB	T2a	N0	M0	Lower lobe, lung	8255/3	499.0	no			Lifelong Non-Smoker
+TCGA-78-7539	7be86a90-6da8-4c01-8a7a-bc5cfef9894f		white	not reported	Alive		75.0		Adenocarcinoma with mixed subtypes	28133.0					Not Reported	8255/3				2.2	Current Reformed Smoker for > 15 yrs
+TCGA-MP-A4T8	7c4ed533-ee66-48be-a84b-ff8607742818		Unknown	Unknown	Dead	161.0	68.0		Adenocarcinoma, NOS	25069.0	Stage IIIA	T2	N2	M0	Upper lobe, lung	8140/3	161.0	yes		25.0	Current Reformed Smoker for > 15 yrs
+TCGA-NJ-A55R	7c7d777b-bf00-4c24-97fc-922580d5605f		white	not hispanic or latino	Alive		67.0		Solid carcinoma, NOS	24738.0	Stage IA	T1b	N0	MX	Upper lobe, lung	8230/3	603.0	no		5.0	Current Reformed Smoker for > 15 yrs
+TCGA-53-A4EZ	7ca711ec-9ac0-4fa7-8a60-32ae84b8789a		white	hispanic or latino	Alive		63.0		Acinar cell carcinoma	23201.0	Stage IIA	T2a	N1	MX	Upper lobe, lung	8550/3	1071.0	no		40.0	Current Reformed Smoker for > 15 yrs
+TCGA-55-6970	7cce924f-12a1-4895-9866-5d4b1869dde6		white	not reported	Dead	464.0	67.0		Papillary adenocarcinoma, NOS	24773.0	Stage IIIA	T2	N2	MX	Upper lobe, lung	8260/3	464.0	no			Current Reformed Smoker for < or = 15 yrs
+TCGA-86-8359	7e7f089c-25f7-4e14-aed5-d741047b9e42		white	not hispanic or latino	Dead	444.0	52.0		Adenocarcinoma, NOS	19088.0	Stage IIIA	T3	N2	M0	Lower lobe, lung	8140/3	444.0	no		36.0	Current Smoker
+TCGA-86-7955	0d0d83d9-d558-4d38-977b-6f1b2471beda		white	not hispanic or latino	Alive		62.0		Adenocarcinoma, NOS	23592.0					Not Reported	8140/3					Lifelong Non-Smoker
+TCGA-17-Z004	0d96def2-cf0a-4659-94e5-f08744c57cc6																				
+TCGA-50-7109	7eb540b4-8dd3-4382-a488-e48b1c7213b3		white	not hispanic or latino	Dead	308.0	60.0		Adenocarcinoma, NOS	21979.0	Stage IA	T1	N0	M0	Lower lobe, lung	8140/3	308.0	no		120.0	Current Smoker
+TCGA-67-3771	0df573ee-28f0-4244-b434-09e6ca59fbf0		black or african american	not hispanic or latino	Alive		77.0		Adenocarcinoma, NOS	28406.0	Stage IA	T1	N0	M0	Upper lobe, lung	8140/3	610.0	no			Current Reformed Smoker for < or = 15 yrs
+TCGA-NJ-A4YG	7fd03220-531e-4ef8-beca-e9703e8c0ae1		white	not reported	Alive		65.0		Adenocarcinoma with mixed subtypes	23812.0	Stage IB	T2	N0	M0	Upper lobe, lung	8255/3	2261.0	no		104.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-86-8054	0fe909ea-d52c-4b71-816f-57f62d4a5744		white	not hispanic or latino	Alive		61.0		Acinar cell carcinoma	22584.0	Stage IIB	T2b	N1	M0	Upper lobe, lung	8550/3	1148.0	no		9.0	Current Smoker
+TCGA-55-8089	1070ff27-17c9-43dd-a4f6-daa643eb9123		white	not hispanic or latino	Dead	702.0	56.0		Adenocarcinoma, NOS	20576.0	Stage IA	T1a	N0	M0	Upper lobe, lung	8140/3	702.0	no		97.0	Current Smoker
+TCGA-64-1679	81a0b2ff-a3d3-41bb-9ce6-765e6ae894af		white	not hispanic or latino	Alive		58.0		Adenocarcinoma, NOS	21310.0	Stage IIIA	T1	N2	M0	Upper lobe, lung	8140/3	2488.0	no		40.0	Current Smoker
+TCGA-50-6595	82476d2d-e403-4f6b-8dd6-cc84e3329478		white	not hispanic or latino	Dead	189.0	74.0		Adenocarcinoma, NOS	27197.0	Stage IIIA	T2	N2	M0	Upper lobe, lung	8140/3	189.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-55-A48Y	12c07138-e3fa-418a-89e3-628da12bc99e		white	not hispanic or latino	Alive		69.0		Adenocarcinoma, NOS	25384.0	Stage IIA	T2b	N0	M0	Lower lobe, lung	8140/3	630.0	no		50.0	Current Smoker
+TCGA-44-8120	83e38dbd-edab-47f2-b19f-6ea38fc6bece		black or african american	not hispanic or latino	Alive		58.0		Adenocarcinoma, NOS	21188.0	Stage IB	T2a	N0	M0	Upper lobe, lung	8140/3	260.0	no		30.0	Current Reformed Smoker, Duration Not Specified
+TCGA-50-5931	12ccd581-a921-41bc-bcee-4e9be54532cc		white	not hispanic or latino	Dead	434.0	75.0		Adenocarcinoma, NOS	27733.0	Stage IB	T2	N0	M0	Upper lobe, lung	8140/3	434.0	no		40.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-91-6829	1427cd18-5ad3-491a-9981-908e31ae49db		white	not hispanic or latino	Dead	1258.0	78.0		Bronchiolo-alveolar carcinoma, non-mucinous	28841.0	Stage IB	T2	N0	MX	Lower lobe, lung	8252/3	1258.0	no		94.5	Current Reformed Smoker for < or = 15 yrs
+TCGA-44-A479	851867cb-9ad0-4fdf-ac75-9bb0427ad440		black or african american	not hispanic or latino	Alive		73.0		Adenocarcinoma, NOS	27024.0	Stage IB	T2	N0	MX	Upper lobe, lung	8140/3	486.0	no		40.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-MP-A4SW	15f12d2c-b834-4bfc-b526-f03bf85bfe96		white	Unknown	Dead	1778.0	53.0		Adenocarcinoma, NOS	19640.0	Stage IIB	T2	N1	M0	Upper lobe, lung	8140/3	1778.0	no		15.0	Current Reformed Smoker for > 15 yrs
+TCGA-78-7161	86faf16c-56fd-4b7b-a6b2-b4c83bec93e1		white	not reported	Dead	291.0	69.0		Adenocarcinoma with mixed subtypes	25294.0	Stage IIB	T3	N0	M0	Upper lobe, lung	8255/3	291.0	no		27.8	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-A48Z	16d3c1c1-cf3a-44b6-b564-8ae5464b243d		white	not hispanic or latino	Alive		60.0		Adenocarcinoma with mixed subtypes	22592.0					Not Reported	8255/3				40.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-78-8662	16e64a1e-08b0-4c27-8c69-fa64551f8ca4		not reported	not reported	Dead	3361.0	53.0		Adenocarcinoma, NOS	19563.0	Stage IB	T2	N0	M0	Upper lobe, lung	8140/3	3361.0	no		45.0	Current Smoker
+TCGA-17-Z037	175cb088-9b10-4fa9-95c0-7837fdc7bcf9																				
+TCGA-95-8039	87f1b3df-4bc7-4336-b658-f30ac1c5c796		white	not hispanic or latino	Alive		72.0		Acinar cell carcinoma	26317.0	Stage IA	T1	N0	MX	Upper lobe, lung	8550/3	830.0	no			Lifelong Non-Smoker
+TCGA-86-8075	8869000d-09d7-465a-ac32-54d1935c43e7		white	not hispanic or latino	Dead	694.0	66.0		Adenocarcinoma, NOS	24402.0	Stage IB	T2	N0	M0	Upper lobe, lung	8140/3	694.0	no			Lifelong Non-Smoker
+TCGA-69-7760	8981f0c9-7155-4c96-bf77-7d40fe404323		white	not hispanic or latino	Alive		73.0		Adenocarcinoma with mixed subtypes	26777.0	Stage IIB	T3	N0	M0	Lower lobe, lung	8255/3	202.0	no			Lifelong Non-Smoker
+TCGA-64-1680	1ab7ad70-0f80-41d8-8efa-3baebc8223cc		white	not hispanic or latino	Alive		63.0		Adenocarcinoma with mixed subtypes	23267.0	Stage IV	T2a	N2	M1	Overlapping lesion of lung	8255/3	1126.0	no		50.0	Current Reformed Smoker for > 15 yrs
+TCGA-97-7552	1b110eb4-a01d-4c50-ba18-77da4dedd549		white	not hispanic or latino	Alive		70.0		Bronchio-alveolar carcinoma, mucinous	25578.0	Stage IB	T2	N0	MX	Lower lobe, lung	8253/3	1932.0	no		40.0	Current Reformed Smoker for > 15 yrs
+TCGA-97-8174	8c695c24-e7f9-449a-9258-a1bc8a33bf9a		white	not hispanic or latino	Dead	164.0	67.0		Papillary adenocarcinoma, NOS	24725.0	Stage IIA	T2b	N0	M0	Upper lobe, lung	8260/3	164.0	no		40.0	Current Reformed Smoker for > 15 yrs
+TCGA-50-5944	1c339545-c08a-4a77-b8e9-a7e49e53853f		white	not reported	Alive		69.0		Acinar cell carcinoma	25440.0	Stage IA	T1	N0	M0	Upper lobe, lung	8550/3	1750.0	no			Not Reported
+TCGA-55-6971	8d0736fe-261c-445c-bfd2-a3ea3ceaf367		white	not reported	Alive		59.0		Adenocarcinoma, NOS	21734.0	Stage IB	T2	N0	MX	Lower lobe, lung	8140/3	1400.0	no		60.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-75-5146	1d276b62-5e64-48fb-b2ce-5192b511fe37		not reported	not reported	Alive				Bronchiolo-alveolar carcinoma, non-mucinous		Stage IB	T2	N0	M0	Lower lobe, lung	8252/3	2368.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-MP-A5C7	8f04660a-2efb-4947-9eab-375066b9eb33		white	not hispanic or latino	Alive		76.0		Adenocarcinoma, NOS	28015.0	Stage IB	T2	N0	M0	Upper lobe, lung	8140/3	2248.0	no		15.0	Current Reformed Smoker for > 15 yrs
+TCGA-55-7911	1f0a5312-0590-4230-9da9-fd0cfe693586		white	not hispanic or latino	Alive		70.0		Adenocarcinoma, NOS	25746.0	Stage IA	T1a	N0	MX	Middle lobe, lung	8140/3	537.0	no		96.0	Current Reformed Smoker for > 15 yrs
+TCGA-64-5778	8fdbd88f-19ae-4ab8-bcd7-6bfa1bbde742		white	not hispanic or latino	Alive		60.0		Bronchiolo-alveolar carcinoma, non-mucinous	21927.0	Stage IB	T2	N0	M0	Upper lobe, lung	8252/3	1305.0	no		68.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-62-8397	9240d5fc-de23-4436-8099-da9bd3054860		white	not hispanic or latino	Alive		70.0		Adenocarcinoma with mixed subtypes	25728.0	Stage IIB	T3	N0	M0	Lower lobe, lung	8255/3	1289.0	no			Lifelong Non-Smoker
+TCGA-75-5125	205759a6-6391-491b-9857-0080c3a5871e		not reported	not reported	Dead	2027.0			Not Reported						Not Reported	Not Reported				25.0	Current Reformed Smoker for > 15 yrs
+TCGA-75-5126	93766482-2f20-4c8f-bbd8-bdd203c37d5a		not reported	not reported	Alive				Papillary adenocarcinoma, NOS		Stage IIIA	T3	N2	M0	Upper lobe, lung	8260/3		no		40.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-17-Z041	94ee639e-3cb4-4943-b5f1-a89eb902153c																				
+TCGA-44-6144	22302e92-fdfa-462a-9249-efdaa26ee5ed		white	not hispanic or latino	Alive		58.0		Adenocarcinoma, NOS	21682.0					Not Reported	8140/3				67.5	Current Smoker
+TCGA-91-6849	953a908d-0993-42f6-853b-512611d19a2c		black or african american	not hispanic or latino	Alive		75.0		Adenocarcinoma, NOS	27676.0	Stage IIIA	T2	N2	MX	Upper lobe, lung	8140/3	35.0	no		30.0	Current Reformed Smoker for > 15 yrs
+TCGA-69-7764	243c6fd6-5516-46e5-bcef-292d93d7b7d3		white	not hispanic or latino	Alive		75.0		Adenocarcinoma with mixed subtypes	27693.0	Stage IA	T1b	N0	M0	Upper lobe, lung	8255/3	414.0	no		30.0	Current Reformed Smoker for > 15 yrs
+TCGA-55-8205	95fa64b0-91e1-4427-b81a-53c47a053563		white	not hispanic or latino	Alive		76.0		Basal cell carcinoma, NOS						Skin of other and unspecified parts of face	8090/3				30.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-38-A44F	258a3a41-211b-4c66-bd3b-ef03014a6967		white	not hispanic or latino	Alive		80.0		Acinar cell carcinoma	29534.0	Stage IB	T2a	N0	M0	Upper lobe, lung	8550/3	133.0	no		12.0	Current Reformed Smoker for > 15 yrs
+TCGA-17-Z039	25c9f984-1a5a-4cca-9ad1-39f759ea7174																				
+TCGA-44-A47B	967d6548-5a84-4b7e-bc3f-2e522859fce6		white	not hispanic or latino	Alive		79.0		Adenocarcinoma, NOS	28869.0	Stage IB	T2a	N0	M0	Upper lobe, lung	8140/3	287.0	no		4.5	Current Reformed Smoker for > 15 yrs
+TCGA-L4-A4E6	26a92e1b-08d8-45cd-af0c-eaf2514808a2		white	not hispanic or latino	Alive		67.0		Adenocarcinoma, NOS	24631.0	Stage IA	T1	N0	M0	Upper lobe, lung	8140/3	435.0	no		30.0	Current Reformed Smoker for > 15 yrs
+TCGA-49-AAQV	96dfa373-4597-49a5-942e-d9b4dc5d28fc		black or african american	not hispanic or latino	Dead	677.0	63.0		Adenocarcinoma with mixed subtypes	23879.0					Not Reported	8255/3					Lifelong Non-Smoker
+TCGA-44-5643	27fceec1-3298-4cdd-a4e6-8f5cf34604f0		black or african american	not hispanic or latino	Alive		53.0		Adenocarcinoma, NOS	19426.0	Stage IIIA	T2b	N2	M0	Lower lobe, lung	8140/3	1013.0	no		20.0	Current Smoker
+TCGA-91-6847	97831d28-ab41-4c18-bfc2-c4c6bc757d13		white	not hispanic or latino	Alive		62.0		Adenocarcinoma, NOS	23634.0					Not Reported	8140/3					Current Reformed Smoker for > 15 yrs
+TCGA-73-A9RS	2a394996-809f-459f-a647-d209921ccbd2		black or african american	not hispanic or latino	Dead	340.0	41.0		Mucinous adenocarcinoma	15162.0	Stage IIB	T3	N0	M0	Upper lobe, lung	8480/3	340.0	no		11.0	Current Smoker
+TCGA-49-AARN	98ef41fa-3015-445a-bbdc-984361c911f7		black or african american	not hispanic or latino	Dead	1135.0	56.0		Not Reported	20575.0					Breast, NOS	Not Reported					Current Reformed Smoker, Duration Not Specified
+TCGA-NJ-A4YI	2c03141e-a0bd-4e8d-91e4-9744d139ccce		white	not reported	Dead	4.0	87.0		Acinar cell carcinoma	31867.0	Stage IIIA	T2	N2	M0	Upper lobe, lung	8550/3	4.0	no		3.0	Current Reformed Smoker for > 15 yrs
+TCGA-55-8299	2cd8ea73-cb3f-4b17-9b97-fa12eb03b85b		white	not hispanic or latino	Dead	469.0	61.0		Adenocarcinoma, NOS	22626.0	Stage IA	T1b	N0	MX	Upper lobe, lung	8140/3	469.0	no		20.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-5899	996a0070-e9bf-4601-8ef7-60212108258d		white	not hispanic or latino	Alive		58.0		Adenocarcinoma, NOS			T1a	N1	M0	Upper lobe, lung	8140/3	930.0	no			Current Smoker
+TCGA-17-Z053	2dca3588-51e1-48f7-8c9b-7b7e53c3fb33																				
+TCGA-49-AARQ	9a2a226e-9605-4214-9320-469305e664e6		black or african american	not hispanic or latino	Alive		41.0		Adenocarcinoma, NOS	15065.0	Stage I	T2	N0	MX	Upper lobe, lung	8140/3	6732.0	no		60.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-6987	2efc156c-464a-4c2f-a854-39fefe32081c		white	not hispanic or latino	Alive		77.0		Adenocarcinoma, NOS	28382.0	Stage IA	T1	N0	M0	Lower lobe, lung	8140/3	2137.0	no			Current Reformed Smoker for < or = 15 yrs
+TCGA-50-6591	9b132e4f-7e35-4cc5-8711-43ad62b906d0		white	not hispanic or latino	Dead	119.0	63.0		Adenocarcinoma, NOS	23067.0	Stage IV	T2	N0	M1	Lower lobe, lung	8140/3	119.0	no			Lifelong Non-Smoker
+TCGA-91-6835	2f09479f-87fc-4c34-8e2c-333e970a3681		white	not hispanic or latino	Alive		81.0		Adenocarcinoma, NOS	29887.0	Stage IA	T1	N0	M0	Lower lobe, lung	8140/3	79.0	no		25.0	Current Reformed Smoker for > 15 yrs
+TCGA-17-Z015	9b714a42-62e8-4b33-947e-6c4850725afd																				
+TCGA-86-8585	2f1a4b16-104c-40eb-8114-8245847bb716		white	not hispanic or latino	Alive		57.0		Solid carcinoma, NOS	20918.0	Stage IB	T2a	N0	M0	Upper lobe, lung	8230/3	353.0	no			Lifelong Non-Smoker
+TCGA-86-7711	9c894668-88f5-4308-a1c0-6b8acc6aaaec		white	hispanic or latino	Dead	1046.0	70.0		Adenocarcinoma, NOS	25719.0	Stage IIA	T2a	N1	M0	Lower lobe, lung	8140/3	1046.0	no		50.0	Current Smoker
+TCGA-MP-A4T4	301ca6e8-7981-4264-b4ae-38f56f7f9225		white	Unknown	Dead	2617.0	68.0		Adenocarcinoma, NOS	25052.0	Stage IIB	T2	N1	M0	Lower lobe, lung	8140/3	2617.0	no		50.0	Current Smoker
+TCGA-17-Z007	3037e91e-213e-43e3-92e4-2fcd68988bde																				
+TCGA-93-A4JP	30f276a8-3a4b-4de8-aea0-7f605d100401		asian	not hispanic or latino	Alive		64.0		Papillary adenocarcinoma, NOS	23620.0	Stage IV	TX	NX	M1b	Lower lobe, lung	8260/3	578.0	no			Lifelong Non-Smoker
+TCGA-93-A4JN	9dda72ec-1698-44e2-b35c-11e9a2704380		white	not hispanic or latino	Alive		71.0		Acinar cell carcinoma	26273.0	Stage IV	T2a	N0	M1a	Upper lobe, lung	8550/3	718.0	no		40.0	Current Reformed Smoker for > 15 yrs
+TCGA-S2-AA1A	31458638-e19c-43e5-ab13-9c64b3b3681d		black or african american	not hispanic or latino	Alive		68.0		Bronchio-alveolar carcinoma, mucinous	24903.0	Stage IA	T1b	N0	M0	Upper lobe, lung	8253/3	513.0	no		95.0	Current Reformed Smoker for > 15 yrs
+TCGA-86-A4P7	9e640ff7-996e-427b-b56c-519a1e23baab		white	not hispanic or latino	Alive		63.0		Adenocarcinoma, NOS	23330.0	Stage IB	T2a	N0	M0	Lower lobe, lung	8140/3	415.0	no			Lifelong Non-Smoker
+TCGA-69-8453	9f4f2ff3-3c02-4281-a398-b0d0955e58eb		white	not hispanic or latino	Alive		77.0		Mucinous adenocarcinoma	28413.0	Stage IIB	T3	N0	MX	Lower lobe, lung	8480/3	813.0	no		12.0	Current Reformed Smoker for > 15 yrs
+TCGA-97-A4M6	31ff69b5-9e58-44da-8326-bdfc7ee495c4		white	not hispanic or latino	Alive		45.0		Adenocarcinoma with mixed subtypes	16764.0	Stage IA	T1a	N0	M0	Lower lobe, lung	8255/3	568.0	no			Lifelong Non-Smoker
+TCGA-78-7150	a0e57b39-960e-4e46-8aa0-d0ee2fd9a7cc		white	not reported	Dead	666.0	59.0		Adenocarcinoma, NOS	21891.0	Stage IIB	T2	N1	M0	Lower lobe, lung	8140/3	666.0	no		37.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-17-Z033	a16d7bf7-07b7-4320-969c-fc68dd564a92																				
+TCGA-17-Z013	a19d84a1-b316-44d3-90b1-0d14b0fd7a14																				
+TCGA-L4-A4E5	32a7b827-c3f9-4607-ae63-dae8caa2bc97		white	not hispanic or latino	Alive		48.0		Adenocarcinoma, NOS	17680.0	Stage I	T1	N0	M0	Upper lobe, lung	8140/3	578.0	no		33.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-8206	a214a959-3b21-4f25-a615-383cda7afdff		white	not hispanic or latino	Alive		56.0		Adenocarcinoma, NOS	20690.0	Stage IA	T1b	N0	M0	Upper lobe, lung	8140/3	888.0	no			Lifelong Non-Smoker
+TCGA-44-6774	33c71ead-4c2a-476d-85ef-885dbbfc2cbd		white	not hispanic or latino	Alive		56.0		Adenocarcinoma, NOS	20462.0	Stage IIIA	T1	N2	M0	Lower lobe, lung	8140/3	658.0	no		20.0	Current Smoker
+TCGA-55-A491	a250a369-e536-4a18-b7af-2911133d7bdc		white	not hispanic or latino	Alive		81.0		Squamous cell carcinoma, NOS	29487.0					Upper limb, NOS	8070/3				45.0	Current Reformed Smoker for > 15 yrs
+TCGA-49-6743	a391d49f-a822-460b-981c-6fbe1868ee38		white	not reported	Alive		81.0		Clear cell adenocarcinoma, NOS	29807.0	Stage IIIA	T1	N2	MX	Upper lobe, lung	8310/3	1621.0	no		50.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-05-4389	a3de401d-91fe-49a2-bb07-81c1a06506e6		not reported	not reported	Alive		70.0		Adenocarcinoma with mixed subtypes	25660.0	Stage IA	T1	N0	M0	Upper lobe, lung	8255/3	1369.0	no		43.0	Current Reformed Smoker for > 15 yrs
+TCGA-44-6777	349e6f38-2c67-4a69-a777-b9173a2a27cf		white	not reported	Dead	987.0	85.0		Adenocarcinoma, NOS	31234.0	Stage IB	T2	NX	MX	Upper lobe, lung	8140/3	987.0	no		64.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-8513	a3fd20b2-e001-44ab-9716-754e5ae70808		white	not hispanic or latino	Alive		77.0		Mucinous adenocarcinoma	28601.0					Not Reported	8480/3					Lifelong Non-Smoker
+TCGA-55-6982	35cb7841-9b09-465a-90c5-e3b8a9faad49		white	not reported	Dead	995.0	79.0		Adenocarcinoma, NOS						Not Reported	8140/3					Lifelong Non-Smoker
+TCGA-55-A4DF	362000e4-cf7c-48fc-93cc-8f5994b442ea		white	not hispanic or latino	Dead	440.0	88.0		Squamous cell carcinoma, NOS	32454.0	Stage IA	T1a	N0	MX	Lung, NOS	8070/3				60.0	Current Reformed Smoker for > 15 yrs
+TCGA-69-7979	a5bd7d50-9c14-49e6-89cf-6bf440c42309		white	not hispanic or latino	Alive		71.0		Acinar cell carcinoma	26180.0	Stage IB	T2a	N0	MX	Upper lobe, lung	8550/3	408.0	no		28.0	Current Smoker
+TCGA-17-Z019	a5d0c704-2888-4cff-805e-4bbe4636117c																				
+TCGA-17-Z058	3650e5b2-ef58-4b14-97b2-8698f2c160f8																				
+TCGA-64-5815	a65700c2-e58c-4fd4-aeb1-5686b8f4d212		white	not hispanic or latino	Alive		74.0		Adenocarcinoma with mixed subtypes	27280.0	Stage IIB	T2	N1	M0	Upper lobe, lung	8255/3	866.0	no		30.0	Current Reformed Smoker for > 15 yrs
+TCGA-67-3774	36ad7fc7-0cc1-4f01-aef1-f89b3cb4feac		white	not hispanic or latino	Alive		73.0		Adenocarcinoma, NOS	26704.0	Stage IB	T2	N0	M0	Lower lobe, lung	8140/3	385.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-05-4426	36bf02f8-c1c8-49f9-a417-adf88a205c70		not reported	not reported	Alive		71.0		Adenocarcinoma with mixed subtypes	26084.0	Stage IB	T2	N0	M0	Lower lobe, lung	8255/3	791.0	no		20.0	Current Reformed Smoker for > 15 yrs
+TCGA-86-8278	a816e355-be6f-4d16-b051-b6d86ed8cded		white	not hispanic or latino	Alive		63.0		Mucinous adenocarcinoma	23117.0	Stage IIB	T2	N1	M0	Lower lobe, lung	8480/3	944.0	no			Lifelong Non-Smoker
+TCGA-97-7553	37c8d73a-45ae-40fc-ba9a-721b755c1160		white	not hispanic or latino	Alive		58.0		Bronchiolo-alveolar carcinoma, non-mucinous	21518.0	Stage IA	T1	N0	MX	Lower lobe, lung	8252/3	1870.0	no		20.0	Current Smoker
+TCGA-55-8614	a8de1beb-6296-44eb-bd63-c603f70faaf3		white	not hispanic or latino	Alive		76.0		Adenocarcinoma, NOS	27924.0	Stage IB	T2a	N0	MX	Upper lobe, lung	8140/3	536.0	no		40.0	Current Reformed Smoker for > 15 yrs
+TCGA-95-A4VN	389f78a3-fa0b-406c-9434-aa0298341a8c		white	not hispanic or latino	Alive		62.0		Not Reported						Female genital tract, NOS	Not Reported				42.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-17-Z056	392ca7f3-d52e-4aa7-a9ba-4c7d9aa6401c																				
+TCGA-97-7554	a9644274-13bb-4228-9b4f-14260ccc26eb		white	not hispanic or latino	Alive		83.0		Papillary adenocarcinoma, NOS	30327.0	Stage IIIA	T2a	N2	M0	Lower lobe, lung	8260/3	775.0	no		30.0	Current Reformed Smoker for > 15 yrs
+TCGA-05-4430	3a23cdb5-2327-45ac-b0b5-d4afe038c757		not reported	not reported	Alive		59.0		Adenocarcinoma with mixed subtypes	21884.0	Stage IB	T2	N0	M0	Lower lobe, lung	8255/3	761.0	no		80.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-49-AAR0	3afa5045-a1ee-4a07-8aad-2e252b2f7d7a		black or african american	not hispanic or latino	Alive		57.0		Adenocarcinoma, NOS	20552.0					Prostate gland	8140/3				37.0	Current Smoker
+TCGA-55-A57B	3b21b982-dba2-45f4-ad8d-21dc86fcaaa7		black or african american	not hispanic or latino	Alive		80.0		Adenocarcinoma with mixed subtypes	29452.0	Stage IA	T1b	N0	M0	Upper lobe, lung	8255/3	546.0	no			Lifelong Non-Smoker
+TCGA-95-7944	abab925c-bef3-4072-b9c4-40f808744593		white	not hispanic or latino	Alive		71.0		Adenocarcinoma, NOS	26003.0	Stage IA	T1a	N0	M0	Lower lobe, lung	8140/3	377.0	no		50.0	Current Smoker
+TCGA-17-Z025	abb86d09-d4ff-41f4-ba22-185dc48347c9																				
+TCGA-95-7567	3bc7026f-73f2-418b-bd62-f4768582b790		white	not hispanic or latino	Alive		61.0		Adenocarcinoma with mixed subtypes	22437.0	Stage IIB	T2b	N1	M0	Upper lobe, lung	8255/3	568.0	no			Current Reformed Smoker for < or = 15 yrs
+TCGA-44-3396	3bd6badb-27ff-4d8d-b206-4d28dc264862		white	not hispanic or latino	Alive		74.0		Adenocarcinoma, NOS	27073.0	Stage IIIA	T2	N2	M0	Upper lobe, lung	8140/3	1130.0	no		50.0	Current Smoker
+TCGA-44-6775	3c4ff061-d214-4d1c-8d2e-3034f207c252		white	hispanic or latino	Alive		72.0		Adenocarcinoma, NOS	27099.0					Not Reported	8140/3				25.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-17-Z035	3d0cbd55-4eda-4c52-93cc-a74381ea7c59																				
+TCGA-05-4433	aea68827-dc0f-484d-a00d-06deeaa4b3ce		not reported	not reported	Alive		82.0		Adenocarcinoma with mixed subtypes	30194.0	Stage IB	T2	N0	M0	Lower lobe, lung	8255/3	730.0	no		1.0	Current Reformed Smoker for > 15 yrs
+TCGA-05-4420	3d2aa654-1b5f-4eb4-a1c2-af31f5760069		not reported	not reported	Alive		41.0		Adenocarcinoma with mixed subtypes	15159.0	Stage IB	T2	N0	M0	Lower lobe, lung	8255/3	912.0	no		38.0	Current Smoker
+TCGA-55-8097	afe83af5-af22-49c0-88b4-f1d0dfcbe238		white	not hispanic or latino	Alive		60.0		Adenocarcinoma, NOS	22260.0	Stage IA	T1a	N0	MX	Upper lobe, lung	8140/3	476.0	no		35.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-69-7974	3e1df30f-744a-41e9-a169-7dbbff66622e		white	not hispanic or latino	Alive		54.0		Adenocarcinoma with mixed subtypes	20021.0	Stage IIIA	T2a	N2	MX	Upper lobe, lung	8255/3	184.0	no		30.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-A4DG	3e34c7d9-90fa-41e2-ba6b-4bbc332adc4e		white	not hispanic or latino	Alive		71.0		Adenocarcinoma, NOS	26044.0	Stage IA	T1b	N0	MX	Upper lobe, lung	8140/3	608.0	no		100.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-97-7941	b266cbf5-80de-4473-b16f-08c502d365ca		white	not hispanic or latino	Alive		72.0		Acinar cell carcinoma	26298.0	Stage IA	T1b	N0	MX	Upper lobe, lung	8550/3	484.0	no		22.5	Current Reformed Smoker for > 15 yrs
+TCGA-55-8506	3ed05070-6633-4de5-9f72-090f93aa2e4d		white	not hispanic or latino	Alive		62.0		Adenocarcinoma, NOS	22850.0	Stage IIB	T3	N0	MX	Upper lobe, lung	8140/3	11.0	no			Current Smoker
+TCGA-55-8301	b36b7567-30d3-4d0c-84c4-b203986e0fdb		white	not hispanic or latino	Alive		58.0		Adenocarcinoma, NOS	21773.0					Not Reported	8140/3				100.0	Current Smoker
+TCGA-17-Z040	b3c31fdc-26a7-4b39-8127-8006307eb1f5																				
+TCGA-64-5781	41c4c704-825e-49f5-9d54-dbd7d30725e0		white	not hispanic or latino	Alive		55.0		Not Reported	20315.0					Not Reported	Not Reported				25.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-49-4506	b61abdfd-b7a0-4e1a-b570-d1eaecad3a9e		white	not hispanic or latino	Dead	999.0	68.0		Adenocarcinoma, NOS	25132.0	Stage IIB	T2	N1	M0	Upper lobe, lung	8140/3	999.0	no		100.0	Current Smoker
+TCGA-49-4514	b87a5d92-4c09-48fe-bb08-b3c89a7c892e		white	not reported	Alive		79.0		Papillary adenocarcinoma, NOS	28908.0	Stage IA	T1	N0	M0	Upper lobe, lung	8260/3	1700.0	no		65.0	Current Reformed Smoker for > 15 yrs
+TCGA-55-A490	b89de053-d253-447f-952e-9a2edcf6bca5		white	not hispanic or latino	Dead	99.0	78.0		Adenocarcinoma, NOS	28728.0	Stage IIA	T2b	N0	MX	Upper lobe, lung	8140/3	99.0	no		34.0	Current Reformed Smoker for > 15 yrs
+TCGA-NJ-A55A	b8b5ed35-b299-4c1e-9226-5ca055dc7a43		white	not hispanic or latino	Alive		76.0		Acinar cell carcinoma	28022.0	Stage IB	T2	N0	M0	Lower lobe, lung	8550/3	15.0	no		25.0	Current Reformed Smoker for > 15 yrs
+TCGA-53-7813	42d208bd-cd77-4bfb-ad53-9fc072a87393		white	not hispanic or latino	Alive		51.0		Bronchiolo-alveolar carcinoma, non-mucinous	18875.0	Stage IIIB	T4	N0	M0	Upper lobe, lung	8252/3	424.0	no		35.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-62-8402	433a32d0-93d1-4897-8e36-beb1ec1d998e		white	not hispanic or latino	Dead	1498.0	73.0		Adenocarcinoma with mixed subtypes	26934.0	Stage IIIA	T2	N2	M0	Upper lobe, lung	8255/3	1498.0	no			Lifelong Non-Smoker
+TCGA-17-Z027	4432a02d-91de-4a7d-875f-684865f3c95d																				
+TCGA-35-4122	44adf4cb-2829-4153-80fd-a8b7ee0e654a		white	not hispanic or latino	Alive		69.0		Adenocarcinoma, NOS	25491.0	Stage IA	T1	N0	M0	Upper lobe, lung	8140/3	225.0	no		45.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-69-8253	44d8c859-4b7a-4e9d-bffc-0de0e6afdcc4		black or african american	not hispanic or latino	Alive		59.0		Adenocarcinoma with mixed subtypes	21771.0	Stage IIA	T1a	N1	MX	Lower lobe, lung	8255/3	426.0	no		7.8	Current Reformed Smoker for < or = 15 yrs
+TCGA-86-8673	bc4c4079-b449-485d-84e4-a40496e563e8		white	not hispanic or latino	Alive		61.0		Bronchiolo-alveolar carcinoma, non-mucinous	22571.0	Stage IB	T2	N0	M0	Upper lobe, lung	8252/3	862.0	no		54.0	Current Smoker
+TCGA-69-7765	bcf2e591-9dae-440f-bd03-5f27c57db741		black or african american	not hispanic or latino	Alive		56.0		Adenocarcinoma with mixed subtypes	20625.0		T4	N0	MX	Upper lobe, lung	8255/3	165.0	no			Current Reformed Smoker for < or = 15 yrs
+TCGA-49-4487	bd4e9a9f-17f3-4d33-92fc-fcc45dd0e7b4		white	not hispanic or latino	Dead	855.0	72.0		Adenocarcinoma, NOS	26583.0	Stage IA	T1	N0	M0	Upper lobe, lung	8140/3	855.0	no		40.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-MP-A4TE	bebd0025-74e2-451b-93b3-86f82df43573		white	not hispanic or latino	Dead	896.0	56.0		Adenocarcinoma, NOS	20853.0					Not Reported	8140/3				40.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-MP-A4T7	47062ad2-ba82-45c8-a871-bdea84f0c405		Unknown	Unknown	Dead	167.0	75.0		Adenocarcinoma, NOS	27603.0	Stage IV	T2	N0	M1	Lower lobe, lung	8140/3	167.0	no		50.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-7907	bf755bc2-b7aa-4c3c-8b3c-58b089b5cab6		white	not hispanic or latino	Dead	343.0	77.0		Adenocarcinoma, NOS	28495.0					Not Reported	8140/3				80.0	Current Reformed Smoker for > 15 yrs
+TCGA-97-A4M1	c0c879f7-c332-4d31-9f7e-a3bf361b36ee		white	not hispanic or latino	Alive		52.0		Adenocarcinoma with mixed subtypes	19272.0	Stage IA	T1a	N0	M0	Upper lobe, lung	8255/3	601.0	no		3.0	Current Reformed Smoker for > 15 yrs
+TCGA-49-AAR9	47b749e6-e060-4aa1-8f29-976e489ba789		black or african american	not hispanic or latino	Dead	260.0	61.0		Adenocarcinoma, NOS	22510.0	Stage IIB	T3	N0	MX	Lung, NOS	8140/3	260.0	no			Current Smoker
+TCGA-86-8074	482eb2a7-6fed-4e4c-b1b6-14d6d869f855		white	not hispanic or latino	Alive		62.0		Papillary adenocarcinoma, NOS	22862.0	Stage IIA	T1b	N1	M0	Lower lobe, lung	8260/3	24.0	no		40.0	Current Smoker
+TCGA-75-7027	488646a1-0bdb-45f8-8c30-bef006924511		not reported	not reported	Alive				Adenocarcinoma, NOS		Stage IB	T2	N0	M0	Lower lobe, lung	8140/3	3059.0	no		50.0	Current Smoker
+TCGA-17-Z016	494d50b6-578e-441b-8195-4b4d26c0d810																				
+TCGA-50-8460	497cc506-03fe-4ffa-860b-5a12adb1bc7d		white	not hispanic or latino	Alive		74.0		Papillary adenocarcinoma, NOS	27270.0	Stage IA	T1a	N0	M0	Upper lobe, lung	8260/3	829.0	no			Unknown
+TCGA-17-Z024	4999df33-3a47-4feb-a264-c5d71b271d8c																				
+TCGA-75-6206	c4c1469d-752f-42b6-8686-714ad4a8ac97		not reported	not reported	Alive				Adenocarcinoma, NOS		Stage IB	T2	N0	M0	Upper lobe, lung	8140/3	2590.0	no		20.0	Current Reformed Smoker for > 15 yrs
+TCGA-91-8497	4ad63dac-76a7-4527-abce-d7a0184e8739		white	not hispanic or latino	Dead	434.0	75.0		Adenocarcinoma, NOS	27632.0	Stage IA	T1a	N0	MX	Upper lobe, lung	8140/3	434.0	no			Lifelong Non-Smoker
+TCGA-05-4249	4addf05f-3668-4b3f-a17f-c0227329ca52		not reported	not reported	Alive		67.0		Adenocarcinoma, NOS	24532.0	Stage IB	T2	N0	M0	Lower lobe, lung	8140/3	1523.0	no		52.0	Current Reformed Smoker for > 15 yrs
+TCGA-97-A4M7	c6b680e3-d96e-4fc7-8053-77454b7a14fa		white	not hispanic or latino	Alive		74.0		Adenocarcinoma with mixed subtypes	27062.0					Lung, NOS	8255/3				40.0	Current Reformed Smoker for > 15 yrs
+TCGA-71-6725	4b7cd595-e7f9-45a8-b736-a8c7c42d9539		asian	not hispanic or latino	Alive		48.0		Papillary adenocarcinoma, NOS	17957.0					Not Reported	8260/3					Current Smoker
+TCGA-55-8092	4b92fce2-3772-40eb-ab34-a27937b58590		white	not hispanic or latino	Dead	154.0	75.0		Adenocarcinoma, NOS	27597.0	Stage IIB	T3	N0	MX	Upper lobe, lung	8140/3	154.0	no		40.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-7913	c9c533ee-e154-4a56-bce9-b5af37574b2f		black or african american	not hispanic or latino	Dead	561.0	61.0		Adenocarcinoma, NOS	22806.0					Not Reported	8140/3				40.0	Current Smoker
+TCGA-49-6761	4cd3d483-2283-4c6a-a57a-444216119d34		white	not hispanic or latino	Alive		68.0		Not Reported	20499.0					Breast, NOS	Not Reported				50.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-50-5055	cc3d9750-7ce0-489f-86d4-8017b7ebed29		white	not hispanic or latino	Dead	1830.0	79.0		Adenocarcinoma with mixed subtypes	28988.0	Stage IIA	T1	N1	M0	Lower lobe, lung	8255/3	1830.0	no			Not Reported
+TCGA-55-7227	4e7b2af4-b158-41a7-be22-bea227a759e6		white	not hispanic or latino	Dead	952.0	77.0		Adenocarcinoma, NOS	28458.0	Stage IIIA	T3	N1	MX	Lower lobe, lung	8140/3	952.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-86-7713	cc68632c-b1e3-491b-b562-9468e2d1c101		white	not hispanic or latino	Alive		70.0		Adenocarcinoma, NOS	25791.0	Stage IIA	T2b	N0	M0	Middle lobe, lung	8140/3	1157.0	no			Lifelong Non-Smoker
+TCGA-75-7031	4efc2dac-6330-4b7a-a529-a27285f5fc23		not reported	not reported	Alive				Adenocarcinoma, NOS		Stage IB	T2	N0	M0	Upper lobe, lung	8140/3		no		5.0	Current Reformed Smoker for > 15 yrs
+TCGA-78-7158	501c987e-d1eb-48a9-89eb-72a5062c90b4		white	not reported	Dead	179.0	59.0		Adenocarcinoma with mixed subtypes	21742.0	Stage IIIB	T4	N2	M0	Lower lobe, lung	8255/3	179.0	no		14.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-44-2662	ccda26c1-a6d6-4317-8cf8-8a87e15ce12e		white	not hispanic or latino	Alive		65.0		Not Reported	24259.0					Not Reported	Not Reported				56.0	Current Reformed Smoker for > 15 yrs
+TCGA-17-Z054	51e49548-1ad0-4c83-ae8a-2fa95bf4712a																				
+TCGA-49-AARO	5202458b-c38a-47c0-a0ba-5f1a59a762a0		black or african american	not hispanic or latino	Alive		39.0		Papillary adenocarcinoma, NOS	14527.0	Stage IA	T1a	N0	MX	Upper lobe, lung	8260/3	3759.0	no			Current Smoker
+TCGA-55-7283	ccfdad76-cc45-447f-bed8-ede8f6a8844d		white	not hispanic or latino	Alive		76.0		Bronchiolo-alveolar carcinoma, non-mucinous	27946.0	Stage IIIA	T3	N2	MX	Upper lobe, lung	8252/3	609.0	no		5.0	Current Reformed Smoker for > 15 yrs
+TCGA-73-4659	cd0dc947-b708-464e-beb7-954c9d4583e7		white	not hispanic or latino	Dead	711.0	66.0		Adenocarcinoma, NOS	24253.0	Stage IIIA	T2	N2	M0	Lung, NOS	8140/3	711.0	no		12.0	Current Reformed Smoker for > 15 yrs
+TCGA-86-7714	532c1852-76dd-489f-9380-36766d6e3c34		black or african american	not hispanic or latino	Dead	625.0	61.0		Adenocarcinoma with mixed subtypes	22619.0	Stage IIIA	T1b	N2	M0	Lower lobe, lung	8255/3	625.0	no		43.0	Current Smoker
+TCGA-17-Z006	53d7b0c2-b8ed-43c8-9ffd-a586e0a68086																				
+TCGA-49-AARE	cd9e70e4-8622-4a07-8646-63f8275c1737		black or african american	not hispanic or latino	Dead	1229.0	51.0		Adenocarcinoma, NOS	19281.0					Not Reported	8140/3				15.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-91-8499	54480f58-7e63-4aed-a116-c2c2252e8364		white	not hispanic or latino	Alive		76.0		Adenocarcinoma, NOS	27853.0	Stage IA	T1b	N0	MX	Lower lobe, lung	8140/3	36.0	no		90.0	Current Smoker
+TCGA-86-7953	54775a66-08cc-4f38-98f2-e7b2b5cec994		white	not hispanic or latino	Alive		69.0		Bronchiolo-alveolar adenocarcinoma, NOS	25315.0	Stage IA	T1b	N0	M0	Upper lobe, lung	8250/3	997.0	no			Lifelong Non-Smoker
+TCGA-MN-A4N4	ceead734-1ce0-4385-b65a-a9c853b7308e		white	not hispanic or latino	Alive		57.0		Adenocarcinoma, NOS	20888.0	Stage IA	T1b	N0	M0	Upper lobe, lung	8140/3	1175.0	no			Current Smoker
+TCGA-17-Z023	cf411fc0-0cce-42d2-ae79-24de1a105c05																				
+TCGA-17-Z032	d020e685-0435-4b0a-b03f-45853e1c6eed																				
+TCGA-05-4415	d15b7b29-c5c5-41d8-b83b-7cc12fe92820		not reported	not reported	Dead	91.0	57.0		Not Reported	20940.0					Not Reported	Not Reported				29.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-75-5147	d2824e6d-3784-45c2-9b0f-52b17356b5da		not reported	not reported	Alive				Bronchiolo-alveolar carcinoma, non-mucinous		Stage IB	T2	N0	M0	Upper lobe, lung	8252/3	1333.0	no			Lifelong Non-Smoker
+TCGA-78-7154	d288b69f-1e79-4429-8646-9994b7c54f8f		white	not reported	Dead	593.0	72.0		Adenocarcinoma, NOS	26481.0	Stage IIIA	T3	N2	M0	Upper lobe, lung	8140/3	593.0	no		112.5	Current Reformed Smoker for < or = 15 yrs
+TCGA-95-A4VK	d344dae0-adf4-4697-b703-7690c13d8331		white	not hispanic or latino	Alive		74.0		Adenocarcinoma with mixed subtypes	27040.0	Stage IIIA	T2b	N2	M0	Upper lobe, lung	8255/3	651.0	yes		45.0	Current Reformed Smoker for > 15 yrs
+TCGA-69-8255	552712d3-da16-441e-ba93-11810793d598		white	hispanic or latino	Alive		71.0		Solid carcinoma, NOS	26289.0	Stage IA	T1a	N0	M0	Upper lobe, lung	8230/3	129.0	no		40.0	Current Smoker
+TCGA-53-7626	d3ff328c-2488-47bd-8663-366b6812c7b5		white	not hispanic or latino	Dead	929.0	76.0		Adenocarcinoma, NOS	28024.0	Stage IIA	T1	N1	M0	Upper lobe, lung	8140/3	929.0	no		35.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-62-A46Y	562a562b-ca03-44ac-b282-b51b457d8dae		white	not hispanic or latino	Dead	414.0	70.0		Adenocarcinoma with mixed subtypes	26219.0					Not Reported	8255/3					Lifelong Non-Smoker
+TCGA-50-8457	d45aee46-838e-44af-8422-46710b3240a8		black or african american	not hispanic or latino	Alive		63.0		Adenocarcinoma with mixed subtypes	23055.0	Stage IA	T1a	N0	M0	Upper lobe, lung	8255/3	1125.0	no		30.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-97-A4M3	575752f8-2788-43cd-afde-f0f600f39d18		white	not hispanic or latino	Alive		69.0		Basal cell carcinoma, NOS						Head, face or neck, NOS	8090/3				37.5	Current Reformed Smoker for > 15 yrs
+TCGA-55-8507	d63c028b-b6d3-49ce-b63e-261eed3b86df		white	not hispanic or latino	Alive		53.0		Adenocarcinoma, NOS	19390.0	Stage IA	T1a	N0	MX	Upper lobe, lung	8140/3	418.0	no		120.0	Current Smoker
+TCGA-17-Z049	d6a08727-affd-4a59-837b-ea71741d7f09																				
+TCGA-55-6969	d6e274a0-6425-437b-bc07-1225be7808d5		white	not reported	Alive		52.0		Adenocarcinoma, NOS	19270.0	Stage IB	T2	N0	M0	Upper lobe, lung	8140/3	1239.0	no			Current Reformed Smoker for < or = 15 yrs
+TCGA-91-6830	5a2f8140-8f90-4e94-b703-5fa5aa96be7b		white	not hispanic or latino	Alive		65.0		Adenocarcinoma, NOS	23922.0	Stage IIA	T1	N1	MX	Upper lobe, lung	8140/3	60.0	no		12.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-78-7163	5abd6651-69be-42f8-bdc0-308e68136d31		white	not reported	Alive		60.0		Adenocarcinoma, NOS	22002.0	Stage IB	T2	N0	M0	Lower lobe, lung	8140/3	7248.0	no		41.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-49-4488	d721bfe0-90e3-415e-b9f3-1a270efa5fbb		white	not hispanic or latino	Dead	869.0	74.0		Adenocarcinoma, NOS	27332.0	Stage IA	T1	N0	MX	Lower lobe, lung	8140/3	869.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-80-5608	5c06d97f-2aaa-43de-b085-09d7829356ba		not reported	not reported	Alive				Adenocarcinoma, NOS		Stage IA	T1	N0	M0	Upper lobe, lung	8140/3	2832.0	no		26.0	Current Smoker
+TCGA-62-8395	5c266025-e590-457c-af86-4c2dc9797267		white	not hispanic or latino	Alive		80.0		Adenocarcinoma with mixed subtypes	29811.0					Not Reported	8255/3					Lifelong Non-Smoker
+TCGA-44-A47G	da345947-498b-4272-a231-a987ed4fe151		white	not hispanic or latino	Alive		73.0		Adenocarcinoma, NOS	26800.0	Stage IA	T1	N0	M0	Upper lobe, lung	8140/3	351.0	no		28.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-44-6778	5d5cc436-6e57-4d23-a164-7f5153c2e666		black or african american	not reported	Alive		59.0		Adenocarcinoma, NOS	21725.0	Stage IA	T1	N0	MX	Lung, NOS	8140/3	1864.0	no		15.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-86-8281	5d7ec32a-049f-4997-9882-1b3ac157e02d		white	not hispanic or latino	Alive		75.0		Adenocarcinoma, NOS	27409.0	Stage IA	T1	NX	M0	Lower lobe, lung	8140/3	0.0	no		30.0	Current Reformed Smoker for > 15 yrs
+TCGA-MP-A4T6	5f4934be-eee3-40e1-8838-38103badc898		white	not hispanic or latino	Dead	1790.0	76.0		Adenocarcinoma, NOS	27993.0	Stage IIIA	T1	N2	MX	Lower lobe, lung	8140/3	1790.0	no		50.0	Current Reformed Smoker for > 15 yrs
+TCGA-67-6215	dbd5b0de-94c9-45dd-afb3-6820a7ecaca2		white	not hispanic or latino	Alive		52.0		Adenocarcinoma, NOS	19310.0	Stage IB	T2a	N0	M0	Lower lobe, lung	8140/3	174.0	no			Lifelong Non-Smoker
+TCGA-69-7973	dc9eaaa0-0bfd-46d0-994f-310826879da4		white	not hispanic or latino	Alive		42.0		Adenocarcinoma with mixed subtypes	15355.0	Stage IB	T2a	N0	M0	Middle lobe, lung	8255/3	230.0	no		25.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-86-6562	dcd066ba-5894-453e-b1da-82092858c3db		white	not hispanic or latino	Dead	376.0	52.0		Adenocarcinoma, NOS	19301.0	Stage IIA	T2a	N1	M0	Upper lobe, lung	8140/3	376.0	no			Lifelong Non-Smoker
+TCGA-17-Z011	dcf8e752-e95c-4087-a0f5-c041787c8569																				
+TCGA-44-6145	6144d666-8f77-4efe-95f1-f9e5c4e5e056		white	not hispanic or latino	Alive		62.0		Adenocarcinoma, NOS	22745.0	Stage IA	T1	N0	M0	Upper lobe, lung	8140/3	595.0	no		75.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-49-4486	61c655ec-52b5-453f-a6cc-b2aba445b027		white	not hispanic or latino	Dead	2318.0	72.0		Adenocarcinoma, NOS	28460.0					Not Reported	8140/3				17.5	Current Reformed Smoker for > 15 yrs
+TCGA-17-Z052	61cd3ef8-eee4-4266-b01d-09338c89740a																				
+TCGA-62-8399	62380447-3b94-4e7c-823a-72dd7b4ccf3a		white	not hispanic or latino	Alive		62.0		Adenocarcinoma with mixed subtypes	22952.0	Stage IIIA	T2	N2	M0	Upper lobe, lung	8255/3	2696.0	no		70.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-17-Z045	62633a11-db23-481f-add3-853b2acac1bf																				
+TCGA-17-Z036	6313c7cb-5631-42b2-93e2-592f86e84551																				
+TCGA-17-Z008	631dbd88-fc3e-4ed8-b4a7-2da137a49a11																				
+TCGA-05-5429	63bd2175-4b7c-44c9-aef3-9efc8f79837b		not reported	not reported	Dead	275.0	60.0		Adenocarcinoma, NOS	22066.0	Stage IIIA	T3	N2	M0	Lung, NOS	8140/3	275.0	no			Lifelong Non-Smoker
+TCGA-86-A4P8	646910ee-5f5d-40ac-a21a-75790f89430a		white	not hispanic or latino	Alive		59.0		Adenocarcinoma, NOS	21738.0	Stage IIIA	T1b	N2	MX	Lower lobe, lung	8140/3	805.0	no			Lifelong Non-Smoker
+TCGA-17-Z010	654affac-f8ed-40bb-9f9f-a293227b06a6																				
+TCGA-91-8496	656a5eb4-e4a5-4d21-a800-3586f4d6588b		white	not hispanic or latino	Alive		63.0		Bronchiolo-alveolar carcinoma, non-mucinous	23358.0	Stage IB	T2a	NX	MX	Lower lobe, lung	8252/3	505.0	no			Lifelong Non-Smoker
+TCGA-55-7281	659668e8-f0d9-4ff2-bbc8-9246f2ef49ab		white	not reported	Alive		70.0		Adenocarcinoma, NOS	25870.0	Stage IA	T1b	N0	M0	Middle lobe, lung	8140/3	872.0	no		20.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-05-4424	66763a0c-6cda-4832-a0cc-e7b496d78eaa		not reported	not reported	Alive		70.0		Adenocarcinoma with mixed subtypes	25689.0	Stage IIB	T3	N0	M0	Upper lobe, lung	8255/3	913.0	no		50.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-44-3919	66ed89f6-8ba2-49d0-af0f-4b6ebf2381bf		white	not hispanic or latino	Dead	1026.0	71.0		Adenocarcinoma, NOS	26081.0	Stage IA	T1	N0	M0	Upper lobe, lung	8140/3	1026.0	no			Lifelong Non-Smoker
+TCGA-67-3772	673493f6-975c-49e8-934c-001e9a0fff90		white	not hispanic or latino	Alive		82.0		Adenocarcinoma, NOS	29989.0	Stage IB	T2	N0	M0	Upper lobe, lung	8140/3	573.0	no			Lifelong Non-Smoker
+TCGA-17-Z044	67a2593d-b986-4f84-a51c-7f2fb12e54ad																				
+TCGA-78-7537	67a2bc21-7c87-4678-997d-a434de672436		not reported	not reported	Dead	1622.0	72.0		Adenocarcinoma with mixed subtypes	26610.0	Stage IB	T2	N0	M0	Upper lobe, lung	8255/3	1622.0	no		20.0	Current Reformed Smoker for > 15 yrs
+TCGA-17-Z048	67b5fb5d-2484-4aa5-aa7c-c6c5ecbc91b2																				
+TCGA-55-7994	67dbe286-edb3-4d07-8f74-9e5254f01945		white	not hispanic or latino	Alive		81.0		Adenocarcinoma, NOS	29858.0	Stage IIB	T3	N0	MX	Upper lobe, lung	8140/3	603.0	no		28.0	Current Smoker
+TCGA-69-A59K	67fa3e41-c7c6-44c5-9e67-6bcb2715aacc		black or african american	not hispanic or latino	Alive		60.0		Adenocarcinoma with mixed subtypes	22093.0	Stage IIB	T3	N0	M0	Upper lobe, lung	8255/3	591.0	no		25.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-75-7025	681b1176-9676-44d3-892c-1d5dba1ce25b		not reported	not reported	Alive				Adenocarcinoma, NOS						Not Reported	8140/3					Current Reformed Smoker for > 15 yrs
+TCGA-55-8514	6845099a-b2c9-48d8-b856-9903d39bb92e		black or african american	not hispanic or latino	Alive		70.0		Adenocarcinoma, NOS	25608.0	Stage IB	T2a	N0	MX	Upper lobe, lung	8140/3	520.0	no		20.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-44-4112	68b86559-38b2-41f2-b66e-c3c2b628b14d		white	not hispanic or latino	Dead	808.0	60.0		Adenocarcinoma, NOS	22106.0	Stage IB	T2a	N0	M0	Upper lobe, lung	8140/3	808.0	no		30.0	Current Reformed Smoker for > 15 yrs
+TCGA-55-8094	69584d55-18f7-4786-b3cc-cd528500be44		white	not hispanic or latino	Alive		51.0		Adenocarcinoma, NOS	18903.0	Stage IV	T2b	N0	M1b	Upper lobe, lung	8140/3	541.0	no		70.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-05-4425	69b23036-add9-42c9-941f-02fb74d9b08c		not reported	not reported	Alive		70.0		Adenocarcinoma with mixed subtypes	25902.0	Stage IV	T2	N0	M1	Middle lobe, lung	8255/3	669.0	no		28.0	Current Reformed Smoker for > 15 yrs
+TCGA-49-6767	6bffe800-ec2b-4638-9333-97fe85dcd91c		white	not reported	Alive		46.0		Adenocarcinoma, NOS	17108.0	Stage IIB	T3	N0	MX	Middle lobe, lung	8140/3	677.0	no		30.0	Current Smoker
+TCGA-49-4490	6c3655ca-8ae7-4ad7-b3e4-0c3ec293fba7		white	not hispanic or latino	Dead	385.0	45.0		Adenocarcinoma, NOS	16634.0	Stage IIIA	T3	N2	M0	Upper lobe, lung	8140/3	385.0	no		5.0	Current Reformed Smoker for > 15 yrs
+TCGA-35-4123	6cf49cf0-de4c-4c90-8358-eae19c6206b0		white	not hispanic or latino	Alive		38.0		Adenocarcinoma, NOS	14064.0	Stage IA	T1	N0	M0	Upper lobe, lung	8140/3	182.0	no		20.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-44-8117	6d96a298-be5a-4e14-afe8-ca4b6ca298d6		white	not hispanic or latino	Alive		54.0		Adenocarcinoma, NOS	19855.0	Stage IB	T2a	N0	M0	Upper lobe, lung	8140/3	385.0	no		54.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-05-4397	6dfd47d2-831a-4386-9051-f78199a16bb5		not reported	not reported	Dead	731.0	65.0		Adenocarcinoma with mixed subtypes	23833.0	Stage IIB	T2	N1	M0	Middle lobe, lung	8255/3	731.0	no		45.0	Current Smoker
+TCGA-44-3918	6e3b6b72-142d-4b8d-a462-28a205796e41		white	not hispanic or latino	Alive		60.0		Adenocarcinoma, NOS	22236.0	Stage IA	T1	N0	M0	Upper lobe, lung	8140/3	1036.0	no		20.0	Current Reformed Smoker for > 15 yrs
+TCGA-95-8494	6ee9caec-65ac-46db-9426-ffaa31967ae2		white	not hispanic or latino	Alive		67.0		Adenocarcinoma, NOS	24773.0	Stage IIA	T2a	N1	M0	Middle lobe, lung	8140/3	84.0	no			Current Reformed Smoker, Duration Not Specified
+TCGA-55-7815	dd46c83e-6551-485b-b935-f3beed891244		not reported	not reported	Alive		76.0		Adenocarcinoma, NOS	28711.0					Not Reported	8140/3					Lifelong Non-Smoker
+TCGA-97-A4M0	dd63d0fd-e24b-40a5-88c5-7d3d4106631e		white	not hispanic or latino	Alive		60.0		Adenocarcinoma with mixed subtypes	22206.0	Stage IB	T2a	N0	M0	Upper lobe, lung	8255/3	652.0	no		34.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-44-5645	ddeacccf-0953-4952-8a4e-c2617f2e7bcc		black or african american	not hispanic or latino	Alive		61.0		Adenocarcinoma, NOS	22471.0	Stage IA	T1	NX		Upper lobe, lung	8140/3	852.0	no		5.0	Current Reformed Smoker for > 15 yrs
+TCGA-75-7030	df576520-a6b6-4c9b-8d06-3f59cc5342fd		not reported	not reported	Alive				Adenocarcinoma, NOS		Stage IIB	T3	N0	M0	Lower lobe, lung	8140/3		no			Lifelong Non-Smoker
+TCGA-62-A46S	e00a60d7-4253-443d-a187-680ad0931349		white	not hispanic or latino	Dead	1653.0	73.0		Papillary adenocarcinoma, NOS	26825.0	Stage IB	T2	N0	M0	Upper lobe, lung	8260/3	1653.0	no		40.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-86-A4JF	e01e4fb3-236a-4d16-9073-555876b688e9		white	not hispanic or latino	Dead	737.0	56.0		Adenocarcinoma, NOS	20927.0					Not Reported	8140/3					Current Reformed Smoker for < or = 15 yrs
+TCGA-05-5715	e0a19099-5d25-40df-ad73-6260df3a1b32		not reported	not reported	Alive		69.0		Adenocarcinoma with mixed subtypes	25383.0	Stage IB	T2a	N0	M0	Upper lobe, lung	8255/3	62.0	no			Lifelong Non-Smoker
+TCGA-50-6593	e10568fe-0436-43f2-9f0f-48f9903868c4		white	not hispanic or latino	Dead	336.0	49.0		Adenocarcinoma with mixed subtypes	18152.0	Stage IIIA	T1	N2	M0	Upper lobe, lung	8255/3	336.0	no			Current Reformed Smoker for < or = 15 yrs
+TCGA-44-2666	e16ca88f-488b-40f0-9169-e5a62482a2ff		white	hispanic or latino	Dead	97.0	43.0		Adenocarcinoma, NOS	15970.0	Stage IB	T2	N0	M0	Upper lobe, lung	8140/3	97.0	no		30.0	Current Smoker
+TCGA-J2-A4AG	e21e2af3-dc71-41fa-94ba-7a7929f47d90		white	not hispanic or latino	Alive		66.0		Adenocarcinoma, NOS	24224.0	Stage IA	T1b	N0	MX	Upper lobe, lung	8140/3	988.0	no		25.0	Current Reformed Smoker for > 15 yrs
+TCGA-55-8087	e254aaeb-012c-4d92-8a03-cce1f6a2bcd6		white	not hispanic or latino	Alive		59.0		Adenocarcinoma, NOS	21655.0	Stage IB	T2a	N0	MX	Upper lobe, lung	8140/3	462.0	no			Lifelong Non-Smoker
+TCGA-97-A4LX	e2b0d873-4942-4483-9a88-d5c6338d0382		white	not hispanic or latino	Alive		81.0		Adenocarcinoma with mixed subtypes	29915.0	Stage IB	T2a	N0	M0	Upper lobe, lung	8255/3	614.0	no		120.0	Current Reformed Smoker for > 15 yrs
+TCGA-MP-A4T2	e379cf55-68ef-4fbc-af3e-0a5040c27f0f		white	not hispanic or latino	Dead	1136.0	71.0		Adenocarcinoma, NOS	27120.0					Not Reported	8140/3				75.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-55-A493	e43a2b72-35c6-4466-9007-ce96caf77ea8		white	not hispanic or latino	Alive		54.0		Adenocarcinoma, NOS	20027.0	Stage IB	T2a	N0	M0	Upper lobe, lung	8140/3	28.0	no		53.0	Current Smoker
+TCGA-17-Z022	e44e279b-103e-436e-8988-1139b000bdfd																				
+TCGA-62-A472	e499069b-a16a-49e9-941a-e3e9ea62af25		white	not hispanic or latino	Alive		70.0		Adenocarcinoma, NOS	26183.0					Not Reported	8140/3				60.0	Current Smoker
+TCGA-55-6985	e5cb0c86-8fe2-4cfc-b32b-e8ec3839ffc4		white	not reported	Alive		58.0		Adenocarcinoma, NOS	21381.0	Stage IB	T2	N0	MX	Upper lobe, lung	8140/3	1233.0	no		50.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-J2-A4AE	e5f956dd-f49f-435c-83c3-5b1b0a2050ed		white	not hispanic or latino	Alive		77.0		Adenocarcinoma, NOS	28163.0	Stage IA	T1a	N0	MX	Upper lobe, lung	8140/3	1079.0	no			Lifelong Non-Smoker
+TCGA-62-A470	e60a8f8a-0fe6-40e5-9f30-bcff48ac73f4		white	not hispanic or latino	Dead	1194.0	84.0		Acinar cell carcinoma	31228.0					Not Reported	8550/3				30.0	Current Reformed Smoker for > 15 yrs
+TCGA-78-7542	e64f76e4-f748-4d9e-ba71-53e2818a7920		white	not reported	Dead	321.0	56.0		Adenocarcinoma, NOS	20763.0	Stage IB	T2	N0	M0	Upper lobe, lung	8140/3	321.0	no		60.0	Current Smoker
+TCGA-55-6543	e68219b0-a9c2-49df-8f0d-db5ea97fd2dc		white	not reported	Alive		60.0		Bronchio-alveolar carcinoma, mucinous		Stage IA	T1b	N0	MX	Upper lobe, lung	8253/3	435.0	no		60.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-97-7938	e6e75590-9520-4b1c-8a28-4a1d2b2218fc		white	not hispanic or latino	Dead	18.0	76.0		Bronchiolo-alveolar carcinoma, non-mucinous	27980.0	Stage IA	T1a	N0	MX	Upper lobe, lung	8252/3	18.0	no		40.0	Current Reformed Smoker for > 15 yrs
+TCGA-05-4432	e737f650-b72d-44e7-b750-558a56716803		not reported	not reported	Alive		66.0		Adenocarcinoma with mixed subtypes	24350.0	Stage IIB	T2	N1	M0	Upper lobe, lung	8255/3	761.0	no		58.0	Current Smoker
+TCGA-93-7348	e739b4f7-ae46-45c6-9013-9571cbadaf99		white	not hispanic or latino	Alive		75.0		Adenocarcinoma, NOS	27456.0	Stage IA	T1a	N0	MX	Upper lobe, lung	8140/3	531.0	no		42.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-78-7147	e7d30bc2-42e8-49c5-a5b3-9f58411b007a		white	not reported	Dead	586.0	67.0		Adenocarcinoma, NOS	24809.0	Stage IIB	T2	N1	M0	Upper lobe, lung	8140/3	586.0	no		50.0	Current Smoker
+TCGA-78-7148	e8060c45-451d-4779-9584-f284db47e63e		white	not reported	Dead	626.0	71.0		Adenocarcinoma with mixed subtypes	25990.0	Stage IIB	T2	N1	M0	Upper lobe, lung	8255/3	626.0	no		57.0	Current Smoker
+TCGA-35-3615	e8b7a103-644f-4865-92f8-80b053bd5e17		white	not hispanic or latino	Alive		57.0		Adenocarcinoma, NOS	21076.0	Stage IB	T2	N0	M0	Upper lobe, lung	8140/3	14.0	no			Lifelong Non-Smoker
+TCGA-17-Z000	e998a607-ac73-4849-afaa-57eee49cf051																				
+TCGA-91-A4BC	ea0b9461-0d4d-4ade-a255-1b03dd85e30e		white	not hispanic or latino	Alive		59.0		Adenocarcinoma, NOS	21565.0	Stage IIA	T2b	N0	MX	Upper lobe, lung	8140/3	44.0	no		30.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-17-Z012	edd05f61-35f8-4133-a579-f9f32dff3bb8																				
+TCGA-93-7347	ef03654a-dcf1-41ff-a67e-4f3fbf9ba807		white	not hispanic or latino	Alive		76.0		Adenocarcinoma with mixed subtypes	27949.0	Stage IA	T1a	N0	MX	Upper lobe, lung	8255/3	683.0	no		11.0	Current Reformed Smoker for > 15 yrs
+TCGA-50-5936	ef42ae4c-a108-468e-beed-437cf3cf2962		white	not hispanic or latino	Dead	257.0	58.0		Not Reported	21388.0					Not Reported	Not Reported					Not Reported
+TCGA-55-6984	f063ddbb-1668-40df-9ec2-b0a23ca2c389		white	not hispanic or latino	Dead	760.0	71.0		Adenocarcinoma, NOS		Stage IIB	T2	N1	M0	Lower lobe, lung	8140/3	760.0	no			Not Reported
+TCGA-69-8254	f0c94f68-bfd9-45cb-b4fd-8bb1ae4e9a2b		white	not hispanic or latino	Alive		85.0		Adenocarcinoma with mixed subtypes	31134.0		T2b			Lower lobe, lung	8255/3	409.0	no		40.0	Current Reformed Smoker for > 15 yrs
+TCGA-55-6712	f17d3463-af6c-42c2-a8e9-fae45f69286f		white	not reported	Dead	171.0	71.0		Adenocarcinoma, NOS		Stage IIA	T2a	N1	MX	Upper lobe, lung	8140/3	171.0	no			Current Reformed Smoker for < or = 15 yrs
+TCGA-4B-A93V	f1f80dd2-891d-46dd-a3e0-f007628cb515		black or african american	not hispanic or latino	Dead	300.0	52.0		Adenocarcinoma, NOS	19035.0	Stage IA	T1b	N0	M0	Lower lobe, lung	8140/3	300.0	no		30.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-17-Z062	f29b5aef-d53e-457d-b140-b0b5fd1960bc																				
+TCGA-86-8668	f2d8b332-2f03-46e5-a9d5-f163972e5fa7		white	not hispanic or latino	Alive		61.0		Bronchio-alveolar carcinoma, mucinous	22383.0	Stage IA	T1b	N0	M0	Lower lobe, lung	8253/3	423.0	no			Lifelong Non-Smoker
+TCGA-MP-A4TI	f327dea0-2d30-482f-809c-76a148a749b7		white	not hispanic or latino	Dead	429.0	72.0		Adenocarcinoma, NOS	26565.0	Stage IIA	T2a	N1	M0	Lower lobe, lung	8140/3	429.0	no		35.0	Current Reformed Smoker for > 15 yrs
+TCGA-50-5941	f3f024c2-52f1-400e-946c-398f5b72e6dc		white	not reported	Alive		55.0		Adenocarcinoma, NOS	20350.0	Stage IIIA	T2a	N2	M0	Upper lobe, lung	8140/3	1474.0	no		25.0	Current Smoker
+TCGA-44-2657	f40301ba-831e-4afd-9ce8-5f3c1a05ff7e		white	not hispanic or latino	Alive		74.0		Adenocarcinoma, NOS	27298.0	Stage IB	T2	NX	M0	Upper lobe, lung	8140/3	1351.0	no		25.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-97-8175	f4350d9c-3f40-4829-bbc4-8acb2f3ff512		white	not hispanic or latino	Alive		55.0		Solid carcinoma, NOS	20206.0	Stage IB	T2a	N0	M0	Upper lobe, lung	8230/3	551.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-69-7978	f462cfef-f60a-4d3e-b92d-b8d8f50b6bb3		white	not hispanic or latino	Alive		59.0		Adenocarcinoma with mixed subtypes	21785.0	Stage IIB	T2b	N1	MX	Upper lobe, lung	8255/3	134.0	no		80.0	Current Smoker
+TCGA-17-Z061	f4b83449-7d0e-49f3-be53-81cf0d485ed8																				
+TCGA-55-8505	f59e5a76-f803-470b-910c-a897a149d939		white	not hispanic or latino	Alive		62.0		Adenocarcinoma, NOS	22676.0	Stage IIIA	T1a	N2	MX	Lower lobe, lung	8140/3	440.0	no			Lifelong Non-Smoker
+TCGA-44-A47F	f61d599a-43bd-4743-9568-678317e75955		white	not hispanic or latino	Alive		74.0		Adenocarcinoma, NOS	27122.0	Stage IIB	T2b	N1	M0	Upper lobe, lung	8140/3	337.0	yes		20.0	Current Reformed Smoker for > 15 yrs
+TCGA-49-4510	f77b6930-a1ce-446e-a15d-c018cbbecfee		black or african american	not hispanic or latino	Dead	896.0	51.0		Adenocarcinoma, NOS	18762.0	Stage IIB	T2	N1	M0	Upper lobe, lung	8140/3	896.0	no		55.5	Current Smoker
+TCGA-64-1678	f77cf4d3-9829-4fd3-95a1-b29aed9e94b8		white	not hispanic or latino	Alive		70.0		Adenocarcinoma, NOS	25931.0		T2b	N0	M0	Upper lobe, lung	8140/3	1189.0	no		20.0	Current Reformed Smoker for > 15 yrs
+TCGA-MP-A4TK	f7f9f522-de88-4f9c-8ba4-7be3726faaf8		Unknown	Unknown	Dead	582.0	56.0		Adenocarcinoma, NOS	21126.0					Not Reported	8140/3				28.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-62-A46V	f809e21d-5f2e-4f3b-a1aa-d6b8d463552a		white	not hispanic or latino	Alive		78.0		Adenocarcinoma with mixed subtypes	28495.0	Stage IB	T2	N0	M0	Lower lobe, lung	8255/3	2199.0	no			Current Reformed Smoker for > 15 yrs
+TCGA-49-AAR2	f809e7d9-a75e-41c9-ac2c-5bec6ffcb4a2		black or african american	not hispanic or latino	Alive		64.0		Acinar cell carcinoma	23479.0	Stage IB	T2	N0	MX	Lower lobe, lung	8550/3	2224.0	no			Current Reformed Smoker for < or = 15 yrs
+TCGA-17-Z043	f86e1da7-bad6-4eb8-ae4c-fa9421308d47																				
+TCGA-44-A4SS	f934ed41-090e-4313-bbc5-d1a4a9ed9ad7		white	not hispanic or latino	Alive		73.0		Adenocarcinoma, NOS	26991.0	Stage IA	T1b	N0	M0	Upper lobe, lung	8140/3	415.0	no		90.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-05-4250	f98ecd8a-b878-4f53-b911-20cd8e17281c		not reported	not reported	Dead	121.0	79.0		Adenocarcinoma, NOS	29068.0	Stage IIIA	T3	N1	M0	Lower lobe, lung	8140/3	121.0	no		47.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-50-5044	fa0c7392-d485-41ac-bf7e-244a528209ae		white	not hispanic or latino	Dead	624.0	72.0		Adenocarcinoma, NOS	26567.0	Stage IIIB	T4	N1	M0	Lower lobe, lung	8140/3	624.0	no			Not Reported
+TCGA-17-Z029	fae64c9d-5204-4dc6-a561-bf59506aabcc																				
+TCGA-64-1676	fb6b289c-aaf9-4d8e-b6e0-5d35bce1b6e1		white	not hispanic or latino	Alive		58.0		Adenocarcinoma, NOS	21428.0	Stage IA	T1a	N0	M0	Lower lobe, lung	8140/3	1728.0	no		60.0	Current Smoker
+TCGA-44-2665	fb79c491-7b01-42ae-8369-8364e442e31b		white	not hispanic or latino	Alive		55.0		Adenocarcinoma, NOS	20349.0	Stage IIB	T2	N1	M0	Upper lobe, lung	8140/3	1301.0	no			Lifelong Non-Smoker
+TCGA-78-7155	fc79086c-af9a-4c27-b074-f7050b6f3381		white	not reported	Dead	1171.0	68.0		Not Reported	25072.0					Not Reported	Not Reported				48.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-97-7937	fcfe0b53-dfc1-42fa-9efc-2b2ff259297e		white	not hispanic or latino	Alive		65.0		Invasive micropapillary carcinoma	23919.0	Stage IB	T2a	N0	MX	Upper lobe, lung	8507/3	564.0	no		35.0	Current Reformed Smoker for > 15 yrs
+TCGA-64-5774	fd3fc273-c035-40ea-a459-ff4806f5d592		white	not hispanic or latino	Alive		60.0		Not Reported	22305.0					Not Reported	Not Reported				45.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-78-7220	fd5c44ef-ea50-4fba-9e8d-e371cf34ebdb		white	not reported	Dead	807.0	53.0		Not Reported	20011.0					Not Reported	Not Reported				35.0	Current Smoker
+TCGA-17-Z030	fddc4d29-1ae8-451d-a13e-8ef6492be201																				
+TCGA-78-7167	fe3eeeb6-0db4-46d7-a020-55604d474c12		white	not reported	Dead	2681.0	77.0		Not Reported	29021.0					Not Reported	Not Reported				64.0	Current Smoker
+TCGA-55-8616	fe714ac0-f874-426a-924b-a2980232b5f7		white	not hispanic or latino	Alive		58.0		Adenocarcinoma, NOS	21225.0	Stage IB	T2a	N0	M0	Upper lobe, lung	8140/3	48.0	no			Current Reformed Smoker for < or = 15 yrs
+TCGA-55-7570	ff07ea4b-4e50-410d-99d6-96a351dad7b1		black or african american	not hispanic or latino	Alive		60.0		Adenocarcinoma, NOS	22218.0	Stage IA	T1a	N0	MX	Upper lobe, lung	8140/3	824.0	no			Current Smoker
+TCGA-78-7146	ff9def3d-17e5-4ef6-b74e-933f11ed6f00		white	not reported	Dead	173.0	71.0		Adenocarcinoma with mixed subtypes	26272.0	Stage IIIA	T2	N2	M0	Lower lobe, lung	8255/3	173.0	no		6.0	Current Reformed Smoker for < or = 15 yrs
+TCGA-44-3398	ffb0c0b7-165e-4439-b3e6-62431f40b7fe		white	not hispanic or latino	Alive		77.0		Adenocarcinoma, NOS	28392.0	Stage IA	T1b	N0	M0	Lower lobe, lung	8140/3	1163.0	no		60.0	Current Reformed Smoker for < or = 15 yrs

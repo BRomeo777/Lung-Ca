@@ -1,0 +1,111 @@
+======================================================================
+AUDIT EVIDENCE LOG
+======================================================================
+Generated: 2026-07-09
+
+All evidence verified by direct inspection of code, data, and artifacts.
+
+── Item 1: Feature Selection Nesting ──
+  Source: run_phase1b_ml.py, step2_feature_matrices()
+  Lines: 121-405 (feature selection), 411-629 (CV with pre-selected features)
+  Evidence: Variance filter (line 322) and univariate Cox (line 331) run on
+    all 738 training patients before CV. X_train has 143 features before
+    step5_6_train_models(). No sklearn Pipeline, no nested CV.
+  Log: ml_pipeline_log.txt lines 19-33 confirm feature selection before CV.
+
+── Item 2: Multiple Testing Correction ──
+  Source: run_phase1b_ml.py line 343
+  Evidence: `if p < 0.05: significant_genes.append(gene)` — raw p-value
+    threshold, no BH/Bonferroni correction.
+  Log: ml_pipeline_log.txt line 29: "After univariate Cox screening
+    (p<0.05): 127 genes"
+
+── Item 3: Sex/Gender Extraction ──
+  Source: TCGA-LUAD_clinical.tsv, TCGA-LUSC_clinical.tsv
+  Evidence: gender column = 100% NaN in both files (0/585, 0/504 non-null)
+  Code: dt_common.py std_sex() lines 176-186 — correctly maps NaN to NAV
+  Data: TCGA_train.csv Sex = 'not_available' for all 814 patients
+  Also: Treatment = 'not_available' for all patients (not downloaded)
+
+── Item 4: Model Selection Leakage ──
+  Source: model_selection_report.txt, run_phase1b_ml.py step6b (lines 635-671)
+  Evidence: Selection uses cv_df only. "Validation set was NOT used for
+    selection." All 4 models evaluated on validation. No post-hoc selection.
+  Timestamps: CV 13:43-13:53, validation evaluation after 13:53.
+
+── Item 5: GEO Patient Overlap ──
+  Source: GEO_patient_overlap_report.csv
+  Evidence: "no cross-series fingerprint matches detected"
+  Direct verification: All 10 pairwise GEO overlaps = 0, TCGA-GEO = 0
+  Method: Fingerprint-based + Patient_ID matching
+
+── Item 6: CPTAC-TCGA Overlap ──
+  Source: CPTAC_TCGA_overlap_report.csv
+  Evidence: "no literal CPTAC/TCGA patient-ID overlap detected"
+  Direct verification: 0 overlap (C3N- vs TCGA- ID namespaces)
+  CPTAC: 337 patients
+
+── Item 7: TCGA Sample Selection ──
+  Source: run_phase1.py step3_filter_tcga() (lines 177-235)
+  LUAD: 601 samples → 540 Primary Tumor → 517 unique patients
+  LUSC: 562 samples → 511 Primary Tumor → 501 unique patients
+  Total: 1018 patients (814 train + 204 val)
+  Excluded: Solid Tissue Normal, Recurrent Tumor, duplicate aliquots
+  Selection: lowest_barcode_portion for duplicates (19 cases)
+  Verified: TCGA_train.csv Sample_Type = 'Primary Tumor' for all 814
+
+── Item 8: Gene Panel QC ──
+  Source: gene_symbol_quality_report.csv
+  Evidence: 0 invalid, 0 suspicious, 0 duplicates across all 5 series
+  Panel: 127 genes + 16 clinical = 143 (SHA-256 verified)
+  Coverage: GSE31210=121, GSE30219=121, GSE50081=121, GSE68465=84, GSE72094=117
+
+── Item 9: Expression Scale ──
+  Source: ml_common.py normalize_counts_log2cpm() (lines 48-53)
+  Code: CPM = counts / library_size * 1e6; return log2(CPM + 1)
+  Input: TCGA-{coh}_STAR_counts_matrix.tsv.gz (raw STAR counts)
+  Verified: TCGA_train_expression.tsv.gz max=115,293 (raw counts, not log)
+  Phase 1D: log2(X+1) applied to GSE31210 raw microarray intensities
+
+── Item 10: Validation Metric Readiness ──
+  Evidence: No phase2*.py files found. No calibration_cluster_comparison_report.txt.
+  Phase 1B step8 implements C-index, AUC, IBS, KM for internal validation only.
+  Cluster A/B assignment not coded in any existing file.
+  Phase 1D report shows median offset: GSE31210=7.65 vs GSE30219=5.66 (~2 log2).
+
+── Item 11: Survival Outcome Integrity ──
+  Train (814 rows): OS_time=0 & event=1: 2 (TCGA-05-4395, TCGA-77-A5GB)
+    OS_time=NaN & event=1: 7 (dropped by pipeline)
+    OS_event values: {0: 491, 1: 323} — all valid 0/1
+  Val (204 rows): OS_time=0 & event=1: 0
+    OS_time=NaN & event=1: 1 (TCGA-75-5122, dropped by pipeline)
+    OS_event values: {0: 123, 1: 81} — all valid 0/1
+  Pipeline: dropna(subset=["Overall_Survival_Time", "Survival_Status"])
+    → Train: 814→738, Val: 204→181
+  Issue: OS_time=0 & event=1 not filtered (0 is not NaN)
+
+── Item 12: Patient Independence ──
+  Train Patient_ID duplicates: 0
+  Val Patient_ID duplicates: 0
+  Train-Val overlap: 0
+  TCGA-GEO overlap: 0 (all 5 series)
+  TCGA-CPTAC overlap: 0
+  GEO inter-series: 0 (all 10 pairs)
+  Split: seed=42, np.random.default_rng(42), stratified by Survival_Status
+  Counts: 1018 → 814 train + 204 val (matches split_information.txt)
+
+── Item 13: Predictor Leakage ──
+  Feature columns: Age, Sex, Cancer_Type, Stage, Smoking_Status, Treatment
+    + 127 Ensembl gene expression values
+  Excluded: Overall_Survival_Time, Survival_Status (outcome variables)
+  No post-treatment or post-outcome variables found
+  GEO expression matrices: gene expression only, no outcome columns
+
+── Item 14: Model Reproducibility ──
+  Files: cox_ph_model.pkl (263KB), coxnet_model.pkl (2.9KB),
+    rsf_model.pkl (143MB), xgb_survival_model.json (122KB)
+  Timestamps: all 2026-07-07 13:53-13:54 (match pipeline log)
+  No retraining artifacts found
+  Load verification: not completed (scipy/lifelines import issue in
+    Python 3.14 audit environment) — recommended in training env
+======================================================================

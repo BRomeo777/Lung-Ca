@@ -1,0 +1,71 @@
+2026-07-07 12:16:08 | ################ PHASE 1 PIPELINE START ################
+2026-07-07 12:16:08 | [RAW] 01_RAW_DATA populated with structured input files (large per-file expression TSVs intentionally excluded; merged matrices copied).
+2026-07-07 12:16:08 | === STEP 1: Data inventory ===
+2026-07-07 12:16:11 | [STEP1] inventory rows=47 -> dataset_inventory.csv
+2026-07-07 12:16:11 | === STEP 3: TCGA sample filtering (Primary Tumor only) ===
+2026-07-07 12:16:11 | [STEP3] TCGA-LUAD: 601 samples -> 540 Primary Tumor, 61 non-primary routed to matched-normal set
+2026-07-07 12:16:12 | [STEP3] TCGA-44-2656: excluded duplicate primary aliquot TCGA-44-2656-01A-02R-A278-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-2656: excluded duplicate primary aliquot TCGA-44-2656-01B-06R-A277-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-2662: excluded duplicate primary aliquot TCGA-44-2662-01A-01R-A278-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-2662: excluded duplicate primary aliquot TCGA-44-2662-01B-02R-A277-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-2665: excluded duplicate primary aliquot TCGA-44-2665-01A-01R-A278-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-2665: excluded duplicate primary aliquot TCGA-44-2665-01B-06R-A277-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-2666: excluded duplicate primary aliquot TCGA-44-2666-01A-01R-A278-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-2666: excluded duplicate primary aliquot TCGA-44-2666-01B-02R-A277-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-2668: excluded duplicate primary aliquot TCGA-44-2668-01A-01R-A278-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-2668: excluded duplicate primary aliquot TCGA-44-2668-01B-02R-A277-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-3917: excluded duplicate primary aliquot TCGA-44-3917-01B-02R-A277-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-3918: excluded duplicate primary aliquot TCGA-44-3918-01A-01R-A278-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-3918: excluded duplicate primary aliquot TCGA-44-3918-01B-02R-A277-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-4112: excluded duplicate primary aliquot TCGA-44-4112-01A-01R-A278-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-4112: excluded duplicate primary aliquot TCGA-44-4112-01B-06R-A277-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-5645: excluded duplicate primary aliquot TCGA-44-5645-01A-01R-A278-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-5645: excluded duplicate primary aliquot TCGA-44-5645-01B-04R-A277-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-6146: excluded duplicate primary aliquot TCGA-44-6146-01A-11R-1755-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-6146: excluded duplicate primary aliquot TCGA-44-6146-01A-11R-A278-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-6147: excluded duplicate primary aliquot TCGA-44-6147-01A-11R-1755-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-6147: excluded duplicate primary aliquot TCGA-44-6147-01A-11R-A278-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-6775: excluded duplicate primary aliquot TCGA-44-6775-01A-11R-1858-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-44-6775: excluded duplicate primary aliquot TCGA-44-6775-01A-11R-A278-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-LUAD: 517 unique patients after selection (23 duplicate primary aliquots excluded)
+2026-07-07 12:16:12 | [STEP3] TCGA-LUSC: 562 samples -> 511 Primary Tumor, 51 non-primary routed to matched-normal set
+2026-07-07 12:16:12 | [STEP3] TCGA-18-4083: excluded duplicate primary aliquot TCGA-18-4083-01A-01R-A96U-41 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-21-1070: excluded duplicate primary aliquot TCGA-21-1070-01A-01R-A96U-41 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-21-1071: excluded duplicate primary aliquot TCGA-21-1071-01A-01R-A96U-41 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-21-1076: excluded duplicate primary aliquot TCGA-21-1076-01A-02R-0692-07 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-21-1081: excluded duplicate primary aliquot TCGA-21-1081-01A-01R-A96U-41 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-21-1082: excluded duplicate primary aliquot TCGA-21-1082-01A-01R-A96U-41 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-22-1002: excluded duplicate primary aliquot TCGA-22-1002-01A-01R-A96U-41 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-22-1005: excluded duplicate primary aliquot TCGA-22-1005-01A-01R-A96U-41 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-22-1016: excluded duplicate primary aliquot TCGA-22-1016-01A-01R-A96U-41 (selected lowest portion)
+2026-07-07 12:16:12 | [STEP3] TCGA-22-1017: excluded duplicate primary aliquot TCGA-22-1017-01A-01R-A96U-41 (selected lowest portion)
+2026-07-07 12:16:13 | [STEP3] TCGA-LUSC: 501 unique patients after selection (10 duplicate primary aliquots excluded)
+2026-07-07 12:16:13 | [STEP3] wrote TCGA_matched_normal_samples.csv (n=145)
+2026-07-07 12:16:13 | === STEP 4: TCGA discovery dataset (LUAD + LUSC) ===
+2026-07-07 12:16:14 | [STEP4] TCGA discovery master: 1018 patients (LUAD=517, LUSC=501) -> TCGA_discovery_master.csv
+2026-07-07 12:16:43 | [STEP4] aligned TCGA expression: 60660 genes x 1018 patients (matched to selected aliquots) -> TCGA_discovery_expression_counts.tsv.gz
+2026-07-07 12:16:43 | === STEP 5: TCGA reproducible 80/20 stratified split ===
+2026-07-07 12:16:44 | [STEP5] TCGA_train_expression.tsv.gz: exists (skipped rewrite)
+2026-07-07 12:16:44 | [STEP5] TCGA_internal_validation_expression.tsv.gz: exists (skipped rewrite)
+2026-07-07 12:16:44 | [STEP5] train=814 internal_validation=204 (seed=42) -> TCGA_train.csv / TCGA_internal_validation.csv
+2026-07-07 12:16:44 | === STEP 6: CPTAC clinical-only processing + TCGA overlap ===
+2026-07-07 12:16:44 | [STEP6] CPTAC clinical validation: 337 patients; TCGA literal-ID overlap = 0 -> CPTAC_clinical_validation.csv
+2026-07-07 12:16:44 | === STEP 7: GEO per-series processing ===
+2026-07-07 12:16:44 | [STEP7] GSE31210: 246 samples, GPL=GPL570, probes=54675, normals=20; expression saved probe-level (gene mapping deferred)
+2026-07-07 12:16:44 | [STEP7] GSE30219: 307 samples, GPL=GPL570, probes=54675, normals=0; expression saved probe-level (gene mapping deferred)
+2026-07-07 12:16:44 | [STEP7] GSE50081: 181 samples, GPL=GPL570, probes=54675, normals=0; expression saved probe-level (gene mapping deferred)
+2026-07-07 12:16:44 | [STEP7] GSE68465: 462 samples, GPL=GPL96, probes=22283, normals=19; expression saved probe-level (gene mapping deferred)
+2026-07-07 12:16:44 | [STEP7] GSE72094: 442 samples, GPL=GPL15048, probes=60607, normals=0; expression saved probe-level (gene mapping deferred)
+2026-07-07 12:16:44 | === STEP 8: GEO cross-cohort clinical-fingerprint overlap ===
+2026-07-07 12:16:44 | [STEP8] GSE31210: 246 external-validation patients -> GSE31210_external_validation.csv
+2026-07-07 12:16:44 | [STEP8] GSE30219: 307 external-validation patients -> GSE30219_external_validation.csv
+2026-07-07 12:16:44 | [STEP8] GSE50081: 181 external-validation patients -> GSE50081_external_validation.csv
+2026-07-07 12:16:44 | [STEP8] GSE68465: 462 external-validation patients -> GSE68465_external_validation.csv
+2026-07-07 12:16:44 | [STEP8] GSE72094: 442 external-validation patients -> GSE72094_external_validation.csv
+2026-07-07 12:16:45 | === STEP 9: Mutation data availability check ===
+2026-07-07 12:16:45 | [STEP9] Mutation data unavailable - no MAF/somatic-mutation files present in any cohort. No mutation variables created (not assumed). Note: GSE72094 metadata contains microarray-derived KRAS/EGFR/STK11/TP53 genotype ANNOTATIONS, but these are not a dedicated mutation data file and are left in raw metadata only.
+2026-07-07 12:16:45 | === STEP 10: Quality control ===
+2026-07-07 12:16:45 | [STEP10] quality_control_report.txt written (with limitations section)
+2026-07-07 12:16:45 | === Writing cohort_definition.csv and data_dictionary.csv ===
+2026-07-07 12:16:45 | [DOCS] cohort_definition.csv + data_dictionary.csv written
+2026-07-07 12:16:45 | ################ PHASE 1 PIPELINE COMPLETE ################

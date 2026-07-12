@@ -1,0 +1,71 @@
+2026-07-10 09:04:17 | ======================================================================
+2026-07-10 09:04:17 | SUPPLEMENTARY EVALUATION: IBS, Calibration, KM Curves, Prediction Function
+2026-07-10 09:04:17 | ======================================================================
+2026-07-10 09:04:17 |   Strategy: Top-2 ensemble: Config 0 ([64, 32])
+2026-07-10 09:04:17 |   Architecture: [64, 32], dropout=0.2, n_models=2
+2026-07-10 09:04:17 |   Loaded 2 models
+2026-07-10 09:04:17 | Loading data...
+2026-07-10 09:04:31 |   GSE30219: 293 patients
+2026-07-10 09:04:31 |   GSE50081: 181 patients
+2026-07-10 09:04:35 |   GSE72094: 398 patients
+2026-07-10 09:04:36 |   GSE31210: 226 patients
+2026-07-10 09:04:36 | Computing predictions...
+2026-07-10 09:04:37 | 
+2026-07-10 09:04:37 | ======================================================================
+2026-07-10 09:04:37 | 1. Integrated Brier Score (using Breslow survival estimates)
+2026-07-10 09:04:37 | ======================================================================
+2026-07-10 09:04:37 |   Breslow baseline survival: 301 time points
+2026-07-10 09:04:37 |   Time points for IBS: [ 365 1095 1825]
+2026-07-10 09:04:37 |   Survival prob shape: (180, 3)
+2026-07-10 09:04:37 |   DeepSurv IBS: 0.2567
+2026-07-10 09:04:37 |   CoxPH IBS: 0.2153
+2026-07-10 09:04:37 | 
+2026-07-10 09:04:37 | ======================================================================
+2026-07-10 09:04:37 | 2. Calibration plots
+2026-07-10 09:04:37 | ======================================================================
+2026-07-10 09:04:43 |   Saved: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\PHASE3_DEEP_LEARNING\figures\calibration_plots.png
+2026-07-10 09:04:43 | 
+2026-07-10 09:04:43 | ======================================================================
+2026-07-10 09:04:43 | 3. Kaplan-Meier curves
+2026-07-10 09:04:43 | ======================================================================
+2026-07-10 09:04:45 |   Saved: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\PHASE3_DEEP_LEARNING\figures\km_curves_internal_val.png
+2026-07-10 09:04:50 |   Saved: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\PHASE3_DEEP_LEARNING\figures\km_curves_external.png
+2026-07-10 09:04:50 | 
+2026-07-10 09:04:50 |   Generating C-index forest plot...
+2026-07-10 09:05:41 |   Saved: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\PHASE3_DEEP_LEARNING\figures\cindex_forest_plot.png
+2026-07-10 09:05:41 | 
+2026-07-10 09:05:41 |   Time-dependent AUC...
+2026-07-10 09:05:41 |   DeepSurv mean AUC: 0.6423
+2026-07-10 09:05:41 |   CoxPH mean AUC: 0.6083
+2026-07-10 09:05:42 |   Saved: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\PHASE3_DEEP_LEARNING\figures\time_dependent_auc.png
+2026-07-10 09:06:11 | 
+2026-07-10 09:06:11 | ======================================================================
+2026-07-10 09:06:11 | 4. Updating comparison table with IBS
+2026-07-10 09:06:11 | ======================================================================
+2026-07-10 09:06:11 |   Updated: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\PHASE3_DEEP_LEARNING\tables\final_comparison_coxph_v1_optimized.csv
+2026-07-10 09:06:11 | 
+2026-07-10 09:06:11 |   Model                         TCGA   GSE30219   GSE50081   GSE72094   GSE31210    MeanExt      IBS      AUC    Logrank
+2026-07-10 09:06:11 |   ------------------------------------------------------------------------------------------------------------------------
+2026-07-10 09:06:11 |   CoxPH                       0.5881     0.6552     0.5411     0.5593     0.7049     0.6151   0.2153   0.6083   9.98e-02
+2026-07-10 09:06:11 |   v1 DeepSurv (single)        0.6189     0.6499     0.5643     0.5992     0.7057     0.6298   0.2173   0.0000   2.57e-02
+2026-07-10 09:06:11 |   Final DeepSurv              0.6131     0.6782     0.5965     0.6334     0.7271     0.6588   0.2567   0.6423   9.70e-05
+2026-07-10 09:06:11 | 
+2026-07-10 09:06:11 | ======================================================================
+2026-07-10 09:06:11 | 5. Writing updated final report
+2026-07-10 09:06:11 | ======================================================================
+2026-07-10 09:06:11 |   Report updated: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\PHASE3_DEEP_LEARNING\reports\phase3_final_report.txt
+2026-07-10 09:06:11 | 
+2026-07-10 09:06:11 | ======================================================================
+2026-07-10 09:06:11 | 6. Creating standalone prediction function
+2026-07-10 09:06:11 | ======================================================================
+2026-07-10 09:06:11 |   Saved: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\00_CODE\predict_new_patient.py
+2026-07-10 09:06:11 | 
+2026-07-10 09:06:11 | ======================================================================
+2026-07-10 09:06:11 | SUPPLEMENTARY EVALUATION COMPLETE
+2026-07-10 09:06:11 | ======================================================================
+2026-07-10 09:06:11 |   IBS: DeepSurv=0.2567 vs CoxPH=0.2153
+2026-07-10 09:06:11 |   Logrank: DeepSurv p=9.70e-05 vs CoxPH p=9.98e-02
+2026-07-10 09:06:11 |   DeepSurv wins 5/5 cohorts
+2026-07-10 09:06:11 |   Figures: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\PHASE3_DEEP_LEARNING\figures
+2026-07-10 09:06:11 |   Prediction function: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\00_CODE\predict_new_patient.py
+2026-07-10 09:06:11 |   Report: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\PHASE3_DEEP_LEARNING\reports\phase3_final_report.txt

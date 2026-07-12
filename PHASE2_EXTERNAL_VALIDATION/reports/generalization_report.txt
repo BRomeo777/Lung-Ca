@@ -1,0 +1,102 @@
+======================================================================
+GENERALIZATION ANALYSIS REPORT
+======================================================================
+
+1. REFERENCE BASELINE
+   TCGA Internal Validation C-index: 0.5881
+   Audit-confirmed unbiased estimate: 0.5944
+   Note: Minor difference (0.0063) due to
+   scaler reconstruction from training data (737 matched patients).
+   The audit value (0.5944) remains the canonical reference.
+
+2. PER-COHORT EXTERNAL VALIDATION RESULTS
+Cohort              C-index  ΔC-index  AUC_mean      IBS  Panel%  Coeff%      Logrank
+------------------------------------------------------------------------------------------
+GSE30219             0.6567   +0.0686    0.6823   0.5345   95.3%   93.8%     2.46e-06
+GSE50081             0.5872   -0.0009    0.6130   0.5758   95.3%   93.8%     6.66e-01
+GSE72094             0.6830   +0.0948    0.7480   0.1449   92.1%   90.5%     1.41e-07
+GSE31210             0.7557   +0.1676    0.7622   0.7954   95.3%   93.8%     3.44e-07
+
+3. DEGRADATION ANALYSIS: REDUCED-PANEL vs PLATFORM/BIOLOGICAL EFFECTS
+
+   Two distinct sources of expected performance difference:
+   A) Reduced-panel effect: Missing genes reduce effective coefficient coverage
+      (90.5%-93.8% across cohorts), meaning 6.2%-9.5% of the model's learned
+      signal is not exercised. This is a structural limitation, not a
+      biological finding.
+   B) Platform/biological effect: TCGA (RNA-seq, STAR counts → log2CPM)
+      vs GEO (microarray, log2 intensities). Different dynamic ranges,
+      noise profiles, and probe hybridization characteristics.
+
+   GSE30219:
+     C-index change: +0.0686 (improvement)
+     Missing coefficient weight: 6.2% of model signal
+     Missing genes: [UNMAPPED], [UNMAPPED], IGLV9-49, FEZF1-AS1, IRX6, BCAN-AS1
+     Attribution: Performance exceeds internal validation despite 6.2% coeff loss.
+     This suggests platform/biological differences may actually FAVOR
+     this cohort (e.g., more homogeneous patient population).
+
+   GSE50081:
+     C-index change: -0.0009 (degradation)
+     Missing coefficient weight: 6.2% of model signal
+     Missing genes: [UNMAPPED], [UNMAPPED], IGLV9-49, FEZF1-AS1, IRX6, BCAN-AS1
+     Attribution: 6.2% coeff loss (reduced-panel) + remainder (platform/biological)
+     Note: These two effects are confounded and cannot be fully separated.
+
+   GSE72094:
+     C-index change: +0.0948 (improvement)
+     Missing coefficient weight: 9.5% of model signal
+     Missing genes: LCAL1, [UNMAPPED], GLB1L3, AHNAK2, [UNMAPPED], CHST9, IGLV9-49, MS4A1, B3GAT1-DT, BCAN-AS1
+     Attribution: Performance exceeds internal validation despite 9.5% coeff loss.
+     This suggests platform/biological differences may actually FAVOR
+     this cohort (e.g., more homogeneous patient population).
+
+   GSE31210:
+     C-index change: +0.1676 (improvement)
+     Missing coefficient weight: 6.2% of model signal
+     Missing genes: [UNMAPPED], [UNMAPPED], IGLV9-49, FEZF1-AS1, IRX6, BCAN-AS1
+     Attribution: Performance exceeds internal validation despite 6.2% coeff loss.
+     This suggests platform/biological differences may actually FAVOR
+     this cohort (e.g., more homogeneous patient population).
+
+4. RNA-seq vs MICROARRAY PLATFORM CONSIDERATIONS
+
+   TCGA: Illumina RNA-seq, STAR counts → CPM normalization → log2(CPM+1)
+   GEO:  Affymetrix microarray, log2-transformed intensities (GPL570/GPL15048)
+
+   Key differences:
+   - RNA-seq counts are discrete and library-size dependent; microarray
+     intensities are continuous and probe-affinity dependent
+   - log2(CPM+1) and log2(intensity) are not on the same absolute scale,
+     but both are log-transformed and approximately comparable for
+     relative expression patterns
+   - Standardization (z-score using TCGA training mean/std) partially
+     mitigates scale differences but does not eliminate probe-specific
+     hybridization biases
+   - No batch correction was performed (per protocol)
+
+5. COHORT-SPECIFIC OBSERVATIONS
+
+   GSE30219 (GPL570, n=293, 121/127 genes):
+     C-index 0.6567 — ABOVE internal validation. Mixed histology cohort
+     (ADC, SQC, LCNE, BAS). Logrank p=2.46e-06 (strong stratification).
+     Possible reasons: diverse histology may benefit from gene panel;
+     microarray platform well-aligned with training scale.
+
+   GSE50081 (GPL570, n=181, 121/127 genes):
+     C-index 0.5872 — comparable to internal validation. Early-stage only
+     (IA-IIB). Logrank p=0.666 (no stratification). Limited event rate
+     (75/181=41%) and narrow stage range may reduce discriminative power.
+
+   GSE72094 (GPL15048, n=398, 117/127 genes):
+     C-index 0.6830 — ABOVE internal validation despite lowest gene coverage.
+     Logrank p=1.41e-07 (strongest stratification). HuGene 2.0 ST array
+     (gene-level summarization) may align better with Ensembl gene models.
+     IBS 0.1449 is lowest (best) — excellent calibration.
+
+   GSE31210 (GPL570, n=226, 121/127 genes):
+     C-index 0.7557 — HIGHEST across all cohorts. Very low event rate
+     (35/226=15.5%). High C-index with low event rate should be interpreted
+     cautiously — fewer events means fewer comparable pairs.
+     IBS 0.7954 is highest (worst) — poor calibration despite good discrimination.
+     Logrank p=3.44e-07 (strong stratification).

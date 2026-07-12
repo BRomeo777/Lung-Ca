@@ -1,0 +1,96 @@
+2026-07-09 11:15:21 | ======================================================================
+2026-07-09 11:15:21 | PHASE 1C: GEO Platform Annotation & External Validation Readiness
+2026-07-09 11:15:21 | ======================================================================
+2026-07-09 11:15:21 | STEP 0: Verify frozen Phase 1B feature panel
+2026-07-09 11:15:21 |   -> phase1B_feature_panel_verification.txt written
+2026-07-09 11:15:21 |   Molecular genes: 127, Total predictors: 143, Checksum: 09d3c6a17ef28729...
+2026-07-09 11:15:21 | STEP 1: Confirm GEO platform information
+2026-07-09 11:15:24 |   GSE31210: GPL570 (Affymetrix Human Genome U133 Plus 2.0 Array), 54675 probes
+2026-07-09 11:15:28 |   GSE30219: GPL570 (Affymetrix Human Genome U133 Plus 2.0 Array), 54675 probes
+2026-07-09 11:15:31 |   GSE50081: GPL570 (Affymetrix Human Genome U133 Plus 2.0 Array), 54675 probes
+2026-07-09 11:15:32 |   GSE68465: GPL96 (Affymetrix Human Genome U133A Array), 22283 probes
+2026-07-09 11:15:36 |   GSE72094: GPL15048 (Affymetrix HuGene 2.0 ST Array), 60607 probes
+2026-07-09 11:15:36 |   -> geo_platform_confirmation.csv written
+2026-07-09 11:15:36 | STEP 1B: Map Phase 1B Ensembl IDs to gene symbols
+2026-07-09 11:15:51 |   Mapped 125/127 Ensembl IDs to gene symbols
+2026-07-09 11:15:51 | STEP 2: Retrieve platform annotation files (reverse lookup mode)
+2026-07-09 11:15:51 |   Querying 125 unique gene symbols across platforms
+2026-07-09 11:15:51 |   GPL15048: reverse lookup via mygene
+2026-07-09 11:16:08 |   GPL15048: 60607 probes in expression matrix, reporter key=__ACCESSION__
+2026-07-09 11:16:08 |   GPL15048: 59090 unique accession cores to query
+2026-07-09 11:17:10 |   GPL15048: processed 5000/59090, 2121 mapped
+2026-07-09 11:18:07 |   GPL15048: processed 10000/59090, 4210 mapped
+2026-07-09 11:18:50 |   GPL15048: processed 15000/59090, 6265 mapped
+2026-07-09 11:19:32 |   GPL15048: processed 20000/59090, 8340 mapped
+2026-07-09 11:20:01 |   GPL15048: processed 25000/59090, 10425 mapped
+2026-07-09 11:20:26 |   GPL15048: processed 30000/59090, 12549 mapped
+2026-07-09 11:20:51 |   GPL15048: processed 35000/59090, 14600 mapped
+2026-07-09 11:21:18 |   GPL15048: processed 40000/59090, 16649 mapped
+2026-07-09 11:21:43 |   GPL15048: processed 45000/59090, 18744 mapped
+2026-07-09 11:22:17 |   GPL15048: processed 50000/59090, 20812 mapped
+2026-07-09 11:22:42 |   GPL15048: processed 55000/59090, 22884 mapped
+2026-07-09 11:23:06 |   GPL15048: processed 59090/59090, 24623 mapped
+2026-07-09 11:23:06 |   GPL15048: reverse lookup returned 24623 probe-to-gene mappings
+2026-07-09 11:23:06 |   GPL15048: 24623 probe annotations
+2026-07-09 11:23:06 |   GPL570: reverse lookup via mygene
+2026-07-09 11:23:10 |   GPL570: 54675 probes in expression matrix, reporter key=HG-U133_Plus_2
+2026-07-09 11:23:19 |   GPL570: reverse lookup returned 262 probe-to-gene mappings
+2026-07-09 11:23:19 |   GPL570: 262 probe annotations
+2026-07-09 11:23:19 |   GPL96: reverse lookup via mygene
+2026-07-09 11:23:21 |   GPL96: 22283 probes in expression matrix, reporter key=HG-U133_Plus_2
+2026-07-09 11:23:28 |   GPL96: reverse lookup returned 136 probe-to-gene mappings
+2026-07-09 11:23:28 |   GPL96: 136 probe annotations
+2026-07-09 11:23:28 |   -> annotation_sources_used.txt written
+2026-07-09 11:23:28 | STEP 3: Probe ID to Gene Symbol mapping
+2026-07-09 11:23:31 |   GSE31210: 262/54675 mapped (0.5%), 121 unique genes
+2026-07-09 11:23:35 |   GSE30219: 262/54675 mapped (0.5%), 121 unique genes
+2026-07-09 11:23:39 |   GSE50081: 262/54675 mapped (0.5%), 121 unique genes
+2026-07-09 11:23:54 |   GSE68465: 136/22283 mapped (0.6%), 84 unique genes
+2026-07-09 11:24:07 |   GSE72094: 24623/60607 mapped (40.6%), 20024 unique genes
+2026-07-09 11:24:07 |   -> probe_gene_mapping_report.csv written
+2026-07-09 11:24:07 | STEP 4: Multiple probe collapsing (highest mean expression rule)
+2026-07-09 11:24:17 |   GSE31210: 76 duplicated genes, 141 probes collapsed, final: 121 genes x 246 samples
+2026-07-09 11:24:32 |   GSE30219: 76 duplicated genes, 141 probes collapsed, final: 121 genes x 307 samples
+2026-07-09 11:24:37 |   GSE50081: 76 duplicated genes, 141 probes collapsed, final: 121 genes x 181 samples
+2026-07-09 11:24:41 |   GSE68465: 33 duplicated genes, 52 probes collapsed, final: 84 genes x 462 samples
+2026-07-09 11:24:52 |   GSE72094: 3851 duplicated genes, 4599 probes collapsed, final: 20024 genes x 442 samples
+2026-07-09 11:24:52 | STEP 5: Gene symbol quality control
+2026-07-09 11:24:52 |   GSE31210: 121 -> 121 clean genes (0 invalid, 0 suspicious, 0 dup)
+2026-07-09 11:24:52 |   GSE30219: 121 -> 121 clean genes (0 invalid, 0 suspicious, 0 dup)
+2026-07-09 11:24:52 |   GSE50081: 121 -> 121 clean genes (0 invalid, 0 suspicious, 0 dup)
+2026-07-09 11:24:52 |   GSE68465: 84 -> 84 clean genes (0 invalid, 0 suspicious, 0 dup)
+2026-07-09 11:24:52 |   GSE72094: 20024 -> 20024 clean genes (0 invalid, 0 suspicious, 0 dup)
+2026-07-09 11:24:52 |   -> gene_symbol_quality_report.csv written
+2026-07-09 11:24:52 | STEP 6: Create gene-mapped GEO expression matrices
+2026-07-09 11:24:52 |   GSE31210: 121 genes x 246 samples -> expression_gene_mapped.csv
+2026-07-09 11:24:52 |   GSE30219: 121 genes x 307 samples -> expression_gene_mapped.csv
+2026-07-09 11:24:52 |   GSE50081: 121 genes x 181 samples -> expression_gene_mapped.csv
+2026-07-09 11:24:52 |   GSE68465: 84 genes x 462 samples -> expression_gene_mapped.csv
+2026-07-09 11:25:07 |   GSE72094: 20024 genes x 442 samples -> expression_gene_mapped.csv
+2026-07-09 11:25:21 | STEP 7: Verify Phase 1B 127-gene panel coverage
+2026-07-09 11:25:21 |   Using pre-computed mapping: 125/127 Ensembl IDs mapped to symbols
+2026-07-09 11:25:21 |   GSE31210: 121/127 genes available (95.3%), missing 6 (+2 unmapped Ensembl IDs)
+2026-07-09 11:25:21 |   GSE30219: 121/127 genes available (95.3%), missing 6 (+2 unmapped Ensembl IDs)
+2026-07-09 11:25:21 |   GSE50081: 121/127 genes available (95.3%), missing 6 (+2 unmapped Ensembl IDs)
+2026-07-09 11:25:21 |   GSE68465: 84/127 genes available (66.1%), missing 43 (+2 unmapped Ensembl IDs)
+2026-07-09 11:25:21 |   GSE72094: 117/127 genes available (92.1%), missing 10 (+2 unmapped Ensembl IDs)
+2026-07-09 11:25:21 |   -> panel_coverage_by_series.csv written
+2026-07-09 11:25:21 | STEP 8: Expression scale compatibility assessment
+2026-07-09 11:25:21 |   GSE31210: min=0.66, max=31854.95, mean=1133.89, std=2956.17 -> Raw intensity (not log-transformed)
+2026-07-09 11:25:21 |   GSE30219: min=2.61, max=14.55, mean=6.22, std=2.18 -> Log2-transformed
+2026-07-09 11:25:21 |   GSE50081: min=1.97, max=14.53, mean=6.06, std=2.23 -> Log2-transformed
+2026-07-09 11:25:21 |   GSE68465: min=0.75, max=49233.80, mean=675.82, std=1902.88 -> Raw intensity (not log-transformed)
+2026-07-09 11:25:22 |   GSE72094: min=0.61, max=14.62, mean=6.88, std=2.78 -> Log2-transformed
+2026-07-09 11:25:22 |   -> expression_compatibility_report.csv written
+2026-07-09 11:25:22 | STEP 9: Final GEO readiness classification
+2026-07-09 11:25:22 |   GSE31210: REQUIRES PHASE 1D EXPRESSION HARMONIZATION — Good coverage (95.3%) but expression scale needs harmonization
+2026-07-09 11:25:22 |   GSE30219: READY FOR PHASE 2 — Good coverage (95.3%) and expression compatibility
+2026-07-09 11:25:22 |   GSE50081: READY FOR PHASE 2 — Good coverage (95.3%) and expression compatibility
+2026-07-09 11:25:22 |   GSE68465: EXCLUDED — Insufficient gene overlap (66.1%)
+2026-07-09 11:25:22 |   GSE72094: READY FOR PHASE 2 — Good coverage (92.1%) and expression compatibility
+2026-07-09 11:25:22 | STEP 10: Final quality control
+2026-07-09 11:25:22 |   -> geo_mapping_quality_control.txt written
+2026-07-09 11:25:22 | 
+2026-07-09 11:25:22 | ======================================================================
+2026-07-09 11:25:22 | PHASE 1C COMPLETE — All outputs in PHASE1C_GEO_HARMONIZATION/
+2026-07-09 11:25:22 | ======================================================================

@@ -1,0 +1,192 @@
+======================================================================
+BIOLOGICAL INTERPRETATION REPORT
+======================================================================
+
+CAVEAT: The 127-gene panel was selected by univariate Cox screening at p<0.05
+WITHOUT multiple-testing correction (Pre-Phase 2 Audit Limitation #2).
+These genes should be interpreted as a PREDICTIVE FEATURE SET, not a confirmed
+causal/biological gene list. Association does not imply causation.
+
+TOP 30 GENES BY PREDICTIVE CONTRIBUTION (|β|):
+Rank   Ensembl_ID                Symbol                   β       HR Direction          Missing in GEO           
+------------------------------------------------------------------------------------------------------------------------
+1      ENSG00000125848.10        FLRT3             0.044872   1.0459 Risk-increasing                             
+2      ENSG00000196549.12        MME               0.034379   1.0350 Risk-increasing                             
+3      ENSG00000223350.2         IGLV9-49         -0.034299   0.9663 Risk-decreasing    GSE30219, GSE50081, GSE72094, GSE31210
+4      ENSG00000171560.16        FGA               0.033822   1.0344 Risk-increasing                             
+5      ENSG00000263639.7         MSMB             -0.033499   0.9671 Risk-decreasing                             
+6      ENSG00000009694.13        TENM1            -0.033479   0.9671 Risk-decreasing                             
+7      ENSG00000171557.17        FGG               0.032618   1.0332 Risk-increasing                             
+8      ENSG00000185860.13        CCDC190          -0.032133   0.9684 Risk-decreasing                             
+9      ENSG00000107984.10        DKK1              0.031422   1.0319 Risk-increasing                             
+10     ENSG00000176532.4         PRR15             0.030184   1.0306 Risk-increasing                             
+11     ENSG00000169436.17        COL22A1           0.029576   1.0300 Risk-increasing                             
+12     ENSG00000184985.16        SORCS2           -0.028937   0.9715 Risk-decreasing                             
+13     ENSG00000021826.17        CPS1              0.027210   1.0276 Risk-increasing                             
+14     ENSG00000156234.7         CXCL13           -0.027056   0.9733 Risk-decreasing                             
+15     ENSG00000153404.14        PLEKHG4B         -0.026334   0.9740 Risk-decreasing                             
+16     ENSG00000169174.11        PCSK9             0.026103   1.0264 Risk-increasing                             
+17     ENSG00000104332.12        SFRP1             0.025920   1.0263 Risk-increasing                             
+18     ENSG00000084110.11        HAL               0.025557   1.0259 Risk-increasing                             
+19     ENSG00000149043.16        SYT8              0.024897   1.0252 Risk-increasing                             
+20     ENSG00000075618.18        FSCN1             0.024713   1.0250 Risk-increasing                             
+21     ENSG00000159387.8         IRX6             -0.024181   0.9761 Risk-decreasing    GSE30219, GSE50081, GSE31210
+22     ENSG00000156298.13        TSPAN7           -0.024037   0.9762 Risk-decreasing                             
+23     ENSG00000275216.2         ENSG00000275216.2   0.023069   1.0233 Risk-increasing    GSE30219, GSE50081, GSE72094, GSE31210
+24     ENSG00000131620.17        ANO1              0.022853   1.0231 Risk-increasing                             
+25     ENSG00000113739.10        STC2              0.022414   1.0227 Risk-increasing                             
+26     ENSG00000167653.5         PSCA              0.022184   1.0224 Risk-increasing                             
+27     ENSG00000135318.12        NT5E              0.021392   1.0216 Risk-increasing                             
+28     ENSG00000115009.13        CCL20             0.020888   1.0211 Risk-increasing                             
+29     ENSG00000137203.15        TFAP2A            0.020769   1.0210 Risk-increasing                             
+30     ENSG00000124882.4         EREG              0.020635   1.0208 Risk-increasing                             
+
+BIOLOGICAL ANNOTATIONS FOR TOP GENES:
+
+  FLRT3 (ENSG00000125848.10)
+    β=0.044872, HR=1.0459, higher expression → higher risk
+    Fibronectin leucine-rich transmembrane 3; cell adhesion
+
+  MME (ENSG00000196549.12)
+    β=0.034379, HR=1.0350, higher expression → higher risk
+    Neprilysin/CD10; common acute lymphoblastic leukemia antigen
+
+  IGLV9-49 (ENSG00000223350.2)
+    β=-0.034299, HR=0.9663, higher expression → lower risk
+    Function not curated in this report; see literature for details.
+    ⚠ UNAVAILABLE in: GSE30219, GSE50081, GSE72094, GSE31210 (reduced-panel effect)
+
+  FGA (ENSG00000171560.16)
+    β=0.033822, HR=1.0344, higher expression → higher risk
+    Fibrinogen alpha chain; coagulation, metastasis
+
+  MSMB (ENSG00000263639.7)
+    β=-0.033499, HR=0.9671, higher expression → lower risk
+    PSP94; tumor suppressor in prostate, emerging in lung
+
+  TENM1 (ENSG00000009694.13)
+    β=-0.033479, HR=0.9671, higher expression → lower risk
+    Teneurin-1; cell adhesion, axon guidance
+
+  FGG (ENSG00000171557.17)
+    β=0.032618, HR=1.0332, higher expression → higher risk
+    Fibrinogen gamma chain; coagulation, metastasis
+
+  CCDC190 (ENSG00000185860.13)
+    β=-0.032133, HR=0.9684, higher expression → lower risk
+    Function not curated in this report; see literature for details.
+
+  DKK1 (ENSG00000107984.10)
+    β=0.031422, HR=1.0319, higher expression → higher risk
+    Dickkopf-1; Wnt antagonist, osteolytic bone metastasis in lung cancer
+
+  PRR15 (ENSG00000176532.4)
+    β=0.030184, HR=1.0306, higher expression → higher risk
+    Proline rich 15; function less characterized
+
+  COL22A1 (ENSG00000169436.17)
+    β=0.029576, HR=1.0300, higher expression → higher risk
+    Collagen type XXII alpha 1; tissue junctions
+
+  SORCS2 (ENSG00000184985.16)
+    β=-0.028937, HR=0.9715, higher expression → lower risk
+    Sortilin related VPS10 domain receptor 2
+
+  CPS1 (ENSG00000021826.17)
+    β=0.027210, HR=1.0276, higher expression → higher risk
+    Carbamoyl phosphate synthetase 1; urea cycle, ammonia detoxification
+
+  CXCL13 (ENSG00000156234.7)
+    β=-0.027056, HR=0.9733, higher expression → lower risk
+    BLC; B-cell attractant, associated with immune infiltration
+
+  PLEKHG4B (ENSG00000153404.14)
+    β=-0.026334, HR=0.9740, higher expression → lower risk
+    Function not curated in this report; see literature for details.
+
+  PCSK9 (ENSG00000169174.11)
+    β=0.026103, HR=1.0264, higher expression → higher risk
+    Proprotein convertase; cholesterol metabolism, emerging cancer target
+
+  SFRP1 (ENSG00000104332.12)
+    β=0.025920, HR=1.0263, higher expression → higher risk
+    Secreted frizzled-related protein 1; Wnt antagonist, tumor suppressor
+
+  HAL (ENSG00000084110.11)
+    β=0.025557, HR=1.0259, higher expression → higher risk
+    Histidine ammonia-lyase; amino acid metabolism
+
+  SYT8 (ENSG00000149043.16)
+    β=0.024897, HR=1.0252, higher expression → higher risk
+    Synaptotagmin 8; membrane trafficking
+
+  FSCN1 (ENSG00000075618.18)
+    β=0.024713, HR=1.0250, higher expression → higher risk
+    Fascin-1; actin-bundling protein, promotes cell migration; NSCLC biomarker
+
+  IRX6 (ENSG00000159387.8)
+    β=-0.024181, HR=0.9761, higher expression → lower risk
+    Function not curated in this report; see literature for details.
+    ⚠ UNAVAILABLE in: GSE30219, GSE50081, GSE31210 (reduced-panel effect)
+
+  TSPAN7 (ENSG00000156298.13)
+    β=-0.024037, HR=0.9762, higher expression → lower risk
+    Tetraspanin 7; cell membrane organization
+
+  ENSG00000275216.2 (ENSG00000275216.2)
+    β=0.023069, HR=1.0233, higher expression → higher risk
+    Function not curated in this report; see literature for details.
+    ⚠ UNAVAILABLE in: GSE30219, GSE50081, GSE72094, GSE31210 (reduced-panel effect)
+
+  ANO1 (ENSG00000131620.17)
+    β=0.022853, HR=1.0231, higher expression → higher risk
+    Anoctamin-1/TMEM16A; chloride channel, secretory carcinoma
+
+  STC2 (ENSG00000113739.10)
+    β=0.022414, HR=1.0227, higher expression → higher risk
+    Stanniocalcin-2; stress response, ER stress
+
+  PSCA (ENSG00000167653.5)
+    β=0.022184, HR=1.0224, higher expression → higher risk
+    Prostate stem cell antigen; aberrant expression in NSCLC
+
+  NT5E (ENSG00000135318.12)
+    β=0.021392, HR=1.0216, higher expression → higher risk
+    CD73; immunosuppressive, adenosine pathway
+
+  CCL20 (ENSG00000115009.13)
+    β=0.020888, HR=1.0211, higher expression → higher risk
+    Macrophage inflammatory protein-3 alpha; Th17 attractant
+
+  TFAP2A (ENSG00000137203.15)
+    β=0.020769, HR=1.0210, higher expression → higher risk
+    AP-2 alpha; transcription factor, regulates differentiation
+
+  EREG (ENSG00000124882.4)
+    β=0.020635, HR=1.0208, higher expression → higher risk
+    Epiregulin; EGF family, proliferation
+
+FUNCTIONAL CATEGORIES REPRESENTED IN TOP GENES:
+
+  Extracellular matrix / invasion: FLRT3
+  Chemokines / immune signaling: CXCL13, CCL20
+  Hypoxia / angiogenesis: STC2
+  Cell adhesion / differentiation: TSPAN7
+  Metabolism: HAL, CPS1, PCSK9
+  Signaling pathways: DKK1, SFRP1
+  Coagulation: FGA, FGG
+
+CLINICAL FEATURE INTERPRETATION:
+  Stage features: The model uses one-hot encoded stage categories.
+  Higher stage (IIIB, IV) generally shows risk-increasing coefficients,
+  while lower stage (IA) shows risk-decreasing coefficients — biologically consistent.
+  Age: included as a continuous variable; direction depends on coefficient sign.
+  Cancer_Type and Smoking_Status: included as categorical features;
+  coefficients reflect baseline category differences.
+
+CROSS-REFERENCE WITH GEO AVAILABILITY:
+  Several top-ranked genes are missing in one or more GEO cohorts.
+  This means the per-cohort reduced model may rely more heavily on
+  available high-weight genes, potentially shifting the effective
+  importance ranking compared to the full model.
+  See feature_importance.csv for per-gene availability details.

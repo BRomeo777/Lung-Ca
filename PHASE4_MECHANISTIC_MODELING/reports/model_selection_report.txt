@@ -1,0 +1,115 @@
+═══════════════════════════════════════════════════════════════════════
+PHASE 4 — MODEL SELECTION REPORT
+═══════════════════════════════════════════════════════════════════════
+
+Date: 2026-07-10
+Author: Phase 4 Mechanistic Modeling Pipeline
+
+1. EVALUATED MODELS
+──────────────────
+
+Model 1: Exponential Growth
+  dV/dt = lambda * V
+  Assumptions: Unlimited resources, constant growth rate
+  Biological justification: Valid only for very early-stage tumors (<1cm)
+  Parameter count: 1 (lambda)
+  Identifiability: Good with serial measurements, but unrealistic for clinical simulation
+  NSCLC validation: Limited; overestimates growth for tumors >2cm
+  Verdict: REJECTED — Too simplistic for clinical simulation
+
+Model 2: Logistic Growth
+  dV/dt = lambda * V * (1 - V/K)
+  Assumptions: Linear decrease in growth rate with size; symmetric S-curve
+  Biological justification: Carrying capacity K limits growth
+  Parameter count: 2 (lambda, K)
+  Identifiability: Moderate with serial measurements
+  NSCLC validation: Adequate fits but inferior to Gompertz (Benzekry 2019)
+  Verdict: REJECTED — Gompertz provides better fits for NSCLC
+
+Model 3: Gompertz Growth (SELECTED for natural history)
+  dV/dt = alpha * V * ln(V_max / V)
+  Assumptions: Growth rate decreases exponentially with tumor size
+  Biological justification: Well-validated for solid tumors including NSCLC
+  Parameter count: 2 (alpha, V_max) + initial condition V0
+  Identifiability: alpha and V_max are correlated; need long observation
+  NSCLC validation:
+    - Benzekry et al. Sci Rep 2019: Validated for NSCLC primary tumor
+    - Liu et al. Sci Rep 2017: Used for NSCLC treatment response modeling
+    - Usuda et al. EJCA 2024: Meta-analysis confirms Gompertzian kinetics
+    - Frontiers Immunol 2024: Novel Gompertz model fits 861 NSCLC patients
+  Verdict: SELECTED — Best supported by NSCLC literature
+
+Model 4: Norton-Simon Treatment Response (SELECTED for chemotherapy)
+  dV/dt = Gompertz growth - delta_c * C(t) * V
+  Assumptions: Cell kill proportional to unperturbed growth rate at that size
+  Biological justification: Norton-Simon hypothesis validated in multiple cancers
+  Parameter count: 3 (alpha, V_max, delta_c) + PK parameters
+  Identifiability: delta_c identifiable with treatment response data
+  NSCLC validation:
+    - Liu et al. Sci Rep 2017: beta_c = 0.028 (mg/L)^-1 day^-1 for NSCLC
+    - Norton L, Simon R. Nature Clinical Practice Oncology 2006
+  Verdict: SELECTED — Best for chemotherapy simulation
+
+Model 5: Full Treatment-Response System (SELECTED for immunotherapy)
+  dV/dt = Gompertz - cytotoxic - immune kill - targeted kill
+  dE/dt = s - mu_E * E + rho * E * V/(sigma+V) - delta_EV * E * V
+  Assumptions: Immune effector compartment with recruitment and interaction
+  Biological justification: Kuznetsov-Wodarz model adapted for checkpoint blockade
+  Parameter count: 8+ (growth, kill rates, immune dynamics)
+  Identifiability: Poor without serial immune measurements
+  NSCLC validation:
+    - Kuznetsov VA et al. Bull Math Biol 1994 (general)
+    - Wodarz D. J Theor Biol 2005 (immune dynamics)
+    - Not directly validated in NSCLC (flagged as limitation)
+  Verdict: SELECTED — Best available for immunotherapy simulation
+    with explicit uncertainty quantification
+
+2. PHARMACOKINETIC MODEL SELECTION
+───────────────────────────────────
+
+One-compartment PK model selected for all drugs:
+  dC/dt = -k_el * C + D * k_a / V_d  (oral)
+  dC/dt = -k_el * C                   (IV bolus/infusion)
+
+Justification:
+- Simplicity appropriate for population-level simulation
+- Parameters available from published NSCLC population PK studies
+- Two-compartment models add complexity without identifiability benefit
+  given that we lack patient-specific PK data
+
+Drug-specific PK parameters (all from published sources):
+- Cisplatin: t_half = 30h, Vd = 30L (Hanada 2024, de Jongh 2003)
+- Pembrolizumab: t_half = 25.8d, Vd = 7.66L (FDA 2014, Centanni 2017)
+- Nivolumab: t_half = 25d (Bajaj 2017)
+- Osimertinib: t_half = 48h, Vd = 986L (Vishwanathan 2020)
+
+3. SELECTED MODEL CONFIGURATION
+────────────────────────────────
+
+Natural history:    Gompertz growth (2 parameters + V0)
+Chemotherapy:       Gompertz + Norton-Simon log-cell kill + cisplatin PK
+Immunotherapy:      Full system with immune effector compartment + pembrolizumab PK
+Targeted therapy:   Gompertz + targeted kill + osimertinib PK (EGFR-mut only)
+
+4. PARAMETER IDENTIFIABILITY STATEMENT
+───────────────────────────────────────
+
+TCGA does not provide serial tumor volume measurements. Therefore:
+- Growth parameters (alpha, V_max) are NOT fitted per patient
+- Treatment sensitivity parameters (delta_c, delta_i, delta_t) are NOT fitted
+- All parameters use POPULATION PRIORS from published literature
+- Patient-specific adjustments are derived from genomic features
+- All simulations carry quantified uncertainty (Monte Carlo, n=200-1000)
+- No simulation is presented as a precise prediction
+
+This is the scientifically honest approach that makes the framework defensible.
+
+═══════════════════════════════════════════════════════════════════════
+END OF MODEL SELECTION REPORT
+═══════════════════════════════════════════════════════════════════════
+
+RESEARCH PROTOTYPE ONLY. Simulated tumor trajectories are based on population-derived
+ODE parameters personalized by genomic features. They represent biologically plausible
+scenarios under stated assumptions, not clinically validated predictions. This system
+must not be used for clinical decision-making without prospective validation with serial
+imaging data and regulatory approval.

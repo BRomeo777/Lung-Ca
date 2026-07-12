@@ -1,0 +1,120 @@
+2026-07-11 12:26:08 | ======================================================================
+2026-07-11 12:26:08 | PHASE 5: NEURAL-MECHANISTIC INTEGRATION ENGINE
+2026-07-11 12:26:08 | ======================================================================
+2026-07-11 12:26:08 | RESEARCH PROTOTYPE ONLY — PHASE 5 NEURAL-MECHANISTIC INTEGRATION. This hybrid prediction combines a deep learning survival model (Phase 3) with a mechanistic tumor growth ODE (Phase 4). This system must not be used for clinical decision-making without prospective validation, independent external validation, and regulatory approval.
+2026-07-11 12:26:08 | 
+2026-07-11 12:26:08 | 
+2026-07-11 12:26:08 | ======================================================================
+2026-07-11 12:26:08 | STEP 1: Load and verify all Phase 3 and Phase 4 artifacts
+2026-07-11 12:26:08 | ======================================================================
+2026-07-11 12:26:08 |   Phase 3 config: 143 features, 2 models
+2026-07-11 12:26:08 |   Loaded 2 DeepSurv models
+2026-07-11 12:26:08 |   CoxPH model loaded
+2026-07-11 12:26:08 |   Population priors: 15 parameters
+2026-07-11 12:26:08 |   Phase 4 patient parameters: 737 patients
+2026-07-11 12:26:08 |   Permutation importance: 143 features
+2026-07-11 12:26:30 |   TCGA train: 737 patients (315 events)
+2026-07-11 12:26:30 |   TCGA val: 180 patients (79 events)
+2026-07-11 12:26:31 |   GSE30219: 293 patients, 200 events
+2026-07-11 12:26:31 |   GSE50081: 181 patients, 75 events
+2026-07-11 12:26:36 |   GSE72094: 398 patients, 113 events
+2026-07-11 12:26:36 |   GSE31210: 226 patients, 35 events
+2026-07-11 12:26:36 | 
+2026-07-11 12:26:36 | ======================================================================
+2026-07-11 12:26:36 | STEP 2: Extract mechanistic features
+2026-07-11 12:26:36 | ======================================================================
+2026-07-11 12:26:36 |   Extracting mechanistic features for TCGA training patients...
+2026-07-11 12:26:38 |   Training mechanistic features: (737, 17)
+2026-07-11 12:26:38 |   Extracting mechanistic features for TCGA validation patients...
+2026-07-11 12:26:38 |   Validation mechanistic features: (180, 17)
+2026-07-11 12:26:38 |   Extracting mechanistic features for GEO patients (population priors)...
+2026-07-11 12:26:38 |     GSE30219: (293, 17)
+2026-07-11 12:26:39 |     GSE50081: (181, 17)
+2026-07-11 12:26:39 |     GSE72094: (398, 17)
+2026-07-11 12:26:40 |     GSE31210: (226, 17)
+2026-07-11 12:26:40 | 
+2026-07-11 12:26:40 | ======================================================================
+2026-07-11 12:26:40 | STEP 3: Implement and compare all three strategies
+2026-07-11 12:26:40 | ======================================================================
+2026-07-11 12:26:40 | 
+  Strategy C: Prediction-Level Fusion
+2026-07-11 12:26:41 |     Optimal w_neural: 0.9938
+2026-07-11 12:26:41 |     Training C-index: 0.9509
+2026-07-11 12:26:44 |     Val C-index: 0.6131 (0.539-0.689)
+2026-07-11 12:26:44 | 
+  Strategy A: Feature-Level Fusion
+2026-07-11 12:28:52 |     Val C-index: 0.6109 (0.544-0.674)
+2026-07-11 12:28:52 | 
+  Strategy B: Physics-Informed DeepSurv
+2026-07-11 12:31:25 |     Val C-index: 0.5844 (0.518-0.648)
+2026-07-11 12:31:32 | 
+  Baselines: DeepSurv=0.6131, CoxPH=0.5881
+2026-07-11 12:31:33 | 
+2026-07-11 12:31:33 | ======================================================================
+2026-07-11 12:31:33 | STEP 4: Select winning strategy
+2026-07-11 12:31:33 | ======================================================================
+2026-07-11 12:31:33 |   No strategy beats standalone DeepSurv (0.6131)
+2026-07-11 12:31:33 |   Declaring DeepSurv as final model — integration did not improve discrimination
+2026-07-11 12:31:33 |   Selected strategy: DeepSurv
+2026-07-11 12:31:33 | 
+2026-07-11 12:31:33 | ======================================================================
+2026-07-11 12:31:33 | STEP 5: Evaluate selected strategy on external cohorts
+2026-07-11 12:31:33 | ======================================================================
+2026-07-11 12:31:50 |   TCGA_val CoxPH: C-index=0.5881, IBS=0.4032
+2026-07-11 12:31:50 |   TCGA_val DeepSurv: C-index=0.6131, IBS=0.3658
+2026-07-11 12:31:50 |   TCGA_val Hybrid: C-index=0.6131, IBS=0.3658
+2026-07-11 12:32:22 |   GSE30219 CoxPH: C-index=0.5603, IBS=0.8469
+2026-07-11 12:32:22 |   GSE30219 DeepSurv: C-index=0.5593, IBS=0.7906
+2026-07-11 12:32:22 |   GSE30219 Hybrid: C-index=0.5593, IBS=0.7906
+2026-07-11 12:32:41 |   GSE50081 CoxPH: C-index=0.5411, IBS=0.9415
+2026-07-11 12:32:41 |   GSE50081 DeepSurv: C-index=0.5965, IBS=0.8581
+2026-07-11 12:32:41 |   GSE50081 Hybrid: C-index=0.5965, IBS=0.8581
+2026-07-11 12:32:59 |   GSE72094 CoxPH: C-index=0.5593, IBS=0.2108
+2026-07-11 12:32:59 |   GSE72094 DeepSurv: C-index=0.6334, IBS=0.2318
+2026-07-11 12:32:59 |   GSE72094 Hybrid: C-index=0.6334, IBS=0.2318
+2026-07-11 12:33:06 |   GSE31210 CoxPH: C-index=0.7049, IBS=1.0695
+2026-07-11 12:33:06 |   GSE31210 DeepSurv: C-index=0.7271, IBS=1.0142
+2026-07-11 12:33:06 |   GSE31210 Hybrid: C-index=0.7271, IBS=1.0142
+2026-07-11 12:33:07 |   Mean external C-index (CoxPH): 0.5914
+2026-07-11 12:33:07 |   Mean external C-index (DeepSurv): 0.6291
+2026-07-11 12:33:07 |   Mean external C-index (Hybrid): 0.6291
+2026-07-11 12:33:43 | 
+2026-07-11 12:33:44 | ======================================================================
+2026-07-11 12:33:44 | STEP 6: Fit cascade calibration
+2026-07-11 12:33:44 | ======================================================================
+2026-07-11 12:33:44 |   Cascade calibrator fitted on 73 calibration patients
+2026-07-11 12:33:44 |   Calibration applied to validation set
+2026-07-11 12:33:44 | 
+2026-07-11 12:33:44 | ======================================================================
+2026-07-11 12:33:44 | STEP 7: Generate HybridPatientState for all patients
+2026-07-11 12:33:44 | ======================================================================
+2026-07-11 12:33:46 |   Generated 180 HybridPatientStates for validation patients
+2026-07-11 12:33:51 |   Generated 737 HybridPatientStates for training patients
+2026-07-11 12:33:51 |   Saved 917 total states to phase6_inputs/
+2026-07-11 12:33:51 | 
+2026-07-11 12:33:51 | ======================================================================
+2026-07-11 12:33:51 | STEP 8: Run explainability engine
+2026-07-11 12:33:51 | ======================================================================
+2026-07-11 12:33:51 |   Hallmark distribution across all patients:
+2026-07-11 12:33:51 |     Sustained Proliferation: 917
+2026-07-11 12:33:51 |     Immune Evasion: 917
+2026-07-11 12:33:51 |     Invasion & Metastasis: 917
+2026-07-11 12:33:51 |   Explainability summary saved: 917 patients
+2026-07-11 12:33:51 | 
+2026-07-11 12:33:51 | ======================================================================
+2026-07-11 12:33:51 | STEP 9: Consistency analysis
+2026-07-11 12:33:51 | ======================================================================
+2026-07-11 12:33:51 |   Spearman correlation (DeepSurv risk vs TTP): rho=0.2570, p=4.9624e-04
+2026-07-11 12:33:51 |   Consistency violations (>0.3): 96/180 patients
+2026-07-11 12:33:51 | 
+2026-07-11 12:33:51 | ======================================================================
+2026-07-11 12:33:51 | STEP 10: Generate all deliverables
+2026-07-11 12:33:51 | ======================================================================
+2026-07-11 12:33:51 |   Final report saved: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\PHASE5_NEURAL_MECHANISTIC_INTEGRATION\reports\phase5_final_report.txt
+2026-07-11 12:33:51 |   Phase 6 readiness: 14/14
+2026-07-11 12:33:55 | 
+2026-07-11 12:33:55 | ======================================================================
+2026-07-11 12:33:55 | PHASE 5 COMPLETE
+2026-07-11 12:33:55 | ======================================================================
+2026-07-11 12:33:55 |   All outputs in: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\PHASE5_NEURAL_MECHANISTIC_INTEGRATION
+2026-07-11 12:33:55 | RESEARCH PROTOTYPE ONLY — PHASE 5 NEURAL-MECHANISTIC INTEGRATION. This hybrid prediction combines a deep learning survival model (Phase 3) with a mechanistic tumor growth ODE (Phase 4). This system must not be used for clinical decision-making without prospective validation, independent external validation, and regulatory approval.

@@ -1,0 +1,11 @@
+# Phase 8 CDSS — Python Dependencies (deployment-optimized)
+# NOTE: torch is installed separately in Dockerfile (CPU-only wheel)
+streamlit>=1.28.0
+fastapi>=0.104.0
+uvicorn>=0.24.0
+plotly>=5.18.0
+pydantic>=2.5.0
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.11.0
+scikit-learn>=1.3.0

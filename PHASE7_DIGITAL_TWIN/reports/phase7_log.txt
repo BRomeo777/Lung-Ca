@@ -1,0 +1,147 @@
+2026-07-11 22:48:25 | ======================================================================
+2026-07-11 22:48:25 | PHASE 7: PERSONALIZED NEURAL-MECHANISTIC DIGITAL TWIN
+2026-07-11 22:48:25 | ======================================================================
+2026-07-11 22:48:25 | RESEARCH PROTOTYPE — NOT FOR CLINICAL USE. This system generates computational simulations for hypothesis generation. It does not determine the best treatment for individual patients.
+
+2026-07-11 22:48:25 | Loading Phase 3 artifacts (DeepSurv model, scaler, config)...
+2026-07-11 22:48:26 |   2 DeepSurv models loaded, 143 features
+2026-07-11 22:48:26 | Loading Phase 4 artifacts (population priors, patient parameters)...
+2026-07-11 22:48:26 |   737 patient parameter sets loaded
+2026-07-11 22:48:26 | Loading Phase 5 artifacts (hybrid patient states)...
+2026-07-11 22:48:26 |   737 train + 180 val hybrid states loaded
+2026-07-11 22:48:26 |   Integration strategy: C, w_neural=0.0007
+2026-07-11 22:48:26 | Loading TCGA clinical data...
+2026-07-11 22:48:26 | Loading TCGA expression data...
+2026-07-11 22:48:46 |   Train: 738 patients, Val: 181 patients
+2026-07-11 22:48:46 |   Total: 919 patients
+
+2026-07-11 22:48:46 | ======================================================================
+2026-07-11 22:48:46 | PHASE 7A: Digital Twin State Representation
+2026-07-11 22:48:46 | ======================================================================
+2026-07-11 22:48:46 |   Building Digital Twin states for all patients...
+2026-07-11 22:48:49 |   Built 919 Digital Twin states (0 failed)
+2026-07-11 22:48:49 |   -> digital_twin_state_matrix.csv saved (919 patients, 22 variables)
+2026-07-11 22:48:49 |   -> digital_twin_schema.md saved
+2026-07-11 22:48:49 |   7A acceptance: coverage=100.0% (target: 100%)
+2026-07-11 22:48:49 |   7A: PASS
+
+2026-07-11 22:48:49 | ======================================================================
+2026-07-11 22:48:49 | PHASE 7B: Disease Evolution Simulation
+2026-07-11 22:48:49 | ======================================================================
+2026-07-11 22:48:49 |   Simulation horizon: 1095 days (3.0 years)
+2026-07-11 22:48:49 |   Time points: 100
+2026-07-11 22:48:49 |   Treatments: ['none', 'chemo', 'immuno', 'targeted']
+2026-07-11 22:48:49 |   Simulating 919 patients × 4 treatments...
+2026-07-12 06:06:19 |   Simulations: 3676 OK, 0 failed (26249.9s)
+2026-07-12 06:06:22 |   -> digital_twin_trajectory_simulations.csv saved (183800 rows)
+2026-07-12 06:06:22 |   Safety flags: 0 / 3676 simulations flagged
+2026-07-12 06:06:22 |   7B acceptance: 100.0% simulations pass safety checks (target: 100% or flagged)
+2026-07-12 06:06:22 |   7B: PASS
+
+2026-07-12 06:06:22 | ======================================================================
+2026-07-12 06:06:22 | PHASE 7C: Virtual Treatment Scenario Engine
+2026-07-12 06:06:22 | ======================================================================
+2026-07-12 06:06:23 |   -> virtual_treatment_scenarios.csv saved (4595 rows)
+2026-07-12 06:06:23 |   Observed: 919 rows
+2026-07-12 06:06:23 |   Counterfactual: 3676 rows
+2026-07-12 06:06:23 |   outcome_type present on every row: True
+2026-07-12 06:06:23 |   Counterfactuals per patient: min=4, max=4
+2026-07-12 06:06:23 |   7C: PASS
+
+2026-07-12 06:06:23 | ======================================================================
+2026-07-12 06:06:23 | PHASE 7D: Digital Twin Validation
+2026-07-12 06:06:23 | ======================================================================
+2026-07-12 06:06:23 |   Prediction validation (C-index, calibration, IBS)...
+2026-07-12 06:06:25 |     Digital Twin C-index (DeepSurv risk): 0.6251 (0.5587-0.6964)
+2026-07-12 06:06:25 |     Phase 3 reported C-index: 0.6131
+2026-07-12 06:06:25 |     Delta (twin - phase3): 0.0120
+2026-07-12 06:06:27 |     Calibration slope: 0.5940 (target: 0.8-1.2)
+2026-07-12 06:06:27 |     IBS (DeepSurv): 0.8844, Null model: 0.6582
+2026-07-12 06:06:27 |   Subgroup prediction error by stage:
+2026-07-12 06:06:27 |     IA: n=37, C-index=0.4266 (0.1885-0.6622)
+2026-07-12 06:06:27 |     IB: n=40, C-index=0.4506 (0.3397-0.5861)
+2026-07-12 06:06:27 |     IIA: n=16, C-index=0.6049 (0.2808-0.9559)
+2026-07-12 06:06:27 |     IIB: n=19, C-index=0.5307 (0.3031-0.8225)
+2026-07-12 06:06:27 |     IIIA: n=25, C-index=0.5989 (0.4040-0.7866)
+2026-07-12 06:06:28 |     IIIB: n=6, C-index=0.7273 (0.1412-1.0000)
+2026-07-12 06:06:28 |     IV: n=10, C-index=nan (nan-nan)
+2026-07-12 06:06:28 |   Biological validation (quantitative pass/fail)...
+2026-07-12 06:06:28 |     1. Growth rate vs survival (events only): rho=nan, p=nan
+2026-07-12 06:06:28 |        Expected: negative (faster growth → shorter survival)
+2026-07-12 06:06:28 |        Result: FAIL
+2026-07-12 06:06:28 |     2. Mech risk vs survival (events only): rho=0.1917, p=0.0885
+2026-07-12 06:06:28 |        Expected: negative (higher risk → shorter survival)
+2026-07-12 06:06:28 |        Result: FAIL
+2026-07-12 06:06:28 |     3. Treatment benefit (>30d TTP improvement):
+2026-07-12 06:06:28 |        Chemo: 100.0% (181/181)
+2026-07-12 06:06:28 |        Immuno: 100.0% (181/181)
+2026-07-12 06:06:28 |        Targeted: 100.0% (181/181)
+2026-07-12 06:06:28 |        Threshold: ≥50% for at least one therapy
+2026-07-12 06:06:28 |        Result: PASS
+2026-07-12 06:06:28 |   Treatment simulation validity...
+2026-07-12 06:06:28 |     Responders: 86, Non-responders: 95
+2026-07-12 06:06:28 |     Median chemo benefit: 597.3 days (19.6 months)
+2026-07-12 06:06:28 |     Median predicted TTP — Responders: 28.3mo, Non-responders: 22.2mo
+2026-07-12 06:06:28 |     Log-rank p-value: 8.7960e-44
+2026-07-12 06:06:28 |     CAVEAT: Responder/non-responder labels are model-derived (simulated TTP benefit).
+2026-07-12 06:06:28 |     This validates internal consistency of the treatment-response module,
+2026-07-12 06:06:28 |     NOT real-world treatment discrimination.
+2026-07-12 06:06:28 |   -> treatment_simulation_validation_report.csv saved
+2026-07-12 06:06:28 |   -> digital_twin_validation_report.txt saved
+2026-07-12 06:06:28 |   7D: PASS
+
+2026-07-12 06:06:28 | ======================================================================
+2026-07-12 06:06:28 | PHASE 7E: Uncertainty Quantification
+2026-07-12 06:06:28 | ======================================================================
+2026-07-12 06:06:28 |   Method: Monte Carlo over ODE parameter bounds (alpha ±30%, V_max ±30%, V0 ±30%)
+2026-07-12 06:06:28 |   + DeepSurv ensemble std for AI risk uncertainty
+2026-07-12 06:06:28 |   Running MC simulations (n_mc=20) for 181 validation patients...
+2026-07-12 06:06:46 |   -> uncertainty_analysis_report.csv saved (1086 rows)
+2026-07-12 06:06:46 |   Cohort-wide uncertainty summary:
+2026-07-12 06:06:46 |     survival_prob_1yr: median=0.9781, median CI width=0.0385
+2026-07-12 06:06:46 |     survival_prob_2yr: median=0.9567, median CI width=0.0742
+2026-07-12 06:06:46 |     survival_prob_3yr: median=0.9358, median CI width=0.1074
+2026-07-12 06:06:46 |     ttp_natural_days: median=181.7551, median CI width=97.2092
+2026-07-12 06:06:46 |     deepsurv_risk: median=-2.8028, median CI width=1.6161
+2026-07-12 06:06:46 |     ttp_cv: median=0.1754, median CI width=nan
+2026-07-12 06:06:46 |   Uncertainty by stage (1yr survival CI width):
+2026-07-12 06:06:46 |     IA: n=37, median CI width=0.0311
+2026-07-12 06:06:46 |     IV: n=10, median CI width=0.1086
+2026-07-12 06:06:46 |     IB: n=40, median CI width=0.0055
+2026-07-12 06:06:46 |     IIIA: n=25, median CI width=0.0581
+2026-07-12 06:06:46 |     not_available: n=24, median CI width=0.0797
+2026-07-12 06:06:46 |     IIB: n=19, median CI width=0.0385
+2026-07-12 06:06:46 |     II: n=1, median CI width=0.9908
+2026-07-12 06:06:46 |     IIIB: n=6, median CI width=0.4748
+2026-07-12 06:06:46 |     IIA: n=16, median CI width=0.0792
+2026-07-12 06:06:46 |     I: n=2, median CI width=0.1139
+2026-07-12 06:06:46 |     III: n=1, median CI width=0.0737
+2026-07-12 06:06:46 |   7E: PASS
+
+2026-07-12 06:06:46 | ======================================================================
+2026-07-12 06:06:46 | PHASE 7F: Explainable Digital Twin
+2026-07-12 06:06:46 | ======================================================================
+2026-07-12 06:06:46 |   Permutation importance not found — using feature names only
+2026-07-12 06:06:46 |   -> digital_twin_explainability_report.csv saved (181 rows)
+2026-07-12 06:06:46 |   7F: PASS
+
+2026-07-12 06:06:46 | Saving Digital Twin states for interface...
+2026-07-12 06:06:46 |   -> twin_summaries_for_interface.csv saved (919 patients)
+
+2026-07-12 06:06:46 | ======================================================================
+2026-07-12 06:06:46 | PHASE 7 SUMMARY
+2026-07-12 06:06:46 | ======================================================================
+2026-07-12 06:06:46 |   Patients: 919
+2026-07-12 06:06:46 |   Simulations: 3676 OK, 0 failed
+2026-07-12 06:06:46 |   Safety flags: 0
+2026-07-12 06:06:46 |   Validation C-index: 0.6251 (0.5587-0.6964)
+2026-07-12 06:06:46 |   Calibration slope: 0.5940
+2026-07-12 06:06:46 |   IBS: 0.8844 (null: 0.6582)
+2026-07-12 06:06:46 |   Biological validation: 1/3 passed
+2026-07-12 06:06:46 |   Treatment benefit: chemo=100.0%, immuno=100.0%, targeted=100.0%
+
+2026-07-12 06:06:46 | RESEARCH PROTOTYPE — NOT FOR CLINICAL USE. This system generates computational simulations for hypothesis generation. It does not determine the best treatment for individual patients.
+2026-07-12 06:06:46 |   Phase 7A-7F complete. Run test_phase7_digital_twin.py for 7H.
+2026-07-12 06:06:46 |   Streamlit app: PHASE7_DIGITAL_TWIN/app/digital_twin_app.py
+
+2026-07-12 06:06:46 | ======================================================================

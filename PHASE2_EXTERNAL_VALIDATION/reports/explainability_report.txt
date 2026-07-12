@@ -1,0 +1,83 @@
+======================================================================
+MODEL EXPLAINABILITY REPORT
+======================================================================
+
+Model: CoxPH (lifelines CoxPHFitter, penalizer=1.0)
+Total features: 143 (127 genes + 16 clinical)
+
+IMPORTANT NOTE: Explainability outputs describe the FULL 127-gene trained model.
+A feature highlighted as important may have been UNAVAILABLE in one or more GEO
+cohorts. Cross-reference the 'Missing_in' column in feature_importance.csv.
+
+TOP 20 FEATURES BY |β|:
+Rank   Feature                   Symbol                   β       HR Direction          Missing in          
+--------------------------------------------------------------------------------------------------------------
+1      Stage=IA                  Stage=IA         -0.056221   0.9453 Risk-decreasing    N/A                 
+2      ENSG00000125848.10        FLRT3             0.044872   1.0459 Risk-increasing                        
+3      Stage=IV                  Stage=IV          0.039491   1.0403 Risk-increasing    N/A                 
+4      ENSG00000196549.12        MME               0.034379   1.0350 Risk-increasing                        
+5      ENSG00000223350.2         IGLV9-49         -0.034299   0.9663 Risk-decreasing    GSE30219, GSE50081, GSE72094, GSE31210
+6      ENSG00000171560.16        FGA               0.033822   1.0344 Risk-increasing                        
+7      ENSG00000263639.7         MSMB             -0.033499   0.9671 Risk-decreasing                        
+8      ENSG00000009694.13        TENM1            -0.033479   0.9671 Risk-decreasing                        
+9      Stage=IB                  Stage=IB          0.032715   1.0333 Risk-increasing    N/A                 
+10     ENSG00000171557.17        FGG               0.032618   1.0332 Risk-increasing                        
+11     Age                       Age               0.032185   1.0327 Risk-increasing    N/A                 
+12     ENSG00000185860.13        CCDC190          -0.032133   0.9684 Risk-decreasing                        
+13     ENSG00000107984.10        DKK1              0.031422   1.0319 Risk-increasing                        
+14     ENSG00000176532.4         PRR15             0.030184   1.0306 Risk-increasing                        
+15     ENSG00000169436.17        COL22A1           0.029576   1.0300 Risk-increasing                        
+16     ENSG00000184985.16        SORCS2           -0.028937   0.9715 Risk-decreasing                        
+17     ENSG00000021826.17        CPS1              0.027210   1.0276 Risk-increasing                        
+18     ENSG00000156234.7         CXCL13           -0.027056   0.9733 Risk-decreasing                        
+19     Stage=IIIB                Stage=IIIB        0.027011   1.0274 Risk-increasing    N/A                 
+20     ENSG00000153404.14        PLEKHG4B         -0.026334   0.9740 Risk-decreasing                        
+
+CLINICAL FEATURES:
+  Stage=IA: β=-0.056221, HR=0.9453, Risk-decreasing
+  Stage=IV: β=0.039491, HR=1.0403, Risk-increasing
+  Stage=IB: β=0.032715, HR=1.0333, Risk-increasing
+  Age: β=0.032185, HR=1.0327, Risk-increasing
+  Stage=IIIB: β=0.027011, HR=1.0274, Risk-increasing
+  Stage=IIB: β=-0.025380, HR=0.9749, Risk-decreasing
+  Stage=III: β=0.025267, HR=1.0256, Risk-increasing
+  Stage=II: β=0.025068, HR=1.0254, Risk-increasing
+  Stage=I: β=0.017078, HR=1.0172, Risk-increasing
+  Smoking_Status=Former: β=-0.012372, HR=0.9877, Risk-decreasing
+  Cancer_Type=LUAD_Adenocarcinoma: β=0.009557, HR=1.0096, Risk-increasing
+  Cancer_Type=LUSC_SquamousCell: β=-0.009557, HR=0.9905, Risk-decreasing
+  Smoking_Status=Never: β=0.008578, HR=1.0086, Risk-increasing
+  Smoking_Status=Current: β=0.007845, HR=1.0079, Risk-increasing
+  Stage=IIA: β=0.004999, HR=1.0050, Risk-increasing
+  Stage=IIIA: β=-0.002015, HR=0.9980, Risk-decreasing
+
+GENE AVAILABILITY CROSS-REFERENCE:
+Gene                      Symbol                 |β| Missing in                    
+-------------------------------------------------------------------------------------
+ENSG00000125848.10        FLRT3             0.044872                               
+ENSG00000196549.12        MME               0.034379                               
+ENSG00000223350.2         IGLV9-49          0.034299 GSE30219, GSE50081, GSE72094, GSE31210
+ENSG00000171560.16        FGA               0.033822                               
+ENSG00000263639.7         MSMB              0.033499                               
+ENSG00000009694.13        TENM1             0.033479                               
+ENSG00000171557.17        FGG               0.032618                               
+ENSG00000185860.13        CCDC190           0.032133                               
+ENSG00000107984.10        DKK1              0.031422                               
+ENSG00000176532.4         PRR15             0.030184                               
+ENSG00000169436.17        COL22A1           0.029576                               
+ENSG00000184985.16        SORCS2            0.028937                               
+ENSG00000021826.17        CPS1              0.027210                               
+ENSG00000156234.7         CXCL13            0.027056                               
+ENSG00000153404.14        PLEKHG4B          0.026334                               
+  ... (see feature_importance.csv for full list)
+
+PERMUTATION IMPORTANCE:
+  Not computed for external validation cohorts because permuting features
+  in a reduced-panel setting would conflate missing-gene effects with
+  importance effects. Feature importance is reported from the frozen model's
+  coefficients (|β|), which is the standard approach for CoxPH models.
+
+SHAP ANALYSIS:
+  SHAP values are not directly applicable to CoxPH models in the same way
+  as tree-based models. The coefficient-based importance (|β|) serves as
+  the primary explainability method for this linear model.

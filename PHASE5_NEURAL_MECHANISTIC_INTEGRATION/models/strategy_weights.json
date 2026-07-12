@@ -1,0 +1,6 @@
+{
+  "strategy": "C",
+  "w_neural": 0.000737606959866651,
+  "w_mechanistic": 0.9992623930401333,
+  "normalization": "rank"
+}

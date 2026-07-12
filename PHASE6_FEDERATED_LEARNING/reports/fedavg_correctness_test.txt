@@ -1,0 +1,7 @@
+FedAvg Correctness Test — Identical Data at All Sites
+============================================================
+Spearman correlation (centralized vs fedavg): 0.9955
+Centralized C-index: 0.9384
+FedAvg C-index: 0.9393
+Abs difference: 0.0009
+Result: PASS (threshold: rho > 0.95)

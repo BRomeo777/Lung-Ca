@@ -1,0 +1,15 @@
+{
+  "n_params": 11743,
+  "model_size_mb": 0.0448,
+  "n_rounds": 50,
+  "n_sites": 5,
+  "comm_per_round_mb": 0.448,
+  "total_comm_mb": 22.4,
+  "fedavg_time_s": 53.7,
+  "centralized_time_s": 8.7,
+  "overhead_ratio": 6.14,
+  "what_is_shared": "Model weights (state_dict) \u2014 all layers including BatchNorm parameters",
+  "what_is_not_shared": "Raw patient data, clinical records, gene expression matrices, survival outcomes",
+  "privacy_guarantee": "NONE \u2014 no differential privacy, no secure aggregation, no gradient compression",
+  "residual_risks": "Weight-based membership inference attacks; model inversion; property inference"
+}

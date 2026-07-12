@@ -1,0 +1,57 @@
+======================================================================
+GEO MAPPING QUALITY CONTROL REPORT
+======================================================================
+Generated: 2026-07-09 11:25:22
+
+QC CHECKLIST:
+
+  [x] No patient data changed
+  [x] No clinical variables changed
+  [x] No survival outcomes changed
+  [x] No cohorts merged
+  [x] Only platform annotation was added
+  [x] Raw probe matrices preserved (untouched in GEO raw data directory)
+  [x] Mapping reproducible (annotation files cached in annotation_cache/)
+  [x] Gene panel coverage reproducible (frozen Phase 1B panel used)
+  [x] Multi-probe collapsing consistently applied (highest mean expression rule)
+
+READINESS CLASSIFICATION SUMMARY:
+
+  GSE31210: REQUIRES PHASE 1D EXPRESSION HARMONIZATION
+    Coverage: 95.3%
+    Reason: Good coverage (95.3%) but expression scale needs harmonization
+
+  GSE30219: READY FOR PHASE 2
+    Coverage: 95.3%
+    Reason: Good coverage (95.3%) and expression compatibility
+
+  GSE50081: READY FOR PHASE 2
+    Coverage: 95.3%
+    Reason: Good coverage (95.3%) and expression compatibility
+
+  GSE68465: EXCLUDED
+    Coverage: 66.1%
+    Reason: Insufficient gene overlap (66.1%)
+
+  GSE72094: READY FOR PHASE 2
+    Coverage: 92.1%
+    Reason: Good coverage (92.1%) and expression compatibility
+
+FILES GENERATED:
+  reports/phase1B_feature_panel_verification.txt
+  reports/geo_platform_confirmation.csv
+  reports/annotation_sources_used.txt
+  reports/probe_gene_mapping_report.csv
+  reports/gene_symbol_quality_report.csv
+  reports/panel_coverage_by_series.csv
+  reports/expression_compatibility_report.csv
+  reports/geo_mapping_quality_control.txt
+  reports/phase1B_ensg_to_symbol_mapping.csv
+  reports/missing_genes_detail.csv
+  processed_data/GSE*/expression_gene_mapped.csv
+
+RAW DATA PRESERVED:
+  Original probe-level matrices: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_AI_Datasets\GEO
+  Phase 1A processed probe matrices: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\02_PROCESSED_DATA\GEO_EXTERNAL_VALIDATION
+
+======================================================================

@@ -1,0 +1,32 @@
+======================================================================
+RANDOM SEED & REPRODUCIBILITY REPORT
+======================================================================
+
+Data split seed: 42
+Model training seed: 42
+CV folds: 5 (StratifiedKFold, shuffle=True, random_state=42)
+Stratification: by event status (Survival_Status)
+
+── Software environment ──
+  Python: 3.14.3
+  numpy: 2.4.3
+  pandas: 2.3.3
+  scikit-learn: 1.9.0
+  lifelines: 0.30.3
+  scikit-survival: 0.28.0
+  xgboost: 3.3.0
+
+── Preprocessing fitted on TRAIN only ──
+  Imputation values: learned from TCGA_train.csv
+  Scaler: StandardScaler fit on TCGA_train.csv
+  Feature selection: variance filter + univariate Cox on TCGA_train.csv
+  Number of features before selection: 60664
+  Number of features after selection: 143
+
+── Leakage prevention checklist ──
+  [x] Validation set never used for imputation fitting
+  [x] Validation set never used for scaler fitting
+  [x] Validation set never used for feature selection
+  [x] Validation set never used for hyperparameter tuning
+  [x] Validation set never used for model selection
+  [x] No retraining/reselection after seeing validation results

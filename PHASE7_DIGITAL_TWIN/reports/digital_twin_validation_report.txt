@@ -1,0 +1,55 @@
+Digital Twin Validation Report — Phase 7D (Post-Processed)
+==================================================
+
+Validation set: 182 patients
+All patients (for biological validation): 919 patients
+
+1. PREDICTION VALIDATION
+------------------------------
+   C-index (DeepSurv risk): 0.6333 (95% CI: 0.5748-0.7021)
+   Phase 3 reported C-index: 0.6131
+   Delta (twin - phase3): 0.0202
+   Calibration slope: 0.6189 (target: 0.8-1.2)
+   IBS (Cox-calibrated): 0.7196
+   IBS (null model): 0.6505
+
+2. SUBGROUP PREDICTION ERROR BY STAGE
+------------------------------
+   IA: n=37, C-index=0.4266 (0.1885-0.6622)
+   IB: n=40, C-index=0.4506 (0.3397-0.5861)
+   IIA: n=16, C-index=0.6049 (0.2808-0.9559)
+   IIB: n=19, C-index=0.5307 (0.3031-0.8225)
+   IIIA: n=25, C-index=0.5989 (0.4040-0.7866)
+   IIIB: n=7, C-index=0.8571 (0.3179-1.0000)
+   IV: n=10, C-index=nan (nan-nan)
+
+3. BIOLOGICAL VALIDATION (ALL patients for parameter variance)
+------------------------------
+   NOTE: Validation patients share population prior alpha (no personalization).
+   Tests 1-2 use ALL patients (train+val) for parameter variance.
+   3.1 Faster growth → worse outcomes: rho=-0.1786, p=0.0004 → PASS
+   3.2 Higher mech risk → shorter survival: rho=-0.0153, p=0.7612 → FAIL
+   3.3 Effective therapies → improved outcomes: chemo=100.0%, immuno=100.0%, targeted=100.0% → PASS
+        Threshold: ≥50% for at least one therapy
+
+4. TREATMENT SIMULATION VALIDITY
+------------------------------
+   Responders: 87, Non-responders: 95
+   Median TTP — Responders: 28.3mo, Non-responders: 22.2mo
+   Log-rank p-value: 3.8438e-44
+
+   CAVEAT: Responder/non-responder labels are model-derived (simulated TTP benefit).
+   This validates internal consistency of the treatment-response module,
+   NOT real-world treatment discrimination. Only call it clinical validation
+   if labels come from real, independent patient records.
+
+5. CIRCULARITY CAVEAT
+------------------------------
+   The mechanistic component of the Digital Twin is partially circular.
+   TTP and treatment response outcomes are simulated by the same Gompertz ODE
+   model that is used inside the twin. Biological validation tests (3.1-3.3)
+   validate internal consistency, not real-world predictive accuracy.
+   Prediction validation (C-index, calibration, IBS) uses real survival outcomes
+   and is NOT circular.
+
+RESEARCH PROTOTYPE — NOT FOR CLINICAL USE. This system generates computational simulations for hypothesis generation. It does NOT determine the best treatment for individual patients.

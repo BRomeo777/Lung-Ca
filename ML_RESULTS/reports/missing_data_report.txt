@@ -1,0 +1,21 @@
+======================================================================
+MISSING DATA REPORT
+======================================================================
+
+Feature                    Train Missing  Train % Decision                      
+--------------------------------------------------------------------------------
+Age                                   12     1.6% Median impute (continuous)    
+Sex                                  738   100.0% DROP (>50% missing)           
+Cancer_Type                            0     0.0% Most-frequent impute (categorical)
+Stage                                103    14.0% Most-frequent impute (categorical)
+Smoking_Status                        12     1.6% Most-frequent impute (categorical)
+Treatment                            738   100.0% DROP (>50% missing)           
+
+── Applied imputation values (learned from TRAIN only) ──
+  Age: median=67.00
+  Cancer_Type: mode='LUSC_SquamousCell'
+  Stage: mode='IB'
+  Smoking_Status: mode='Former'
+
+Dropped columns: ['Sex', 'Treatment']
+Kept clinical features: ['Age', 'Cancer_Type', 'Stage', 'Smoking_Status']

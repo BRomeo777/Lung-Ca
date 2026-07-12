@@ -1,0 +1,112 @@
+2026-07-11 18:24:21 | ======================================================================
+2026-07-11 18:24:21 | PHASE 6: FEDERATED LEARNING — SIMULATED 5-SITE NON-IID
+2026-07-11 18:24:21 | ======================================================================
+2026-07-11 18:24:21 | SIMULATED FEDERATED SETTING — NOT a real multi-institutional deployment.
+2026-07-11 18:24:21 | RESEARCH PROTOTYPE ONLY — NOT FOR CLINICAL USE.
+2026-07-11 18:24:21 | 
+2026-07-11 18:24:21 |   Phase 3 config: 143 features, arch=[64, 32]
+2026-07-11 18:24:21 | 
+2026-07-11 18:24:21 | Loading data for 5 simulated sites...
+2026-07-11 18:24:42 |   TCGA: 917 patients (394 events), RNA-seq
+2026-07-11 18:24:42 |   GSE30219: 293 patients (200 events), Affymetrix HuGene 1.0
+2026-07-11 18:24:42 |   GSE50081: 181 patients (75 events), Affymetrix HG-U133 Plus 2.0
+2026-07-11 18:24:46 |   GSE72094: 398 patients (113 events), Affymetrix HG-U133 Plus 2.0
+2026-07-11 18:24:46 |   GSE31210: 226 patients (35 events), Affymetrix HG-U133 Plus 2.0
+2026-07-11 18:24:46 |   Total sites: 5
+2026-07-11 18:24:46 | 
+2026-07-11 18:24:46 | ======================================================================
+2026-07-11 18:24:46 | STEP 1: Establish two bounds — centralized (pooled) + per-site (no-collab)
+2026-07-11 18:24:46 | ======================================================================
+2026-07-11 18:24:46 |   Training centralized DeepSurv on pooled data from all sites...
+2026-07-11 18:24:46 |   Pooled: 1375 train, 240 val
+2026-07-11 18:24:54 |     Epoch 0: val_ci=0.4697, best=0.4697
+2026-07-11 18:25:01 |     Epoch 50: val_ci=0.5831, best=0.5935
+2026-07-11 18:25:01 |   Centralized pooled val C-index: 0.5935
+2026-07-11 18:25:01 |   Evaluating centralized model on each site's held-out test set...
+2026-07-11 18:25:06 |     TCGA: C-index=0.6921 (0.6170-0.7597)
+2026-07-11 18:25:08 |     GSE30219: C-index=0.5932 (0.4998-0.6846)
+2026-07-11 18:25:09 |     GSE50081: C-index=0.4647 (0.3037-0.6415)
+2026-07-11 18:25:11 |     GSE72094: C-index=0.6417 (0.5128-0.7635)
+2026-07-11 18:25:12 |     GSE31210: C-index=0.6969 (0.3958-0.9436)
+2026-07-11 18:25:12 |   Training per-site DeepSurv models (no collaboration)...
+2026-07-11 18:25:20 |     TCGA: C-index=0.6723 (0.5989-0.7413) [train_ci=0.5744]
+2026-07-11 18:25:35 |     GSE30219: C-index=0.5982 (0.5003-0.6932) [train_ci=0.5805]
+2026-07-11 18:25:38 |     GSE50081: C-index=0.4676 (0.3220-0.6223) [train_ci=0.5714]
+2026-07-11 18:25:42 |     GSE72094: C-index=0.3443 (0.2273-0.4740) [train_ci=0.5365]
+2026-07-11 18:25:45 |     GSE31210: C-index=0.6313 (0.3392-0.8631) [train_ci=0.6520]
+2026-07-11 18:25:45 |   -> bounds_comparison.csv saved
+2026-07-11 18:25:45 | 
+2026-07-11 18:25:45 | ======================================================================
+2026-07-11 18:25:45 | STEP 2: FedAvg implementation + correctness unit test
+2026-07-11 18:25:45 | ======================================================================
+2026-07-11 18:25:45 |   Correctness test: identical synthetic data at all sites...
+2026-07-11 18:26:10 |   Spearman correlation (centralized vs fedavg): 0.9955
+2026-07-11 18:26:10 |   Centralized C-index: 0.9384
+2026-07-11 18:26:10 |   FedAvg C-index: 0.9393
+2026-07-11 18:26:10 |   Difference: 0.0009
+2026-07-11 18:26:10 |   CORRECTNESS TEST: PASS (rho > 0.95)
+2026-07-11 18:26:10 | 
+2026-07-11 18:26:10 | ======================================================================
+2026-07-11 18:26:10 | STEP 3: FedAvg across 5 simulated non-IID sites
+2026-07-11 18:26:10 | ======================================================================
+2026-07-11 18:26:10 |   Sites in federation: 5
+2026-07-11 18:26:10 |   Hyperparameters: rounds=50, local_epochs=5, lr=0.001, wd=5e-5, batch_size=256
+2026-07-11 18:26:10 |   Client sampling: all sites every round (only 5 sites)
+2026-07-11 18:26:11 |     Round 0: global_val_ci=0.4964, local_cis=['0.4992', '0.4782', '0.5639', '0.4982', '0.5049']
+2026-07-11 18:26:22 |     Round 10: global_val_ci=0.5335, local_cis=['0.5566', '0.5256', '0.4286', '0.4416', '0.5343']
+2026-07-11 18:26:31 |     Round 20: global_val_ci=0.5487, local_cis=['0.5446', '0.5521', '0.4887', '0.4307', '0.6520']
+2026-07-11 18:26:42 |     Round 30: global_val_ci=0.5660, local_cis=['0.5525', '0.5634', '0.4887', '0.4453', '0.7304']
+2026-07-11 18:26:56 |     Round 40: global_val_ci=0.5848, local_cis=['0.5455', '0.5483', '0.5940', '0.4416', '0.7010']
+2026-07-11 18:27:04 |     Round 49: global_val_ci=0.5861, local_cis=['0.5496', '0.5426', '0.6617', '0.4708', '0.6814']
+2026-07-11 18:27:04 |   FedAvg training completed in 53.7s (0.9 min)
+2026-07-11 18:27:04 |   Evaluating federated global model on each site's held-out test set...
+2026-07-11 18:27:08 |     TCGA: C-index=0.6594 (0.5903-0.7329)
+2026-07-11 18:27:10 |     GSE30219: C-index=0.5737 (0.4761-0.6710)
+2026-07-11 18:27:11 |     GSE50081: C-index=0.5412 (0.3798-0.7163)
+2026-07-11 18:27:13 |     GSE72094: C-index=0.5840 (0.4499-0.7078)
+2026-07-11 18:27:14 |     GSE31210: C-index=0.6313 (0.3436-0.9062)
+2026-07-11 18:27:22 |   Pooled federated C-index: 0.6319 (0.5847-0.6738)
+2026-07-11 18:27:22 |   -> federated_comparison.csv saved
+2026-07-11 18:27:22 |   -> fedavg_round_history.csv saved
+2026-07-11 18:27:22 |   -> fedavg_global_model.pt saved
+2026-07-11 18:27:22 | 
+2026-07-11 18:27:22 | ======================================================================
+2026-07-11 18:27:22 | STEP 4: Non-IID heterogeneity analysis
+2026-07-11 18:27:22 | ======================================================================
+2026-07-11 18:27:22 |   -> noniid_heterogeneity.csv saved
+2026-07-11 18:27:22 |   Per-site summary:
+2026-07-11 18:27:22 |     TCGA: platform=RNA-seq, n_train=625, events=43.0%, coverage=100.0%, fed_ci=0.6594, cent_ci=0.6921, delta=-0.0327
+2026-07-11 18:27:22 |     GSE30219: platform=Affymetrix HuGene 1.0, n_train=200, events=68.3%, coverage=0.0%, fed_ci=0.5737, cent_ci=0.5932, delta=-0.0194
+2026-07-11 18:27:22 |     GSE50081: platform=Affymetrix HG-U133 Plus 2.0, n_train=124, events=41.4%, coverage=0.0%, fed_ci=0.5412, cent_ci=0.4647, delta=0.0765
+2026-07-11 18:27:22 |     GSE72094: platform=Affymetrix HG-U133 Plus 2.0, n_train=272, events=28.4%, coverage=0.0%, fed_ci=0.5840, cent_ci=0.6417, delta=-0.0577
+2026-07-11 18:27:22 |     GSE31210: platform=Affymetrix HG-U133 Plus 2.0, n_train=154, events=15.5%, coverage=0.0%, fed_ci=0.6313, cent_ci=0.6969, delta=-0.0656
+2026-07-11 18:27:22 |   Spearman(delta vs event_rate): rho=0.5000, p=0.3910
+2026-07-11 18:27:22 |   Spearman(delta vs n_train): rho=-0.4000, p=0.5046
+2026-07-11 18:27:22 | 
+2026-07-11 18:27:22 | ======================================================================
+2026-07-11 18:27:22 | STEP 5: Privacy and cost report
+2026-07-11 18:27:22 | ======================================================================
+2026-07-11 18:27:22 |   Re-timing centralized training for comparison...
+2026-07-11 18:27:31 |   Model parameters: 11743
+2026-07-11 18:27:31 |   Model size: 0.0448 MB
+2026-07-11 18:27:31 |   Rounds: 50
+2026-07-11 18:27:31 |   Sites: 5
+2026-07-11 18:27:31 |   Communication per round: 0.4480 MB
+2026-07-11 18:27:31 |   Total communication: 22.40 MB
+2026-07-11 18:27:31 |   FedAvg wall-clock time: 53.7s (0.9 min)
+2026-07-11 18:27:31 |   Centralized wall-clock time: 8.7s (0.1 min)
+2026-07-11 18:27:31 |   Overhead ratio: 6.14x
+2026-07-11 18:27:31 |   -> privacy_and_cost.json saved
+2026-07-11 18:27:31 | 
+2026-07-11 18:27:31 | ======================================================================
+2026-07-11 18:27:31 | PHASE 6 SUMMARY
+2026-07-11 18:27:31 | ======================================================================
+2026-07-11 18:27:40 |   Pooled test C-index:
+2026-07-11 18:27:40 |     Centralized:  0.6769 (0.6335-0.7219)
+2026-07-11 18:27:40 |     Federated:    0.6319 (0.5847-0.6738)
+2026-07-11 18:27:40 |     Delta (fed-cent): -0.0451
+2026-07-11 18:27:40 |     Per-site mean: 0.5427 (range: 0.3443-0.6723)
+2026-07-11 18:27:40 | 
+2026-07-11 18:27:40 |   SIMULATED FEDERATED SETTING — NOT a real multi-institutional deployment.
+2026-07-11 18:27:40 |   RESEARCH PROTOTYPE ONLY — NOT FOR CLINICAL USE.
+2026-07-11 18:27:40 |   Phase 6 Steps 1-5 complete. Run test_phase6_regression.py for Step 6.

@@ -1,0 +1,10 @@
+{
+  "source": "GDC API (https://api.gdc.cancer.gov/cases)",
+  "project": "CPTAC-3",
+  "n_lung_cases": 337,
+  "filter": "diagnoses.site_of_resection_or_biopsy in lung sites",
+  "pdc_status": "UNREACHABLE - PDC GraphQL API timed out after multiple attempts",
+  "pdc_url": "https://pdc.cancer.gov/graphql",
+  "manual_pdc_download": "https://pdc.cancer.gov/pdc/study-summary?studyId=CPTAC3-LUAD",
+  "note": "Clinical data downloaded from GDC. Proteomics data requires PDC API which was unreachable. To obtain proteomics, visit the PDC study page or install the cptac Python package (requires C++ build tools)."
+}

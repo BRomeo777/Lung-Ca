@@ -1,0 +1,76 @@
+======================================================================
+PHASE 1D — STEP 4: SCALE ALIGNMENT REPORT
+GSE31210 Post-Transformation Quality Check
+======================================================================
+
+Generated: 2026-07-09 11:56:16
+
+── 1. GSE31210 Pre-Transformation (Raw Intensity) ──
+  Scale: Raw microarray intensity (GPL570 / Affymetrix HG-U133 Plus 2.0)
+  Min:    0.6572
+  Max:    31854.9500
+  Median: ~735.67
+  Range:  Wide, right-skewed, non-negative
+
+── 2. Transformation Applied ──
+  Formula: X_new = log2(X + 1)
+  Type: Fixed deterministic mathematical transformation
+  Parameters estimated from data: NONE
+  Batch correction: NONE
+  Quantile normalization: NONE
+  Centering/scaling: NONE
+
+── 3. GSE31210 Post-Transformation Statistics ──
+  Min:    0.7287
+  Max:    14.9593
+  Median: 7.6547
+  Mean:   7.7661
+  Std:    2.6904
+  Q1:     5.9380
+  Q3:     9.6204
+  IQR:    3.6824
+
+── 4. Comparison with Other Ready GEO Cohorts ──
+  Cohort                Min        Max     Median         Q1         Q3       Mean        Std
+  ----------------------------------------------------------------------------------------------
+  GSE31210*          0.7287    14.9593     7.6547     5.9380     9.6204     7.7661     2.6904
+  GSE30219           2.6055    14.5451     5.6633     4.5334     7.5795     6.2246     2.1778
+  GSE50081           1.9686    14.5273     5.6853     4.3379     7.4312     6.0557     2.2345
+  GSE72094           0.6079    14.6207     7.0557     4.3452     9.1576     6.8787     2.7812
+  TCGA_train         0.0000 115293.0000  1136.0000          —          —          —          —
+
+  * GSE31210 post-log2 transformation
+
+── 5. Distribution Shape Comparison ──
+  GSE31210 (post-log2): range [0.73, 14.96], median 7.65
+  GSE30219: range [2.61, 14.55], median 5.66
+  GSE50081: range [1.97, 14.53], median 5.69
+  GSE72094: range [0.61, 14.62], median 7.06
+  TCGA train: range [0.00, 115293.00], median 1136.00
+
+── 6. Remaining Platform Differences ──
+  Residual platform-specific differences remain between GSE31210
+  and TCGA RNA-seq training data, consistent with the RNA-seq-versus-
+  microarray measurement gap that applies to all four GEO validation
+  cohorts (GSE30219, GSE50081, GSE72094, and GSE31210) — not a
+  limitation unique to GSE31210. This was not corrected in Phase 1D
+  and must be carried forward as a documented limitation into Phase 2.
+
+  Specifically:
+  - TCGA training: RNA-seq STAR counts → CPM normalization → log2(CPM+1)
+  - GEO cohorts: Microarray fluorescence intensities → log2(intensity+1)
+  - CPM normalization accounts for sequencing depth; microarray
+    intensities are already abundance-proportional without library-size
+    normalization.
+  - The log2 step aligns the dynamic range and distribution shape at
+    a coarse level, but does not establish full measurement equivalence.
+
+── 7. Cross-Platform Limitation Statement ──
+  The RNA-seq-vs-microarray platform gap documented here applies
+  equally to ALL four GEO validation cohorts proceeding to Phase 2:
+  GSE30219, GSE50081, GSE72094, and GSE31210. GSE31210 differs from
+  the other three only in that it additionally required the log2
+  transformation step (Phase 1D); it does not carry a distinct
+  limitation that they do not also share.
+
+======================================================================

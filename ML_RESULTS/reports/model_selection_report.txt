@@ -1,0 +1,19 @@
+======================================================================
+MODEL SELECTION REPORT — Cross-Validation Only
+======================================================================
+
+Selection criterion: Mean 5-fold CV C-index (higher = better)
+Validation set (TCGA_internal_validation.csv) was NOT used for selection.
+
+Rank   Model          CV C-index      ± Std Parameters
+--------------------------------------------------------------------------------
+1      CoxPH              0.6486     0.0259 {'penalizer': 1.0, 'l1_ratio': nan, 'alpha': nan, 'n_estimators': nan, 'max_depth': nan, 'min_samples_leaf': nan, 'learning_rate': nan}
+2      RSF                0.6455     0.0085 {'penalizer': nan, 'l1_ratio': nan, 'alpha': nan, 'n_estimators': 200.0, 'max_depth': nan, 'min_samples_leaf': 10.0, 'learning_rate': nan}
+3      Coxnet             0.6347     0.0293 {'penalizer': nan, 'l1_ratio': 0.1, 'alpha': 0.1, 'n_estimators': nan, 'max_depth': nan, 'min_samples_leaf': nan, 'learning_rate': nan}
+4      XGBoost            0.6298     0.0198 {'penalizer': nan, 'l1_ratio': nan, 'alpha': nan, 'n_estimators': 100.0, 'max_depth': 3.0, 'min_samples_leaf': nan, 'learning_rate': 0.1}
+
+Selected model: CoxPH (CV C-index=0.6486)
+
+NOTE: All four models will still be evaluated on the internal validation set.
+The CV winner is noted for reference but validation performance is reported for all models.
+Internal validation is NOT used to pick a winner among these four models.

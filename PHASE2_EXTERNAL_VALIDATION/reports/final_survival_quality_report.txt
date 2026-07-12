@@ -1,0 +1,15 @@
+======================================================================
+FINAL SURVIVAL QUALITY REPORT
+======================================================================
+
+Excluded patients (invalid survival records):
+  TCGA-05-4395: OS_time=0, OS_event=1 (biologically impossible)
+  TCGA-77-A5G6: OS_time=0, OS_event=1 (biologically impossible)
+  Reason: Per Pre-Phase 2 Audit Finding #4 (settled decision)
+  Action: Excluded from all Phase 2 analyses
+
+TCGA Training: 814 -> 813 (removed 1)
+TCGA Internal Validation: 204 -> 203 (removed 1)
+
+Final training N (after dropping NaN OS): 737
+Final validation N (after dropping NaN OS): 180

@@ -1,0 +1,32 @@
+======================================================================
+ANNOTATION SOURCES USED
+======================================================================
+Generated: 2026-07-09 11:23:28
+
+Only platform-level annotation resources were retrieved.
+No patient-level data were downloaded.
+
+  GPL_ID: GPL15048
+    Source: mygene.info API (reverse: gene symbol -> probe ID)
+    File: GPL15048_annotation.tsv.gz
+    Version: current
+    Retrieved: 2026-07-09
+    Annotations: 24623
+
+  GPL_ID: GPL570
+    Source: mygene.info API (reverse: gene symbol -> probe ID)
+    File: GPL570_annotation.tsv.gz
+    Version: current
+    Retrieved: 2026-07-09
+    Annotations: 262
+
+  GPL_ID: GPL96
+    Source: mygene.info API (reverse: gene symbol -> probe ID)
+    File: GPL96_annotation.tsv.gz
+    Version: current
+    Retrieved: 2026-07-09
+    Annotations: 136
+
+Statement: Only platform-level annotation resources were retrieved.
+No patient-level data were downloaded.
+======================================================================

@@ -1,0 +1,43 @@
+======================================================================
+CALIBRATION AND PLATFORM CLUSTER COMPARISON REPORT
+======================================================================
+
+1. CALIBRATION-OFFSET SUMMARY (3-year horizon)
+Cohort              Mean Pred   Observed     Offset        IBS
+------------------------------------------------------------
+TCGA_internal_val      0.2190     0.5751    -0.3561        N/A
+GSE30219               0.3597     0.5809    -0.2213     0.5345
+GSE50081               0.3733     0.7556    -0.3823     0.5758
+GSE72094               0.2762     0.6332    -0.3570     0.1449
+GSE31210               0.2541     0.9086    -0.6545     0.7954
+
+2. PHASE 1D CLUSTER HYPOTHESIS TEST
+
+   Phase 1D observation: Raw expression medians suggested a ~2 log2-unit
+   baseline split: GSE30219/GSE50081 (lower) vs GSE72094/GSE31210 (higher).
+
+   Testing at calibration level:
+   Cluster A (GSE30219, GSE50081): mean offset = -0.3018
+   Cluster B (GSE72094, GSE31210): mean offset = -0.5058
+   Difference (B - A): -0.2040
+
+   FINDING: Calibration offsets are in the same direction but differ
+   in magnitude. Partial support for cluster difference.
+   VERDICT: PARTIALLY SUPPORTED
+
+3. IBS COMPARISON
+   Cluster A mean IBS: 0.5551
+   Cluster B mean IBS: 0.4701
+   Note: IBS values are not directly comparable across cohorts with
+   different event rates and censoring patterns. Interpret with caution.
+
+4. RISK DISTRIBUTION COMPARISON
+   Cluster A risk medians: ['0.5962', '0.5696']
+   Cluster B risk medians: ['0.8576', '0.8535']
+
+5. CONCLUSION
+   The Phase 1D expression-level cluster pattern is partially supported.
+   Calibration behavior should be assessed per-cohort, not by assumed clusters.
+   The standardization step (z-score using TCGA training statistics) appears
+   to partially mitigate the raw expression-level baseline differences,
+   though cohort-specific calibration offsets remain variable.

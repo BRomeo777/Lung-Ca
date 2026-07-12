@@ -1,0 +1,69 @@
+2026-07-12 07:01:31 | ======================================================================
+2026-07-12 07:01:31 | PHASE 7.1: SCIENTIFIC HARDENING (Steps 1-5)
+2026-07-12 07:01:31 | ======================================================================
+2026-07-12 07:01:31 | RESEARCH PROTOTYPE — NOT FOR CLINICAL USE. This system generates computational simulations for hypothesis generation. It does not determine the best treatment for individual patients.
+
+2026-07-12 07:01:31 | Loading Phase 7 artifacts...
+2026-07-12 07:01:32 |   State: 919 pts, Train: 737, Val: 182
+
+2026-07-12 07:01:32 | ======================================================================
+2026-07-12 07:01:32 | STEP 1: Freeze Phase 7 Baseline
+2026-07-12 07:01:32 | ======================================================================
+2026-07-12 07:01:34 |   Archived 27 files
+2026-07-12 07:01:34 |   -> phase7_baseline_manifest.json saved (tag=Phase7_v1.0, git=unknown)
+
+2026-07-12 07:01:34 | ======================================================================
+2026-07-12 07:01:34 | STEP 2: Calibration Audit
+2026-07-12 07:01:34 | ======================================================================
+2026-07-12 07:01:34 |   Val: 182 pts, events=81, censored=101
+2026-07-12 07:01:35 |   Baseline: C=0.6333(0.5748-0.7021), slope=0.6189, ECE=0.0451, ICI=0.3052, IBS=0.7196
+2026-07-12 07:01:38 |   Platt: C=0.6364, slope=0.6316, ECE=0.0451
+2026-07-12 07:01:38 |   Isotonic: C=0.6572, slope=1.2343, ECE=0.0272
+2026-07-12 07:01:40 |   Temp(T=1.62): C=0.6364, slope=1.0041, ECE=0.0451
+2026-07-12 07:01:40 |   Accepted: Platt
+2026-07-12 07:01:40 |   -> calibration_comparison.csv saved
+2026-07-12 07:01:40 |   -> calibration_audit_report.md saved
+
+2026-07-12 07:01:40 | ======================================================================
+2026-07-12 07:01:40 | STEP 3: Treatment Simulation Audit
+2026-07-12 07:01:40 | ======================================================================
+2026-07-12 07:01:40 |   -> treatment_assumption_table.csv saved (8 assumptions)
+2026-07-12 07:01:40 |   chemo: median benefit=19.6mo, IQR=[17.4-21.8], >30d: 182/182
+2026-07-12 07:01:40 |   immuno: median benefit=30.2mo, IQR=[29.4-31.2], >30d: 182/182
+2026-07-12 07:01:40 |   targeted: median benefit=30.2mo, IQR=[29.4-31.2], >30d: 182/182
+2026-07-12 07:01:40 |   -> treatment_simulation_audit.md saved
+
+2026-07-12 07:01:40 | ======================================================================
+2026-07-12 07:01:40 | STEP 4: Real vs. Synthetic Validation Audit
+2026-07-12 07:01:40 | ======================================================================
+2026-07-12 07:01:40 |   -> validation_provenance_report.csv saved (919 patients)
+2026-07-12 07:01:40 |   Minimum n per subgroup: 15 (justification: C-index requires sufficient events for stable ranking)
+2026-07-12 07:01:41 |   val_synthetic_ode: n=182, C=0.6382(0.5754-0.6985), slope=0.6189
+2026-07-12 07:01:44 |   train_personalized_ode: n=737, C=0.6216(0.5911-0.6621), slope=0.5165
+2026-07-12 07:01:47 |   combined_all: n=919, C=0.6235(0.5926-0.6562), slope=0.5350
+2026-07-12 07:01:47 |   val_stage_IA: n=37, C=0.4266
+2026-07-12 07:01:47 |   val_stage_IB: n=40, C=0.4506
+2026-07-12 07:01:48 |   val_stage_IIA: n=16, C=0.6049
+2026-07-12 07:01:48 |   val_stage_IIB: n=19, C=0.5307
+2026-07-12 07:01:48 |   val_stage_IIIA: n=25, C=0.5989
+2026-07-12 07:01:48 |   val_stage_IIIB: n=7 — insufficient
+2026-07-12 07:01:48 |   val_stage_IV: n=10 — insufficient
+2026-07-12 07:01:48 |   -> validation_by_data_origin.csv saved
+
+2026-07-12 07:01:48 | ======================================================================
+2026-07-12 07:01:48 | STEP 5: Biological Plausibility Audit
+2026-07-12 07:01:48 | ======================================================================
+2026-07-12 07:01:48 |   Doubling times: median=866.4d (28.5mo), range=[577.6-1732.9]d
+2026-07-12 07:01:48 |   Literature NSCLC: 30-300d (Gompertz alpha 0.002-0.02/day)
+2026-07-12 07:01:48 |   Growth-survival: rho=-0.1786 (-0.2724--0.0815), p=0.0004, Cohen's d=-0.207
+2026-07-12 07:01:48 |   Natural TTP: median=8.0mo, IQR=[5.8-10.9]
+2026-07-12 07:01:48 |   Literature: untreated NSCLC median OS 4-12mo (stage-dependent)
+2026-07-12 07:01:48 |   chemo benefit: median=21.8mo, all positive=False
+2026-07-12 07:01:48 |   immuno benefit: median=28.0mo, all positive=False
+2026-07-12 07:01:48 |   targeted benefit: median=28.0mo, all positive=False
+2026-07-12 07:01:48 |   alpha: range=[0.000400-0.001200], expected=[0.0001-0.01], plausible=True
+2026-07-12 07:01:48 |   V0: range=[800.000000-179594.000000], expected=[100-500000], plausible=True
+2026-07-12 07:01:48 |   V_max: range=[500000.000000-1500000.000000], expected=[100000.0-10000000.0], plausible=True
+2026-07-12 07:01:48 |   k_immune: range=[0.000067-0.000183], expected=[1e-06-0.001], plausible=True
+2026-07-12 07:01:48 |   TTP outliers (>60mo natural): 0/919 (0.0%)
+2026-07-12 07:01:48 |   -> biological_plausibility_report.md saved

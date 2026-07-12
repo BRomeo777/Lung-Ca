@@ -1,0 +1,24 @@
+======================================================================
+MODEL LOADING VALIDATION REPORT
+======================================================================
+
+Model: CoxPH (lifelines CoxPHFitter)
+Penalizer: 1.0
+Total features: 143
+  Clinical: 16
+  Gene (Ensembl): 127
+
+Scaler: StandardScaler reconstructed from TCGA training data
+  Training samples: 737
+  Feature count: 143
+  Age imputation median: 67.00
+
+Gene symbol mapping:
+  Mapped Ensembl IDs: 125/127
+  Unmapped (no gene symbol): 2
+  Unmapped IDs: ENSG00000272405.1, ENSG00000275216.2
+
+Feature ordering: Verified (matches model params_.index)
+Model status: FROZEN — no retraining performed
+
+Verification: PASSED

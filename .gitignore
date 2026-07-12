@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+env/
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Large model files (not needed in git — artifacts/ has the needed ones)
+PHASE3_DEEP_LEARNING/models/autoencoder.pt
+PHASE3_DEEP_LEARNING/models/deepsurv_*.pt
+PHASE3_DEEP_LEARNING/models/p3_*.pt
+
+# Phase 8 helper script (not needed in repo)
+PHASE8_CDSS/copy_artifacts.py
+
+# PyTorch cache
+*.pth

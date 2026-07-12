@@ -1,0 +1,45 @@
+======================================================================
+PHASE 1D — STEP 1: INPUT SCALE VERIFICATION REPORT
+======================================================================
+
+Generated: 2026-07-09 11:56:12
+
+Input file: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\PHASE1C_GEO_HARMONIZATION\processed_data\GSE31210\expression_gene_mapped.csv
+Source: Phase 1C output (GSE31210/expression_gene_mapped.csv)
+
+Matrix dimensions: 121 genes x 246 samples
+
+── Gene Identifiers ──
+  Total genes: 121
+  First 5: ['ABCC2', 'ADGRF4', 'ADH1C', 'ADM', 'AHNAK2']
+  Last 5: ['TMPRSS11E', 'TNNT1', 'TNS4', 'TSPAN7', 'ZBTB7C']
+  Gene identifiers unchanged from Phase 1C: YES (no re-mapping performed)
+
+── Sample Identifiers ──
+  Total samples: 246
+  First 5: ['GSM773540', 'GSM773541', 'GSM773542', 'GSM773543', 'GSM773544']
+  Patient/sample identifiers unchanged: YES
+
+── Descriptive Statistics ──
+  Min:    0.6572
+  Max:    31854.9500
+  Median: 200.5128
+  Mean:   1133.8870
+  Std:    2956.1651
+  Q1:     60.3077
+  Q3:     786.0979
+  IQR:    725.7902
+
+── Distribution Shape Assessment ──
+  Range (max - min): 31854.2928
+  Right-skew indicator (mean > median): True
+  Large-range indicator (max > 1000): True
+
+── Scale Determination ──
+  Determined scale: Raw intensity (not log-transformed)
+  Evidence: max=31854.95 >> 1000, median=200.51 >> 10,
+            wide range and right-skewed distribution consistent with
+            raw microarray intensity values (not log-transformed).
+  Conclusion: Transformation REQUIRED (proceed to Step 3).
+
+======================================================================

@@ -1,0 +1,53 @@
+2026-07-09 19:17:38 | ======================================================================
+2026-07-09 19:17:38 | PHASE 3: DEEP LEARNING SURVIVAL PREDICTION — CLINICAL-GRADE v2
+2026-07-09 19:17:38 | ======================================================================
+2026-07-09 19:17:38 | PyTorch version: 2.13.0+cpu
+2026-07-09 19:17:38 | CUDA available: False
+2026-07-09 19:17:38 | Device: cpu
+2026-07-09 19:17:38 | Random seed: 42
+2026-07-09 19:17:38 | Improvements: Efron ties, Xavier init, LR scheduling, gradient clipping,
+2026-07-09 19:17:38 |   mini-batch, expanded HP grid, repeated CV, ensemble, bootstrap CIs,
+2026-07-09 19:17:38 |   permutation importance, calibration curves, overfitting diagnostic
+2026-07-09 19:17:38 | 
+2026-07-09 19:17:38 | STEP 0: Loading data and frozen CoxPH model
+2026-07-09 19:17:38 |   CoxPH model loaded: 143 features (127 genes, 16 clinical)
+2026-07-09 19:17:57 |   TCGA train: 737 patients matched to expression
+2026-07-09 19:18:01 |   TCGA val: 180 patients matched to expression
+2026-07-09 19:18:01 |   X_train: (737, 143), X_val: (180, 143)
+2026-07-09 19:18:01 |   Train events: 315/737 (42.7%)
+2026-07-09 19:18:01 |   Val events: 79/180 (43.9%)
+2026-07-09 19:18:16 |   Autoencoder input: train=(737, 2000), val=(180, 2000)
+2026-07-09 19:18:16 | 
+2026-07-09 19:18:16 | STEP 1: Autoencoder pretraining (2000 genes -> 64-dim latent)
+2026-07-09 19:18:45 |     AE Epoch 0: train_loss=1.229317, val_loss=0.987237
+2026-07-09 19:19:10 |     AE Epoch 50: train_loss=0.524513, val_loss=0.517836
+2026-07-09 19:19:33 |     AE Epoch 100: train_loss=0.457781, val_loss=0.475522
+2026-07-09 19:19:50 |     AE Epoch 150: train_loss=0.418269, val_loss=0.457219
+2026-07-09 19:20:14 |     AE Epoch 200: train_loss=0.386652, val_loss=0.446940
+2026-07-09 19:20:47 |     AE Epoch 250: train_loss=0.358977, val_loss=0.443620
+2026-07-09 19:21:11 |     AE Epoch 299: train_loss=0.341708, val_loss=0.442204
+2026-07-09 19:21:11 |   Autoencoder trained. Best val reconstruction loss: 0.441395
+2026-07-09 19:21:11 |   Latent features: train=(737, 64), val=(180, 64)
+2026-07-09 19:21:11 |   -> autoencoder.pt saved
+2026-07-09 19:21:11 | 
+2026-07-09 19:21:11 | STEP 2: DeepSurv hyperparameter search — 18 configs × 3 repeats × 5 folds
+2026-07-09 19:22:21 |   143_features | HP0 [32, 16] relu drop=0.3 | CV C-index: 0.6362 ± 0.0271 (n=15)
+2026-07-09 19:23:17 |   143_features | HP1 [32, 16] relu drop=0.4 | CV C-index: 0.6280 ± 0.0342 (n=15)
+2026-07-09 19:24:47 |   143_features | HP2 [32, 16] relu drop=0.5 | CV C-index: 0.6277 ± 0.0337 (n=15)
+2026-07-09 19:25:46 |   143_features | HP3 [32, 16] silu drop=0.3 | CV C-index: 0.6379 ± 0.0310 (n=15)
+2026-07-09 19:27:02 |   143_features | HP4 [32, 16] gelu drop=0.3 | CV C-index: 0.6356 ± 0.0354 (n=15)
+2026-07-09 19:27:59 |   143_features | HP5 [64, 32] relu drop=0.3 | CV C-index: 0.6353 ± 0.0421 (n=15)
+2026-07-09 19:29:53 |   143_features | HP6 [64, 32] relu drop=0.4 | CV C-index: 0.6391 ± 0.0222 (n=15)
+2026-07-09 19:31:46 |   143_features | HP7 [64, 32] silu drop=0.5 | CV C-index: 0.6395 ± 0.0366 (n=15)
+2026-07-09 19:33:25 |   143_features | HP8 [64, 32] gelu drop=0.3 | CV C-index: 0.6519 ± 0.0459 (n=15)
+2026-07-09 19:34:34 |   143_features | HP9 [128, 64] relu drop=0.4 | CV C-index: 0.6393 ± 0.0310 (n=15)
+2026-07-09 19:35:52 |   143_features | HP10 [128, 64] silu drop=0.5 | CV C-index: 0.6421 ± 0.0295 (n=15)
+2026-07-09 19:37:27 |   143_features | HP11 [128, 64, 32] relu drop=0.4 | CV C-index: 0.6509 ± 0.0215 (n=15)
+2026-07-09 19:39:37 |   143_features | HP12 [128, 64, 32] gelu drop=0.5 | CV C-index: 0.6382 ± 0.0296 (n=15)
+2026-07-09 19:40:45 |   143_features | HP13 [16] relu drop=0.3 | CV C-index: 0.6330 ± 0.0389 (n=15)
+2026-07-09 19:41:54 |   143_features | HP14 [16] silu drop=0.5 | CV C-index: 0.6282 ± 0.0367 (n=15)
+2026-07-09 19:42:39 |   143_features | HP15 [64] relu drop=0.3 | CV C-index: 0.6426 ± 0.0341 (n=15)
+2026-07-09 19:44:01 |   143_features | HP16 [64] gelu drop=0.4 | CV C-index: 0.6464 ± 0.0365 (n=15)
+2026-07-09 19:46:30 |   143_features | HP17 [64, 32, 16] silu drop=0.5 | CV C-index: 0.6375 ± 0.0411 (n=15)
+2026-07-09 19:47:58 |   143+64_latent | HP0 [32, 16] relu drop=0.3 | CV C-index: 0.6293 ± 0.0359 (n=15)
+2026-07-09 19:50:02 |   143+64_latent | HP1 [32, 16] relu drop=0.4 | CV C-index: 0.6324 ± 0.0295 (n=15)

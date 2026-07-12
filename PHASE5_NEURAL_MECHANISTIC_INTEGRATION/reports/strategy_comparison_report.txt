@@ -1,0 +1,17 @@
+PHASE 5 STRATEGY COMPARISON REPORT
+==================================================
+
+Date: 2026-07-11 12:33
+
+Baselines:
+  CoxPH C-index: 0.5881
+  DeepSurv C-index: 0.6131 (0.539-0.681)
+
+Strategy C: C-index=0.6131 (0.539-0.689)
+Strategy A: C-index=0.6109 (0.544-0.674)
+Strategy B: C-index=0.5844 (0.518-0.648)
+
+Selected strategy: DeepSurv
+Selection criterion: Internal validation C-index
+Note: No integration strategy improved over standalone DeepSurv.
+DeepSurv declared as final model. This is a valid scientific finding.

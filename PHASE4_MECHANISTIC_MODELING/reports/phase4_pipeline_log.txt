@@ -1,0 +1,142 @@
+2026-07-10 17:52:57 | ======================================================================
+2026-07-10 17:52:57 | PHASE 4: MECHANISTIC TUMOR GROWTH MODELING
+2026-07-10 17:52:57 | ======================================================================
+2026-07-10 17:52:57 | RESEARCH PROTOTYPE ONLY. Simulated tumor trajectories are based on population-derived ODE parameters personalized by genomic features. They represent biologically plausible scenarios under stated assumptions, not clinically validated predictions. This system must not be used for clinical decision-making without prospective validation with serial imaging data and regulatory approval.
+2026-07-10 17:52:57 | 
+2026-07-10 17:52:57 | Loading data and frozen artifacts...
+2026-07-10 17:52:57 |   Population priors: ['alpha', 'beta', 'V_max', 'V0', 'delta_c', 'delta_i', 'delta_t', 's_E', 'mu_E', 'rho', 'sigma', 'delta_EV', 'E0', 'k_immune', 'E_ref']
+2026-07-10 17:53:12 |   TCGA training: 737 patients
+2026-07-10 17:53:12 |   Features: 143 (127 gene + clinical)
+2026-07-10 17:53:12 |   DeepSurv risk scores: 180 patients (internal val)
+2026-07-10 17:53:12 |   Fitting training distribution for OOD detection (PCA-reduced)...
+2026-07-10 17:53:13 | 
+2026-07-10 17:53:13 | ======================================================================
+2026-07-10 17:53:13 | STEP 3: Baseline tumor growth simulation (100 virtual patients)
+2026-07-10 17:53:13 | ======================================================================
+2026-07-10 17:53:28 |   Saved: population_baseline.png
+2026-07-10 17:53:28 |   Plausibility check:
+2026-07-10 17:53:28 |     Simulated TTP (months): median=8.8, IQR=[6.0-15.9]
+2026-07-10 17:53:28 |     TCGA OS (months): median=20.7, IQR=[11.3-37.8]
+2026-07-10 17:53:28 | 
+2026-07-10 17:53:28 | ======================================================================
+2026-07-10 17:53:28 | STEP 4: Genomic personalization of ODE parameters
+2026-07-10 17:53:28 | ======================================================================
+2026-07-10 17:53:34 |   Saved personalized parameters for 737 patients
+2026-07-10 17:53:34 |   Parameter ranges:
+2026-07-10 17:53:34 |     alpha: [0.0004, 0.0012]
+2026-07-10 17:53:34 |     V_max: [500000, 1.5e+06]
+2026-07-10 17:53:34 |     V0: [1767, 179594]
+2026-07-10 17:53:34 |     delta_i: [2e-09, 2e-09]
+2026-07-10 17:53:34 |     mu_E: [0.03444, 0.04592]
+2026-07-10 17:53:34 | 
+2026-07-10 17:53:34 | ======================================================================
+2026-07-10 17:53:34 | STEP 5: Treatment response simulation (4 scenarios)
+2026-07-10 17:53:34 | ======================================================================
+2026-07-10 17:56:17 |   Simulated 10/50 patients
+2026-07-10 17:59:51 |   Simulated 20/50 patients
+2026-07-10 18:04:39 |   Simulated 30/50 patients
+2026-07-10 18:08:48 |   Simulated 40/50 patients
+2026-07-10 18:12:27 |   Simulated 50/50 patients
+2026-07-10 18:12:27 | 
+  Treatment scenario summary (n=50):
+2026-07-10 18:12:27 |   Scenario              TTP median (mo)  TCT median (mo)    V(2yr) median
+2026-07-10 18:12:27 |   ----------------------------------------------------------------------
+2026-07-10 18:12:27 |   natural_history                   9.4              0.0            96356
+2026-07-10 18:12:27 |   chemo                            15.3              0.0            66898
+2026-07-10 18:12:27 |   immuno                           13.1              0.0            77744
+2026-07-10 18:12:27 |   targeted                         55.2              0.0              975
+2026-07-10 18:12:27 |   Generating detailed treatment comparison plots...
+2026-07-10 18:12:38 | 
+2026-07-10 18:12:38 | ======================================================================
+2026-07-10 18:12:38 | STEP 6: DeepSurv risk score integration
+2026-07-10 18:12:38 | ======================================================================
+2026-07-10 18:13:00 |   Computed DeepSurv risk scores for 737 training patients
+2026-07-10 18:13:00 |   Risk score range: [-3.5182, 5.3377]
+2026-07-10 18:13:07 |   Spearman correlation (DeepSurv risk vs simulated TTP): rho=-0.5055, p=1.8109e-04
+2026-07-10 18:13:07 |   ✓ CONSISTENT: Higher risk score → shorter TTP (negative correlation, significant)
+2026-07-10 18:13:07 |   Per-patient consistency: 34/50 consistent (16 violations)
+2026-07-10 18:13:07 |   Violation examples (showing up to 5):
+2026-07-10 18:13:07 |     TCGA-78-7160: risk=1.156 (high) but TTP=24.2mo (long)
+2026-07-10 18:13:07 |     TCGA-73-4670: risk=2.124 (high) but TTP=10.9mo (long)
+2026-07-10 18:13:07 |     TCGA-63-A5ML: risk=-0.392 (low) but TTP=8.1mo (short)
+2026-07-10 18:13:07 |     TCGA-78-8648: risk=0.447 (high) but TTP=13.5mo (long)
+2026-07-10 18:13:07 |     TCGA-05-4397: risk=0.851 (high) but TTP=16.2mo (long)
+2026-07-10 18:13:07 | 
+2026-07-10 18:13:07 | ======================================================================
+2026-07-10 18:13:07 | STEP 7: Isotonic regression calibration for DeepSurv
+2026-07-10 18:13:07 | ======================================================================
+2026-07-10 18:13:07 |   Option A selected: 73 patients held out for calibration (seed=999)
+2026-07-10 18:13:07 |   Training set reduced to 664 patients
+2026-07-10 18:13:07 |   Calibration set: 26/73 events at 3yr cutoff
+2026-07-10 18:13:07 |   Saved calibration model: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\PHASE4_MECHANISTIC_MODELING\models\calibration_model.pkl
+2026-07-10 18:13:09 |   Saved: isotonic_calibration.png
+2026-07-10 18:13:09 | 
+2026-07-10 18:13:09 | ======================================================================
+2026-07-10 18:13:09 | STEP 8: Uncertainty quantification
+2026-07-10 18:13:09 | ======================================================================
+2026-07-10 18:13:47 |   Confidence levels:
+2026-07-10 18:13:47 |     HIGH: 0/10
+2026-07-10 18:13:47 |     MODERATE: 10/10
+2026-07-10 18:13:47 |     LOW: 0/10
+2026-07-10 18:13:47 |     DO_NOT_USE: 0/10
+2026-07-10 18:13:47 |   MC convergence (n=200, threshold <10% change at 50% split):
+2026-07-10 18:13:47 |     10/10 patients converged
+2026-07-10 18:13:47 |   TTP 95% confidence intervals (from MC, n=200):
+2026-07-10 18:13:47 |     TCGA-78-7160: TTP=25.2mo [95% CI: 14.2–52.0] (n_finite=180)
+2026-07-10 18:13:47 |     TCGA-56-8503: TTP=6.3mo [95% CI: 4.5–9.4] (n_finite=200)
+2026-07-10 18:13:47 |     TCGA-44-5644: TTP=11.5mo [95% CI: 8.4–16.9] (n_finite=200)
+2026-07-10 18:13:47 |     TCGA-38-4627: TTP=12.1mo [95% CI: 8.1–18.4] (n_finite=200)
+2026-07-10 18:13:47 |     TCGA-66-2781: TTP=5.1mo [95% CI: 3.6–7.8] (n_finite=200)
+2026-07-10 18:13:47 |     TCGA-73-4670: TTP=11.5mo [95% CI: 7.2–21.7] (n_finite=200)
+2026-07-10 18:13:47 |     TCGA-63-A5ML: TTP=7.5mo [95% CI: 5.4–11.2] (n_finite=200)
+2026-07-10 18:13:47 |     TCGA-NJ-A55A: TTP=14.2mo [95% CI: 10.6–20.8] (n_finite=200)
+2026-07-10 18:13:47 |     TCGA-55-A48Y: TTP=11.2mo [95% CI: 7.8–16.3] (n_finite=200)
+2026-07-10 18:13:47 |     TCGA-85-8355: TTP=9.4mo [95% CI: 6.9–13.6] (n_finite=200)
+2026-07-10 18:13:47 | 
+2026-07-10 18:13:47 | ======================================================================
+2026-07-10 18:13:47 | STEP 9: Biological validation & sensitivity analysis
+2026-07-10 18:13:47 | ======================================================================
+2026-07-10 18:13:47 | 
+  9A: Phenotype comparison with published literature
+2026-07-10 18:13:47 |     Stage IA, LUAD, Never-smoker: TTP=9.4mo vs Published PFS=60mo (ratio=0.16) [Check]
+2026-07-10 18:13:47 |     Stage IB, LUAD, Former smoker: TTP=9.5mo vs Published PFS=48mo (ratio=0.20) [Check]
+2026-07-10 18:13:47 |     Stage IIA, LUAD, Former smoker: TTP=10.9mo vs Published PFS=30mo (ratio=0.36) [Plausible]
+2026-07-10 18:13:47 |     Stage IIB, LUSC, Current smoker: TTP=8.1mo vs Published PFS=12mo (ratio=0.67) [Plausible]
+2026-07-10 18:13:47 |     Stage IIIA, LUSC, Current smoker: TTP=8.7mo vs Published PFS=11mo (ratio=0.79) [Plausible]
+2026-07-10 18:13:47 |     Stage IIIB, LUSC, Current smoker: TTP=10.2mo vs Published PFS=10mo (ratio=1.02) [Plausible]
+2026-07-10 18:13:48 |     Stage IV, LUAD, Former smoker: TTP=16.7mo vs Published PFS=6mo (ratio=2.78) [Check]
+2026-07-10 18:13:48 |     Stage IV, LUSC, Current smoker: TTP=10.8mo vs Published PFS=5mo (ratio=2.16) [Check]
+2026-07-10 18:13:48 |   Phenotype validation: 4/8 show plausible match
+2026-07-10 18:13:48 | 
+  9B: Sensitivity analysis (Morris screening — 4 scenarios)
+2026-07-10 18:13:48 |     Running Morris screening under natural_history scenario...
+2026-07-10 18:13:51 |     Running Morris screening under chemo scenario...
+2026-07-10 18:15:02 |     Running Morris screening under immuno scenario...
+2026-07-10 18:25:14 |     Running Morris screening under targeted scenario...
+2026-07-10 21:59:32 |   Morris screening results (combined across all scenarios, sorted by Mu*):
+2026-07-10 21:59:32 |     alpha           Mu*=680932  Sigma=834826
+2026-07-10 21:59:32 |     k_immune        Mu*=21434.8  Sigma=49957.7
+2026-07-10 21:59:32 |     mu_E            Mu*=32.7014  Sigma=93.289
+2026-07-10 21:59:32 |     rho             Mu*=24.223  Sigma=83.318
+2026-07-10 21:59:32 |     V0              Mu*=0.0128205  Sigma=0.0161976
+2026-07-10 21:59:32 |     V_max           Mu*=0.00012606  Sigma=0.000153988
+2026-07-10 21:59:32 |     delta_c         Mu*=0  Sigma=0
+2026-07-10 21:59:32 |     delta_i         Mu*=0  Sigma=0
+2026-07-10 21:59:32 |     k_immuno        Mu*=0  Sigma=0
+2026-07-10 21:59:32 |   Per-scenario top 3 parameters:
+2026-07-10 21:59:32 |     natural_history: alpha (Mu*=5.072e+05), V0 (Mu*=0.006142), V_max (Mu*=6.65e-05)
+2026-07-10 21:59:32 |     chemo: alpha (Mu*=7.187e+05), k_immune (Mu*=1988), V0 (Mu*=0.009369)
+2026-07-10 21:59:32 |     immuno: alpha (Mu*=6.623e+05), rho (Mu*=14.49), mu_E (Mu*=7.166)
+2026-07-10 21:59:32 |     targeted: alpha (Mu*=9.621e+05), k_immune (Mu*=8.375e+04), mu_E (Mu*=123.6)
+2026-07-10 21:59:45 | 
+2026-07-10 21:59:45 | ======================================================================
+2026-07-10 21:59:45 | STEP 10: Final report & Phase 5 readiness checklist
+2026-07-10 21:59:45 | ======================================================================
+2026-07-10 21:59:45 |   Final report saved: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\PHASE4_MECHANISTIC_MODELING\reports\phase4_final_report.txt
+2026-07-10 21:59:45 |   Parameter justification saved
+2026-07-10 21:59:45 | 
+2026-07-10 21:59:45 | ======================================================================
+2026-07-10 21:59:45 | PHASE 4 COMPLETE
+2026-07-10 21:59:45 | ======================================================================
+2026-07-10 21:59:45 |   All outputs in: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\PHASE4_MECHANISTIC_MODELING
+2026-07-10 21:59:45 | RESEARCH PROTOTYPE ONLY. Simulated tumor trajectories are based on population-derived ODE parameters personalized by genomic features. They represent biologically plausible scenarios under stated assumptions, not clinically validated predictions. This system must not be used for clinical decision-making without prospective validation with serial imaging data and regulatory approval.

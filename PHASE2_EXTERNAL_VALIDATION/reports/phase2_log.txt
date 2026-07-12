@@ -1,0 +1,60 @@
+2026-07-09 12:59:26 | STEP 0: Data quality finalization
+2026-07-09 12:59:26 |   Train: 814->813, Val: 204->203
+2026-07-09 12:59:26 | STEP 1: Load frozen model and reconstruct preprocessing
+2026-07-09 12:59:26 |   Model loaded: CoxPH penalizer=1.0, 143 features
+2026-07-09 12:59:26 |   Clinical: 16, Genes: 127
+2026-07-09 12:59:26 |   Reconstructing scaler from training data...
+2026-07-09 12:59:33 |   Train patients matched to expression: 737
+2026-07-09 12:59:33 |   Scaler reconstructed: (737, 143)
+2026-07-09 12:59:33 |   Model genes: 127, Mapped: 125, Unmapped: 2
+2026-07-09 12:59:33 | STEP 2: Prepare GEO validation datasets
+2026-07-09 12:59:33 |   Processing GSE30219...
+2026-07-09 12:59:33 |     Normal samples excluded: 14, remaining: 293
+2026-07-09 12:59:33 |     After dropping NaN survival: 293
+2026-07-09 12:59:33 |     Genes available: 121/127 (95.3%)
+2026-07-09 12:59:33 |     Effective coefficient coverage: 93.8%
+2026-07-09 12:59:33 |   Processing GSE50081...
+2026-07-09 12:59:33 |     Normal samples excluded: 0, remaining: 181
+2026-07-09 12:59:33 |     After dropping NaN survival: 181
+2026-07-09 12:59:33 |     Genes available: 121/127 (95.3%)
+2026-07-09 12:59:33 |     Effective coefficient coverage: 93.8%
+2026-07-09 12:59:33 |   Processing GSE72094...
+2026-07-09 12:59:35 |     Normal samples excluded: 0, remaining: 442
+2026-07-09 12:59:35 |     After dropping NaN survival: 398
+2026-07-09 12:59:35 |     Genes available: 117/127 (92.1%)
+2026-07-09 12:59:35 |     Effective coefficient coverage: 90.5%
+2026-07-09 12:59:35 |   Processing GSE31210...
+2026-07-09 12:59:35 |     Normal samples excluded: 20, remaining: 226
+2026-07-09 12:59:35 |     After dropping NaN survival: 226
+2026-07-09 12:59:35 |     Genes available: 121/127 (95.3%)
+2026-07-09 12:59:35 |     Effective coefficient coverage: 93.8%
+2026-07-09 12:59:35 |   -> external_validation_dataset_summary.csv written
+2026-07-09 12:59:35 | STEP 3: Apply frozen model — risk scores with missing-gene handling
+2026-07-09 12:59:35 |   Computing risk scores for GSE30219...
+2026-07-09 12:59:35 |     -> GSE30219_risk_scores.csv (293 patients)
+2026-07-09 12:59:35 |   Computing risk scores for GSE50081...
+2026-07-09 12:59:36 |     -> GSE50081_risk_scores.csv (181 patients)
+2026-07-09 12:59:36 |   Computing risk scores for GSE72094...
+2026-07-09 12:59:37 |     -> GSE72094_risk_scores.csv (398 patients)
+2026-07-09 12:59:37 |   Computing risk scores for GSE31210...
+2026-07-09 12:59:37 |     -> GSE31210_risk_scores.csv (226 patients)
+2026-07-09 12:59:37 | STEP 4: Performance evaluation per cohort
+2026-07-09 12:59:37 |   Training median risk (threshold): 0.9592
+2026-07-09 12:59:37 |   Internal validation: 180 patients
+2026-07-09 12:59:39 |   Evaluating GSE30219...
+2026-07-09 12:59:39 |   Evaluating GSE50081...
+2026-07-09 12:59:39 |   Evaluating GSE72094...
+2026-07-09 12:59:39 |   Evaluating GSE31210...
+2026-07-09 12:59:39 |   -> performance_summary.csv, cohort_performance_table.csv written
+2026-07-09 12:59:39 |   -> risk_distribution_table.csv written
+2026-07-09 12:59:39 | 
+======================================================================
+2026-07-09 12:59:39 | STEPS 0-4 COMPLETE — Core validation finished
+2026-07-09 12:59:39 | ======================================================================
+2026-07-09 12:59:39 | Internal validation C-index: 0.5881
+2026-07-09 12:59:39 |   GSE30219: C-index=0.6567, IBS=0.5345, coverage=95.3%
+2026-07-09 12:59:39 |   GSE50081: C-index=0.5872, IBS=0.5758, coverage=95.3%
+2026-07-09 12:59:39 |   GSE72094: C-index=0.6830, IBS=0.1449, coverage=92.1%
+2026-07-09 12:59:39 |   GSE31210: C-index=0.7557, IBS=0.7954, coverage=95.3%
+2026-07-09 12:59:39 | 
+Run run_phase2_analysis.py for Steps 5-10 (reports, figures, final assessment).

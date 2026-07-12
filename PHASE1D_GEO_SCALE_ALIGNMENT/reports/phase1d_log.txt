@@ -1,0 +1,46 @@
+2026-07-09 11:56:12 | ======================================================================
+2026-07-09 11:56:12 | PHASE 1D: GEO Expression Scale Alignment for GSE31210
+2026-07-09 11:56:12 | ======================================================================
+2026-07-09 11:56:12 | STEP 1: Verify input data and expression scale
+2026-07-09 11:56:12 |   Loaded: 121 genes x 246 samples
+2026-07-09 11:56:12 |   Gene identifiers (first 5): ['ABCC2', 'ADGRF4', 'ADH1C', 'ADM', 'AHNAK2']
+2026-07-09 11:56:12 |   Sample columns (first 5): ['GSM773540', 'GSM773541', 'GSM773542', 'GSM773543', 'GSM773544']
+2026-07-09 11:56:12 |   Statistics: min=0.6572, max=31854.9500, median=200.5128
+2026-07-09 11:56:12 |   IQR: [60.3077, 786.0979] (width=725.7902)
+2026-07-09 11:56:12 |   Mean=1133.8870, Std=2956.1651
+2026-07-09 11:56:12 |   Determination: Raw intensity (not log-transformed)
+2026-07-09 11:56:12 |   Evidence: max=31854.95 >> 1000, median=200.51 >> 10, right-skewed distribution
+2026-07-09 11:56:12 |   -> input_scale_verification_report.txt written
+2026-07-09 11:56:12 | STEP 2: Verify training data expression scale
+2026-07-09 11:56:12 |   Training data technology: RNA-seq (Illumina, STAR alignment)
+2026-07-09 11:56:12 |   Input data: RNA-seq STAR counts
+2026-07-09 11:56:12 |   Normalization: CPM (Counts Per Million)
+2026-07-09 11:56:12 |   Transformation: log2(CPM + 1)
+2026-07-09 11:56:12 |   TCGA training expression file found: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\03_ANALYSIS_READY_DATA\TCGA_train_expression.tsv.gz
+2026-07-09 11:56:12 |   TCGA sample stats: min=0.0000, max=115293.0000, median=1136.0000
+2026-07-09 11:56:12 |   -> training_scale_reference_report.txt written
+2026-07-09 11:56:12 | STEP 3: Apply fixed log2 transformation
+2026-07-09 11:56:12 |   Applying: X_new = log2(X + 1)
+2026-07-09 11:56:12 |   No centering, scaling, variance adjustment, batch correction, or outlier modification
+2026-07-09 11:56:12 |   No parameters estimated from GSE31210's own data
+2026-07-09 11:56:12 |   -> GSE31210_expression_gene_mapped_log2.csv written (121 genes x 246 samples)
+2026-07-09 11:56:12 |   Original raw matrix preserved unchanged at Phase 1C output location
+2026-07-09 11:56:12 |   Post-transform: min=0.7287, max=14.9593, median=7.6547, mean=7.7661
+2026-07-09 11:56:12 | STEP 4: Post-transformation quality check
+2026-07-09 11:56:12 |   GSE31210 (post-log2): min=0.7287, max=14.9593, median=7.6547, IQR=[5.9380, 9.6204]
+2026-07-09 11:56:12 |   GSE30219: min=2.6055, max=14.5451, median=5.6633, IQR=[4.5334, 7.5795]
+2026-07-09 11:56:12 |   GSE50081: min=1.9686, max=14.5273, median=5.6853, IQR=[4.3379, 7.4312]
+2026-07-09 11:56:16 |   GSE72094: min=0.6079, max=14.6207, median=7.0557, IQR=[4.3452, 9.1576]
+2026-07-09 11:56:16 |   TCGA train: min=0.0000, max=115293.0000, median=1136.0000
+2026-07-09 11:56:16 |   -> gse31210_scale_alignment_report.txt written
+2026-07-09 11:56:16 | STEP 5: Update readiness status
+2026-07-09 11:56:16 |   -> phase1d_completion_status.txt written
+2026-07-09 11:56:16 | ======================================================================
+2026-07-09 11:56:16 | PHASE 1D COMPLETE — All outputs in PHASE1D_GEO_SCALE_ALIGNMENT/
+2026-07-09 11:56:16 | ======================================================================
+2026-07-09 11:56:16 | 
+2026-07-09 11:56:16 | FINAL SUMMARY
+2026-07-09 11:56:16 |   GSE31210: Raw intensity → log2(X+1) transformed
+2026-07-09 11:56:16 |   Status:   READY FOR PHASE 2 — REDUCED PANEL (121/127 genes)
+2026-07-09 11:56:16 |   Platform gap (RNA-seq vs microarray): Documented, applies to all 4 GEO cohorts
+2026-07-09 11:56:16 |   GSE68465: Remains EXCLUDED (66.1% coverage, independent of scale)

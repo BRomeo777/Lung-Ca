@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: lung-cancer-cdss
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /_stcore/health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"

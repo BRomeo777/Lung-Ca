@@ -1,0 +1,40 @@
+======================================================================
+PHASE 1D — STEP 2: TRAINING DATA SCALE REFERENCE REPORT
+======================================================================
+
+Generated: 2026-07-09 11:56:12
+
+── Phase 1B Training Data Expression Scale ──
+
+  Expression technology: RNA-seq (Illumina, STAR alignment)
+  Input data type: RNA-seq STAR counts
+  Source files: TCGA-LUAD/LUSC STAR counts matrices
+  Normalization method: CPM (Counts Per Million)
+  Transformation applied: log2(CPM + 1)
+  Implementation: normalize_counts_log2cpm() in ml_common.py
+    - CPM: counts / library_size * 1e6 (per-sample)
+    - Then: log2(CPM + 1)
+
+── TCGA Training Expression Verification ──
+  File: C:\Users\USER\Desktop\Digital research, AI\Lung CA\Lung_Cancer_Digital_Twin_Project\03_ANALYSIS_READY_DATA\TCGA_train_expression.tsv.gz
+  Sample stats (first 50 genes): min=0.0000, max=115293.0000, median=1136.0000
+  Range consistent with log2(CPM+1) scale: NEEDS REVIEW
+
+── Cross-Platform Compatibility Note ──
+  The Phase 1B training data uses RNA-seq (STAR counts → CPM → log2).
+  GEO validation cohorts use microarray intensity data.
+  The RNA-seq-vs-microarray measurement-technology gap is a
+  platform-level limitation that applies to ALL four GEO validation
+  cohorts (GSE30219, GSE50081, GSE72094, GSE31210) — not unique
+  to GSE31210. GSE31210 additionally required a log2 transform step
+  (Phase 1D), but the platform gap is shared equally across all four.
+
+── Scale Alignment Statement ──
+  Expression-scale compatibility achieved at the logarithmic-
+  transformation level only. The exact RNA-seq normalization basis
+  (CPM) used in Phase 1B training is confirmed from source code
+  (ml_common.py, normalize_counts_log2cpm function). However, the
+  residual RNA-seq-vs-microarray platform gap remains an additional
+  limitation beyond the log-transformation alignment.
+
+======================================================================

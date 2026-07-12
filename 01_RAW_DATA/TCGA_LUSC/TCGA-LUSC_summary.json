@@ -1,0 +1,21 @@
+{
+  "project_id": "TCGA-LUSC",
+  "n_expression_files": 562,
+  "n_cases_clinical": 504,
+  "n_genes": 60660,
+  "n_samples": 562,
+  "n_deaths": 220,
+  "sample_types": {
+    "Primary Tumor": 511,
+    "Solid Tissue Normal": 51
+  },
+  "files": {
+    "clinical": "TCGA-LUSC_clinical.tsv",
+    "survival": "TCGA-LUSC_survival.tsv",
+    "manifest": "TCGA-LUSC_file_manifest.tsv",
+    "sample_sheet": "TCGA-LUSC_sample_sheet.tsv",
+    "counts_matrix": "TCGA-LUSC_STAR_counts_matrix.tsv.gz",
+    "tpm_matrix": "TCGA-LUSC_STAR_tpm_matrix.tsv.gz",
+    "gene_annotation": "TCGA-LUSC_gene_annotation.tsv.gz"
+  }
+}

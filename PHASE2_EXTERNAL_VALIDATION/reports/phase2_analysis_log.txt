@@ -1,0 +1,33 @@
+2026-07-09 13:10:25 | Loading all data and recomputing results...
+2026-07-09 13:10:37 |   GSE30219: C-index=0.6567, IBS=0.5345
+2026-07-09 13:10:37 |   GSE50081: C-index=0.5872, IBS=0.5758
+2026-07-09 13:10:38 |   GSE72094: C-index=0.6830, IBS=0.1449
+2026-07-09 13:10:38 |   GSE31210: C-index=0.7557, IBS=0.7954
+2026-07-09 13:10:39 | STEP 5: Generalization analysis
+2026-07-09 13:10:40 |   -> generalization_report.txt written
+2026-07-09 13:10:40 | STEP 6: Calibration and platform cluster analysis
+2026-07-09 13:10:40 |   GSE30219: mean_pred=0.3597, obs=0.5809, offset=-0.2213
+2026-07-09 13:10:40 |   GSE50081: mean_pred=0.3733, obs=0.7556, offset=-0.3823
+2026-07-09 13:10:40 |   GSE72094: mean_pred=0.2762, obs=0.6332, offset=-0.3570
+2026-07-09 13:10:40 |   GSE31210: mean_pred=0.2541, obs=0.9086, offset=-0.6545
+2026-07-09 13:10:40 |   TCGA_internal_val: mean_pred=0.2190, obs=0.5751, offset=-0.3561
+2026-07-09 13:10:42 |   -> calibration_all_cohorts.png
+2026-07-09 13:10:42 |   -> calibration_cluster_comparison_report.txt written
+2026-07-09 13:10:42 | STEP 7: Model explainability
+2026-07-09 13:10:42 |   -> feature_importance.csv (143 features)
+2026-07-09 13:10:42 |   -> top20_feature_importance.png
+2026-07-09 13:10:42 |   -> explainability_report.txt written
+2026-07-09 13:10:42 | STEP 8: Biological interpretation
+2026-07-09 13:10:42 |   -> biological_interpretation_report.txt written
+2026-07-09 13:10:42 | STEP 9: Publication-quality figures
+2026-07-09 13:10:43 |   -> KM curves saved
+2026-07-09 13:10:45 |   -> ROC curves saved
+2026-07-09 13:10:45 |   -> C-index comparison saved
+2026-07-09 13:10:45 |   -> Risk distribution saved
+2026-07-09 13:10:46 |   -> Workflow diagram saved
+2026-07-09 13:10:46 | STEP 10: Final scientific assessment
+2026-07-09 13:10:46 |   -> phase3_readiness_assessment.txt written
+2026-07-09 13:10:46 | 
+======================================================================
+2026-07-09 13:10:46 | PHASE 2 ANALYSIS COMPLETE — All steps 5-10 finished
+2026-07-09 13:10:46 | ======================================================================

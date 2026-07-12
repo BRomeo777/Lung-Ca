@@ -1,0 +1,51 @@
+======================================================================
+CRITICAL ISSUES SUMMARY
+======================================================================
+Generated: 2026-07-09
+
+CRITICAL BLOCKERS: 0
+MAJOR LIMITATIONS: 5
+MINOR DOCUMENTATION ISSUES: 1
+
+── NO CRITICAL BLOCKERS FOUND ──
+
+The pipeline can proceed to Phase 2. No issues were found that
+invalidate the downstream external validation results.
+
+── MAJOR LIMITATIONS (must document in Phase 2 reports) ──
+
+1. Non-nested feature selection (Item 1)
+   - 127 genes selected on full training set before CV
+   - CV C-index (0.6486) is optimistically biased
+   - Validation C-index (0.5944) is the unbiased estimate
+   - Does NOT invalidate the frozen model or validation results
+
+2. No FDR correction (Item 2)
+   - Raw p<0.05 on 1000 genes, no Benjamini-Hochberg
+   - Some false discoveries possible in 127-gene panel
+   - Mitigated by variance pre-filter + Cox L2 penalization
+
+3. Sex variable absent (Item 3)
+   - TCGA clinical TSV gender column = 100% NaN
+   - Data source issue, not code bug
+   - Sex is an unmeasured confounder
+   - Frozen model does not use Sex
+
+4. No Phase 2 code / cluster tagging (Item 10)
+   - Phase 2 validation script must be built
+   - Cluster A/B comparison must be implemented
+   - calibration_cluster_comparison_report.txt must be wired in
+
+5. RNA-seq-vs-microarray platform gap (Item 9, documented in Phase 1D)
+   - Applies equally to all 4 GEO cohorts
+   - Not corrected in Phase 1D
+   - Must be carried forward as shared limitation
+
+── MINOR DOCUMENTATION ISSUE ──
+
+1. Invalid survival observations (Item 11)
+   - 2 train patients with OS_time=0 & event=1
+   - Impact: negligible (0.27% of training set)
+   - Should be documented; add filter in future preprocessing
+
+======================================================================
