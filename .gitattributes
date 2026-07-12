@@ -1,5 +1,10 @@
-*.pt filter=lfs diff=lfs merge=lfs -text
-*.tsv.gz filter=lfs diff=lfs merge=lfs -text
-*.csv filter=lfs diff=lfs merge=lfs -text
-*.pkl filter=lfs diff=lfs merge=lfs -text
-*.xlsx filter=lfs diff=lfs merge=lfs -text
+# LFS only for large files outside the CDSS artifacts directory
+ML_RESULTS/models/rsf_model.pkl filter=lfs diff=lfs merge=lfs -text
+01_RAW_DATA/**/*.tsv.gz filter=lfs diff=lfs merge=lfs -text
+02_PROCESSED_DATA/**/*.tsv.gz filter=lfs diff=lfs merge=lfs -text
+03_ANALYSIS_READY_DATA/**/*.tsv.gz filter=lfs diff=lfs merge=lfs -text
+PHASE1C_GEO_HARMONIZATION/**/*.csv filter=lfs diff=lfs merge=lfs -text
+02_PROCESSED_DATA/**/*.csv filter=lfs diff=lfs merge=lfs -text
+PHASE7_DIGITAL_TWIN/data/digital_twin_trajectory_simulations.csv filter=lfs diff=lfs merge=lfs -text
+PHASE7_DIGITAL_TWIN/reports/phase7_1/baseline_archive/digital_twin_trajectory_simulations.csv filter=lfs diff=lfs merge=lfs -text
+ML_RESULTS/*.xlsx filter=lfs diff=lfs merge=lfs -text
