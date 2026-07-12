@@ -3,8 +3,7 @@ services:
     name: lung-cancer-cdss
     runtime: docker
     plan: free
-    dockerfilePath: ./PHASE8_CDSS/Dockerfile
-    dockerContext: ./PHASE8_CDSS
+    dockerfilePath: ./Dockerfile
     healthCheckPath: /_stcore/health
     autoDeploy: true
     envVars:
