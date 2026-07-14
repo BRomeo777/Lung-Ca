@@ -13,7 +13,7 @@ import pandas as pd
 import torch
 import torch.nn as nn
 
-from .config import P3_MODELS, P7_DATA, MODEL_VERSION, CALIBRATION_WARNING
+from .config import P3_MODELS, P7_DATA, MODEL_VERSION, CALIBRATION_WARNING, CALIBRATOR_PATH
 
 # ── MODEL DEFINITION (must match Phase 3) ──
 ACTIVATIONS = {"relu": nn.ReLU, "silu": nn.SiLU, "gelu": nn.GELU}
@@ -57,6 +57,7 @@ class PredictionEngine:
         self._age_median = 67.0
         self._state_df = None
         self._risk_cache = {}
+        self._calibrator = None
 
     def load(self):
         """Load model artifacts from Phase 3."""
@@ -81,6 +82,17 @@ class PredictionEngine:
 
         # Load state matrix for existing patient lookup
         self._state_df = pd.read_csv(P7_DATA / "digital_twin_state_matrix.csv")
+
+        # Load Phase 3.1 recalibration artifact (optional; falls back to exponential)
+        try:
+            with open(CALIBRATOR_PATH, "r") as f:
+                cal = json.load(f)
+            cal["base_times"] = np.asarray(cal["base_times"], dtype=float)
+            cal["base_surv"] = np.asarray(cal["base_surv"], dtype=float)
+            self._calibrator = cal
+        except Exception:
+            self._calibrator = None
+
         self._loaded = True
 
     def predict_existing(self, patient_id: str) -> dict | None:
@@ -176,11 +188,24 @@ class PredictionEngine:
 
     def risk_to_survival_curve(self, risk_score: float, t_eval: np.ndarray,
                                baseline_lambda: float = 0.001) -> np.ndarray:
-        """Convert DeepSurv risk score to survival probability curve.
-        UNCALIBRATED — uses exponential model from Phase 7."""
+        """Convert DeepSurv risk score to a survival probability curve.
+
+        Uses the Phase 3.1 single-covariate Cox recalibration model when available:
+            S(t | risk) = S0(t) ** exp(slope * (risk - mean) / std)
+        where S0(t) is the baseline survival fit on the internal validation cohort.
+        Falls back to the legacy exponential model if the calibrator is unavailable.
+        """
+        t_eval = np.asarray(t_eval, dtype=float)
+        cal = self._calibrator
+        if cal is not None:
+            z = (float(risk_score) - cal["risk_mean"]) / cal["risk_std"]
+            S0 = np.interp(t_eval, cal["base_times"], cal["base_surv"],
+                           left=1.0, right=float(cal["base_surv"][-1]))
+            S = S0 ** np.exp(cal["slope"] * z)
+            return np.clip(S, 0.0, 1.0)
+        # Fallback: legacy uncalibrated exponential
         lam = baseline_lambda * np.exp(risk_score)
-        S = np.exp(-lam * t_eval)
-        return np.clip(S, 0, 1)
+        return np.clip(np.exp(-lam * t_eval), 0, 1)
 
     def get_survival_at_timepoints(self, risk_score: float,
                                    timepoints_months: list[float] = [12, 24, 36]) -> dict:

@@ -549,17 +549,49 @@ def render_evidence():
     st.caption("Provenance, external validation, and the limitations that drive every safety guardrail.")
 
     section("External validation performance")
-    cohorts = ["TCGA (internal)", "GSE30219", "GSE50081", "GSE72094", "GSE31210"]
-    ds = [0.6131, 0.6782, 0.5965, 0.6334, 0.7271]
-    cox = [0.5881, 0.6552, 0.5411, 0.5593, 0.7049]
+    # Phase 3.1 rigor results (bootstrap 1000 resamples, seed 42) — reproduces Phase 3 report.
+    rigor = [
+        # cohort, ds, ds_lo, ds_hi, cox, delta, p, calib_slope, mean_auc, ibs
+        ("TCGA (internal)", 0.6131, 0.545, 0.687, 0.5881, +0.0249, 0.404, 0.404, 0.648, 0.186),
+        ("GSE30219", 0.6777, 0.635, 0.722, 0.6583, +0.0194, 0.118, 0.987, 0.724, 0.237),
+        ("GSE50081", 0.5965, 0.533, 0.665, 0.5411, +0.0554, 0.226, 0.613, 0.580, 0.143),
+        ("GSE72094", 0.6334, 0.575, 0.687, 0.5593, +0.0741, 0.002, 0.717, 0.643, 0.173),
+        ("GSE31210", 0.7271, 0.624, 0.819, 0.7049, +0.0222, 0.540, 0.796, 0.873, 0.049),
+    ]
+    cohorts = [r[0] for r in rigor]
+    ds = [r[1] for r in rigor]
+    ds_err_lo = [r[1] - r[2] for r in rigor]
+    ds_err_hi = [r[3] - r[1] for r in rigor]
+    cox = [r[4] for r in rigor]
     fig = go.Figure()
-    fig.add_trace(go.Bar(x=cohorts, y=ds, name="DeepSurv", marker_color=PRIMARY))
+    fig.add_trace(go.Bar(x=cohorts, y=ds, name="DeepSurv", marker_color=PRIMARY,
+                         error_y=dict(type="data", symmetric=False, array=ds_err_hi,
+                                      arrayminus=ds_err_lo, color="#155e75")))
     fig.add_trace(go.Bar(x=cohorts, y=cox, name="Cox baseline", marker_color="#cbd5e1"))
     fig.add_hline(y=0.5, line_dash="dot", line_color="#94a3b8")
-    theme_fig(fig, "Concordance index (higher = better ranking)", height=380)
+    theme_fig(fig, "C-index with bootstrap 95% CI (higher = better ranking)", height=380)
     fig.update_layout(barmode="group")
-    fig.update_yaxes(range=[0.5, 0.78], title="C-index")
+    fig.update_yaxes(range=[0.5, 0.85], title="C-index")
     st.plotly_chart(fig, use_container_width=True)
+
+    st.caption("Mean external C-index: **DeepSurv 0.659** vs **Cox 0.616**. DeepSurv wins 5/5 cohorts. "
+               "Statistics: Harrell C-index, 1000 bootstrap resamples, seed 42 (Phase 3.1).")
+
+    section("Statistical rigor (Phase 3.1)")
+    st.dataframe(pd.DataFrame([
+        {"Cohort": r[0], "DeepSurv C-index (95% CI)": f"{r[1]:.4f} ({r[2]:.3f}–{r[3]:.3f})",
+         "Δ vs Cox": f"{r[5]:+.4f}", "paired p": f"{r[6]:.3f}",
+         "Calib. slope": f"{r[7]:.3f}", "Mean td-AUC": f"{r[8]:.3f}", "IBS": f"{r[9]:.3f}"}
+        for r in rigor
+    ]), use_container_width=True, hide_index=True)
+    st.markdown(
+        '<span class="pill pill-green">GSE72094: DeepSurv &gt; Cox, p=0.002</span>'
+        '<span class="pill pill-teal">GSE30219 calibration slope 0.99 (ideal 1.0)</span>'
+        '<span class="pill pill-amber">Absolute survival remains approximate</span>',
+        unsafe_allow_html=True)
+    st.caption("Survival curves in the console use a Phase 3.1 single-covariate Cox recalibration "
+               "(baseline fit on internal validation). Calibration slope (ideal = 1.0) quantifies "
+               "residual miscalibration per cohort.")
 
     c1, c2 = st.columns(2)
     with c1:

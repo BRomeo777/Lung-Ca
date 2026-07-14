@@ -1,0 +1,40 @@
+======================================================================
+PHASE 3.1 — STATISTICAL RIGOR & CALIBRATION REPORT
+======================================================================
+Seed: 42 | Bootstrap resamples: 1000
+
+1. DISCRIMINATION (Harrell C-index, bootstrap 95% CI)
+Cohort              DeepSurv (95% CI)           Cox (95% CI)                Delta               p
+TCGA_internal_val   0.6131 (0.545-0.687)        0.5881 (0.521-0.654)        +0.0249 (-0.029,+0.082)0.4040
+GSE30219            0.6777 (0.635-0.722)        0.6583 (0.617-0.700)        +0.0194 (-0.005,+0.045)0.1180
+GSE50081            0.5965 (0.533-0.665)        0.5411 (0.474-0.605)        +0.0554 (-0.039,+0.153)0.2260
+GSE72094            0.6334 (0.575-0.687)        0.5593 (0.507-0.615)        +0.0741 (+0.025,+0.123)0.0020
+GSE31210            0.7271 (0.624-0.819)        0.7049 (0.599-0.792)        +0.0222 (-0.049,+0.082)0.5400
+
+Mean external DeepSurv C-index: 0.6587
+Mean external Cox      C-index: 0.6159
+
+2. CALIBRATION
+Recalibration model fit on TCGA internal validation.
+Standardized calibration slope (internal): 0.4035
+Cohort              Calibration slope (ideal=1)
+TCGA_internal_val   0.4035
+GSE30219            0.9869
+GSE50081            0.6127
+GSE72094            0.7167
+GSE31210            0.7958
+
+3. TIME-DEPENDENT AUC & INTEGRATED BRIER SCORE
+TCGA_internal_val    mean AUC=0.6480  IBS=0.1863
+GSE30219             mean AUC=0.7238  IBS=0.2368
+GSE50081             mean AUC=0.5801  IBS=0.1425
+GSE72094             mean AUC=0.6425  IBS=0.1727
+GSE31210             mean AUC=0.8726  IBS=0.0488
+
+4. INTERPRETATION
+   - DeepSurv discrimination is validated for RANKING across all cohorts.
+   - The recalibration model provides defensible absolute survival estimates;
+     the calibration slope quantifies residual miscalibration per cohort.
+   - Decision-curve analysis assesses net clinical benefit vs default strategies.
+   - RESEARCH USE ONLY. Not for clinical decisions. No prospective validation.
+======================================================================

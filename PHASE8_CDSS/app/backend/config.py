@@ -33,6 +33,10 @@ else:
 
 P8_REPORTS = P8_DIR / "reports"
 
+# Phase 3.1 recalibration artifact (single-covariate Cox recalibration).
+# Resolves in both deployment (artifacts/models) and dev (PHASE3.../models) modes.
+CALIBRATOR_PATH = P3_MODELS / "calibrator.json"
+
 # ── CONSTANTS ──
 SEED = 42
 SIM_HORIZON_DAYS = 1095
@@ -54,10 +58,11 @@ TREATMENT_ARTIFACT_WARNING = (
 
 CALIBRATION_WARNING = (
     "UNCALIBRATED — interpret with caution. "
-    "Calibration slope 0.6189 (target: 0.8-1.2). "
-    "Platt scaling was evaluated in Phase 7.1 but not deployed. "
-    "Absolute survival probabilities should not be used for clinical decisions. "
-    "Risk scores are validated for ranking only (C-index 0.6333)."
+    "Survival curves now use a Phase 3.1 single-covariate Cox recalibration fit on the internal "
+    "validation cohort (an improvement over the prior ad-hoc exponential). Calibration remains "
+    "imperfect: internal slope 0.40, external slopes 0.61-0.99 (ideal = 1.0; best GSE30219 = 0.99). "
+    "Absolute survival probabilities remain approximate and should not drive clinical decisions. "
+    "Risk scores are validated for ranking only (mean external C-index 0.659)."
 )
 
 STAGE_BLOCK_MESSAGE = (
