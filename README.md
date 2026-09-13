@@ -14,8 +14,8 @@ This repository contains the complete analysis code for a research prototype tha
 Lung_Cancer_Digital_Twin_Project/
 ├── 00_CODE/                    # Main analysis scripts for all phases
 ├── 01_RAW_DATA/                # Data download scripts and accession IDs
-├── 02_PROCESSED_DATA/          # Processed datasets (not included in repo)
-├── 03_ANALYSIS_READY_DATA/     # Analysis-ready datasets (not included in repo)
+├── 02_PROCESSED_DATA/          # Processed datasets (not included in repo - regenerated from raw data)
+├── 03_ANALYSIS_READY_DATA/     # Analysis-ready datasets (not included in repo - regenerated from processed data)
 ├── 04_DOCUMENTATION/           # Manuscript and documentation
 ├── PHASE1C_GEO_HARMONIZATION/  # Phase 1C: GEO harmonization
 ├── PHASE1D_GEO_SCALE_ALIGNMENT/# Phase 1D: Scale alignment
@@ -111,9 +111,7 @@ python 00_CODE/run_phase3_rigor.py
 
 ## Citation
 
-If you use this code or data, please cite the corresponding manuscript:
-
-[Add citation details once published]
+If you use this code or data, please cite the corresponding manuscript. Citation details will be added upon publication.
 
 ## License
 
@@ -125,8 +123,8 @@ This study uses de-identified public datasets (TCGA, GEO). It is a computational
 
 ## Contact
 
-For questions about this analysis, please contact [Add corresponding author email]
+For questions about this analysis, please contact bananeza777@gmail.com
 
 ## Acknowledgments
 
-This work was prepared as supporting material for a PhD application. The framework demonstrates methodological rigor in translational oncology machine learning.
+This work represents part of an ongoing research program in computational oncology. The framework demonstrates methodological rigor in translational oncology machine learning.
