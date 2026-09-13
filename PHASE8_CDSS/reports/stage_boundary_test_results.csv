@@ -1,3 +1,51 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d6b1a9a30c628acd0925e3ba1d7c6194e312d7399bb7d8c33708592aa9636b05
-size 7637
+test_id,category,input_stage,input_age,input_cancer_type,input_smoking,expected,actual,result,block_reason
+IIIA_adjacent_40_LUAD_Current,adjacency_IIIA,IIIA,40,LUAD,Current,allowed,allowed,PASS,
+IIIA_adjacent_40_LUAD_Former,adjacency_IIIA,IIIA,40,LUAD,Former,allowed,allowed,PASS,
+IIIA_adjacent_40_LUAD_Never,adjacency_IIIA,IIIA,40,LUAD,Never,allowed,allowed,PASS,
+IIIA_adjacent_40_LUSC_Current,adjacency_IIIA,IIIA,40,LUSC,Current,allowed,allowed,PASS,
+IIIA_adjacent_40_LUSC_Former,adjacency_IIIA,IIIA,40,LUSC,Former,allowed,allowed,PASS,
+IIIA_adjacent_40_LUSC_Never,adjacency_IIIA,IIIA,40,LUSC,Never,allowed,allowed,PASS,
+IIIA_adjacent_50_LUAD_Current,adjacency_IIIA,IIIA,50,LUAD,Current,allowed,allowed,PASS,
+IIIA_adjacent_50_LUAD_Former,adjacency_IIIA,IIIA,50,LUAD,Former,allowed,allowed,PASS,
+IIIA_adjacent_50_LUAD_Never,adjacency_IIIA,IIIA,50,LUAD,Never,allowed,allowed,PASS,
+IIIA_adjacent_50_LUSC_Current,adjacency_IIIA,IIIA,50,LUSC,Current,allowed,allowed,PASS,
+IIIA_adjacent_50_LUSC_Former,adjacency_IIIA,IIIA,50,LUSC,Former,allowed,allowed,PASS,
+IIIA_adjacent_50_LUSC_Never,adjacency_IIIA,IIIA,50,LUSC,Never,allowed,allowed,PASS,
+IIIA_adjacent_60_LUAD_Current,adjacency_IIIA,IIIA,60,LUAD,Current,allowed,allowed,PASS,
+IIIA_adjacent_60_LUAD_Former,adjacency_IIIA,IIIA,60,LUAD,Former,allowed,allowed,PASS,
+IIIA_adjacent_60_LUAD_Never,adjacency_IIIA,IIIA,60,LUAD,Never,allowed,allowed,PASS,
+IIIA_adjacent_60_LUSC_Current,adjacency_IIIA,IIIA,60,LUSC,Current,allowed,allowed,PASS,
+IIIA_adjacent_60_LUSC_Former,adjacency_IIIA,IIIA,60,LUSC,Former,allowed,allowed,PASS,
+IIIA_adjacent_60_LUSC_Never,adjacency_IIIA,IIIA,60,LUSC,Never,allowed,allowed,PASS,
+IIIA_adjacent_70_LUAD_Current,adjacency_IIIA,IIIA,70,LUAD,Current,allowed,allowed,PASS,
+IIIA_adjacent_70_LUAD_Former,adjacency_IIIA,IIIA,70,LUAD,Former,allowed,allowed,PASS,
+IIIA_adjacent_70_LUAD_Never,adjacency_IIIA,IIIA,70,LUAD,Never,allowed,allowed,PASS,
+IIIA_adjacent_70_LUSC_Current,adjacency_IIIA,IIIA,70,LUSC,Current,allowed,allowed,PASS,
+IIIA_adjacent_70_LUSC_Former,adjacency_IIIA,IIIA,70,LUSC,Former,allowed,allowed,PASS,
+IIIA_adjacent_70_LUSC_Never,adjacency_IIIA,IIIA,70,LUSC,Never,allowed,allowed,PASS,
+IIIA_adjacent_80_LUAD_Current,adjacency_IIIA,IIIA,80,LUAD,Current,allowed,allowed,PASS,
+IIIA_adjacent_80_LUAD_Former,adjacency_IIIA,IIIA,80,LUAD,Former,allowed,allowed,PASS,
+IIIA_adjacent_80_LUAD_Never,adjacency_IIIA,IIIA,80,LUAD,Never,allowed,allowed,PASS,
+IIIA_adjacent_80_LUSC_Current,adjacency_IIIA,IIIA,80,LUSC,Current,allowed,allowed,PASS,
+IIIA_adjacent_80_LUSC_Former,adjacency_IIIA,IIIA,80,LUSC,Former,allowed,allowed,PASS,
+IIIA_adjacent_80_LUSC_Never,adjacency_IIIA,IIIA,80,LUSC,Never,allowed,allowed,PASS,
+IIIB_min_completeness,IIIB_minimum_completeness,IIIB,65,LUAD,Former,blocked (phase7_1_constraint),blocked (phase7_1_constraint),PASS,Prediction unavailable for Stage IIIB/IV patients: Phase 7.1 validation found insufficient sample size (n=7 / n=10) to support reliable estimates for this subgroup.
+IIIB_with_gene_expr,IIIB_minimum_completeness,IIIB,65,LUAD,Former,blocked (phase7_1_constraint),blocked (phase7_1_constraint),PASS,Prediction unavailable for Stage IIIB/IV patients: Phase 7.1 validation found insufficient sample size (n=7 / n=10) to support reliable estimates for this subgroup.
+IV_min_completeness,IV_minimum_completeness,IV,65,LUAD,Former,blocked (phase7_1_constraint),blocked (phase7_1_constraint),PASS,Prediction unavailable for Stage IIIB/IV patients: Phase 7.1 validation found insufficient sample size (n=7 / n=10) to support reliable estimates for this subgroup.
+malformed_iiib,malformed_input,iiib,65,LUAD,Former,blocked (validation - unrecognized stage),"allowed=False, blocked=True, source=validation",PASS,"Unsupported stage: iiib. Supported: ['I', 'IA', 'IB', 'II', 'IIA', 'IIB', 'III', 'IIIA']"
+malformed_IIIB_SPACE_,malformed_input,IIIB ,65,LUAD,Former,blocked (phase7_1_constraint),"allowed=False, blocked=True, source=phase7_1_constraint",PASS,Prediction unavailable for Stage IIIB/IV patients: Phase 7.1 validation found insufficient sample size (n=7 / n=10) to support reliable estimates for this subgroup.
+malformed__SPACE_IIIB,malformed_input, IIIB,65,LUAD,Former,blocked (phase7_1_constraint),"allowed=False, blocked=True, source=phase7_1_constraint",PASS,Prediction unavailable for Stage IIIB/IV patients: Phase 7.1 validation found insufficient sample size (n=7 / n=10) to support reliable estimates for this subgroup.
+malformed_IIIB_SLASH_IV,malformed_input,IIIB/IV,65,LUAD,Former,blocked (validation - unrecognized stage),"allowed=False, blocked=True, source=validation",PASS,"Unsupported stage: IIIB/IV. Supported: ['I', 'IA', 'IB', 'II', 'IIA', 'IIB', 'III', 'IIIA']"
+malformed_Stage_SPACE_IIIB,malformed_input,Stage IIIB,65,LUAD,Former,blocked (validation - unrecognized stage),"allowed=False, blocked=True, source=validation",PASS,"Unsupported stage: Stage IIIB. Supported: ['I', 'IA', 'IB', 'II', 'IIA', 'IIB', 'III', 'IIIA']"
+malformed_3B,malformed_input,3B,65,LUAD,Former,blocked (validation - unrecognized stage),"allowed=False, blocked=True, source=validation",PASS,"Unsupported stage: 3B. Supported: ['I', 'IA', 'IB', 'II', 'IIA', 'IIB', 'III', 'IIIA']"
+malformed_4,malformed_input,4,65,LUAD,Former,blocked (validation - unrecognized stage),"allowed=False, blocked=True, source=validation",PASS,"Unsupported stage: 4. Supported: ['I', 'IA', 'IB', 'II', 'IIA', 'IIB', 'III', 'IIIA']"
+malformed_IIB*,malformed_input,IIB*,65,LUAD,Former,blocked (validation - unrecognized stage),"allowed=False, blocked=True, source=validation",PASS,"Unsupported stage: IIB*. Supported: ['I', 'IA', 'IB', 'II', 'IIA', 'IIB', 'III', 'IIIA']"
+malformed_IIIA_SLASH_IIIB,malformed_input,IIIA/IIIB,65,LUAD,Former,blocked (validation - unrecognized stage),"allowed=False, blocked=True, source=validation",PASS,"Unsupported stage: IIIA/IIIB. Supported: ['I', 'IA', 'IB', 'II', 'IIA', 'IIB', 'III', 'IIIA']"
+malformed_T3N2M0,malformed_input,T3N2M0,65,LUAD,Former,blocked (validation - unrecognized stage),"allowed=False, blocked=True, source=validation",PASS,"Unsupported stage: T3N2M0. Supported: ['I', 'IA', 'IB', 'II', 'IIA', 'IIB', 'III', 'IIIA']"
+malformed_,malformed_input,,65,LUAD,Former,blocked (validation - unrecognized stage),"allowed=False, blocked=True, source=validation",PASS,Stage is required
+malformed_Unknown,malformed_input,Unknown,65,LUAD,Former,blocked (validation - unrecognized stage),"allowed=False, blocked=True, source=validation",PASS,"Unsupported stage: Unknown. Supported: ['I', 'IA', 'IB', 'II', 'IIA', 'IIB', 'III', 'IIIA']"
+malformed_X,malformed_input,X,65,LUAD,Former,blocked (validation - unrecognized stage),"allowed=False, blocked=True, source=validation",PASS,"Unsupported stage: X. Supported: ['I', 'IA', 'IB', 'II', 'IIA', 'IIB', 'III', 'IIIA']"
+malformed_IIIC,malformed_input,IIIC,65,LUAD,Former,blocked (validation - unrecognized stage),"allowed=False, blocked=True, source=validation",PASS,"Unsupported stage: IIIC. Supported: ['I', 'IA', 'IB', 'II', 'IIA', 'IIB', 'III', 'IIIA']"
+malformed_V,malformed_input,V,65,LUAD,Former,blocked (validation - unrecognized stage),"allowed=False, blocked=True, source=validation",PASS,"Unsupported stage: V. Supported: ['I', 'IA', 'IB', 'II', 'IIA', 'IIB', 'III', 'IIIA']"
+malformed_IIIB-IIIA,malformed_input,IIIB-IIIA,65,LUAD,Former,blocked (validation - unrecognized stage),"allowed=False, blocked=True, source=validation",PASS,"Unsupported stage: IIIB-IIIA. Supported: ['I', 'IA', 'IB', 'II', 'IIA', 'IIB', 'III', 'IIIA']"
+III_generic,generic_stage_III,III,65,LUAD,Former,allowed,allowed,PASS,
